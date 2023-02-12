@@ -65,7 +65,8 @@
   height: 370px;
   width: 370px;
   /* background-image: linear-gradient( #f6e5dd, #ffdb3a68);   */
-  background: radial-gradient(circle, rgb(255, 98, 218) 0%, rgba(118, 255, 166, 0.37) 55%, rgb(255, 255, 255) 100%);
+  background: radial-gradient(circle, rgb(255, 98, 218) 20%, rgba(118, 255, 166, 0.37) 60%, rgb(255, 255, 255) 78%);
+  z-index: -10;
 }
 
 #landing-page-container h1 {
@@ -121,7 +122,40 @@ height: 80vh;
 }
 
 
+/* ABOUT PAGE  */
 
+#about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 97vw;
+  margin-top: 20%;
+}
+
+#about-container h1 {
+  font-family: 'Rubik Gemstones', cursive;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2.8em;
+  color: rgba(230, 61, 0, 0.977);
+  text-shadow: rgb(255, 255, 255) -3px -3px;
+  text-transform: lowercase;
+}
+
+#about-container img {
+  border: 1px solid rgb(255, 0, 195);
+  border-radius: 50%;
+}
+
+#bio {
+  width: 80%;
+}
+
+#bio p {
+  text-align: justify;
+}
 
 
 
