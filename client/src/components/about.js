@@ -1,18 +1,25 @@
 import profile from "../images/profile.png";
+import { Icon } from 'semantic-ui-react'
+
 
 
 function About (){
     return(
         <div id="about-container">
             <h1>hi there</h1>
-            <img src={profile} style={{width: `50%`}} alt="Lindsay Taylor" />
+            {/* <Icon name="home"></Icon> */}
+
 
             <div id="bio">
+                    {/* <h3>about me</h3> */}
                     <p>Full Stack Software Engineer with experience in Ruby on Rails and JavaScript based programming, with a background in operations. Experienced working in fast paced environments, building teams from the ground up with minimal resources. Strong cross collaborator, project leader, with experience in data analysis, who thrives in finding solutions at scale. Visual artist with a passion for creative problem solving and building beautiful, accessible apps.
                 </p>
             </div>
 
+            <img src={profile} style={{width: `50%`}} alt="Lindsay Taylor" />
+
             <div id="skills">
+                <h3>technical skills</h3>
                 <ul>
                     <li>
                     Ruby on Rails, Ruby, Sinatra, React, SQLite, Javascript, Active Record, HTML, CSS, Git/GitHub, web development, wireframing, user testing
@@ -21,6 +28,7 @@ function About (){
 
             </div>
             <div id="education">
+                <h3>school</h3>
                 <ul>
                     <li>Flatiron School
                         Full Stack Web Development, Ruby on Rails and JavaScript program 
@@ -38,7 +46,7 @@ function About (){
 
 
             <div id="contact">
-
+                
             </div>
 
         </div>

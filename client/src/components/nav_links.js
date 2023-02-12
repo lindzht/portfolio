@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 
 function NavLinks (){
@@ -6,7 +6,10 @@ function NavLinks (){
 
         <div id="nav-container">
             <h3>Projects</h3>
-            <h3>About</h3>
+            
+            <Link to="#">
+                <h3>About</h3>
+            </Link>
         </div>
     )
 }

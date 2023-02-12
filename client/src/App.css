@@ -102,7 +102,7 @@
 #nav-container {
 position: absolute;
 top: 100px;
-left: 41%;
+left: 39%;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -110,11 +110,12 @@ align-items: center;
 height: 80vh;
 }
 
-#nav-container h3 {
+#nav-container h3{
   color: rgba(156, 42, 0, 0.977);
   text-transform: lowercase;
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.4em;
+  font-family: 'Beth Ellen', cursive;
 }
 
 #nav-container h3:hover {
@@ -131,7 +132,7 @@ height: 80vh;
   align-items: center;
   height: 100vh;
   width: 97vw;
-  margin-top: 20%;
+  margin-top: 30%;
 }
 
 #about-container h1 {
@@ -144,17 +145,30 @@ height: 80vh;
   text-transform: lowercase;
 }
 
+#about-container h3 {
+  color: rgba(156, 42, 0, 0.977);
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size: 1em;
+  font-family: 'Beth Ellen', cursive;
+}
+
 #about-container img {
   border: 1px solid rgb(255, 0, 195);
   border-radius: 50%;
+  margin: 1.1em;
 }
 
-#bio {
+#bio,
+#skills,
+#education {
   width: 80%;
 }
 
-#bio p {
+#about-container p,
+#about-container li {
   text-align: justify;
+  font-size: 0.8em;
 }
 
 
