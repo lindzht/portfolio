@@ -11,7 +11,13 @@ function LandingPage (){
 
     return(
         <div id="landing-page-container">
-           {isDesktop ? <h1>Lindsay Taylor</h1> : <><h1>Lindsay</h1> <br /> <h1>Taylor</h1></>}
+            <div id="bkgr-circle"></div>
+            {isDesktop ? 
+                <h1>Lindsay Taylor</h1> 
+                : <div id="landing-name">
+                    <h1>Lindsay</h1>
+                    <h1>Taylor</h1>
+                    </div>}
         </div>
     )
 }
