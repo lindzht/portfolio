@@ -5,17 +5,15 @@ import LandingPage from './components/landing_page';
 import NavLinks from './components/nav_links';
 import About from './components/about';
 
-
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <div id="bkgr-overlay"></div>
         <div id="bkgr-circle"></div>
-        {/* <NavLinks /> */}
+
         <LandingPage />
-        
-        <div id="#about">
+        <div id="about">
           <About />
         </div>
         {/* <Routes>

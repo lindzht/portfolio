@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 
 
 function NavLinks (){
@@ -7,9 +9,9 @@ function NavLinks (){
         <div id="nav-container">
             <h3>Projects</h3>
             
-            <Link to="#">
+            <HashLink smooth to="/#about">
                 <h3>About</h3>
-            </Link>
+            </HashLink>
         </div>
     )
 }

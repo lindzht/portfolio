@@ -13,8 +13,7 @@ function LandingPage() {
         <>
             <NavLinks />
             <div id="landing-page-container">
-                {/* <div id="bkgr-overlay"></div>
-                <div id="bkgr-circle"></div> */}
+
                 {isDesktop ?
                     <h1>Lindsay Taylor</h1>
                     : <div id="landing-name">
