@@ -13,7 +13,7 @@ function About (){
                 </p>
             </div>
 
-            <img src={profile} style={{width: `50%`}} alt="Lindsay Taylor" />
+            <img src={profile} alt="Lindsay Taylor" />
 
             <div id="skills">
                 <h3>technical skills</h3>
