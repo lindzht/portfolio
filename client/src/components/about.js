@@ -1,6 +1,7 @@
 import profile from "../images/profile.png";
 import hand from "../images/hand.png";
 import { Icon } from 'semantic-ui-react'
+import paint from "../images/painbrushicon_100px.png";
 
 
 
@@ -14,7 +15,7 @@ function About (){
                 </p>
             </div>
 
-            <img src={profile} alt="Lindsay Taylor" />
+            <img id="bio-img" src={profile} alt="Lindsay Taylor" />
             
             <div id="about-bottom">
                 <div id="skills">
@@ -67,9 +68,8 @@ function About (){
 
 
             <div id="contact">
-                
+                <img src={paint} alt="Landing Page"/>
             </div>
-            {/* <img id="hand" src={hand} alt="Landing Page"/> */}
 
         </div>
     )
