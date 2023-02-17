@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route, useParams, Link } from 'react-router-dom';
-import LandingPage from './components/landing_page';
-import NavLinks from './components/nav_links';
-import About from './components/about';
+import LandingPage from './components/LandingPage';
+import NavLinks from './components/Nav';
+import About from './components/About';
 
 function App() {
   return (

@@ -1,4 +1,5 @@
 import profile from "../images/profile.png";
+import hand from "../images/hand.png";
 import { Icon } from 'semantic-ui-react'
 
 
@@ -14,36 +15,53 @@ function About (){
             </div>
 
             <img src={profile} alt="Lindsay Taylor" />
+            
+            <div id="about-bottom">
+                <div id="skills">
+                    <h3>technical skills</h3>
+                    <ul>
+                        <li>Ruby on Rails</li>
+                        <li>Ruby</li>
+                        <li>Sinatra</li>
+                        <li>React</li>
+                        <li>JavaScript</li> 
+                        <li>SQLite</li>
+                        <li>ActiveRecord</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Git/GitHub</li>
+                        <li>web development</li>
+                        <li>mobile web design</li>
+                        <li>wireframing</li>
+                        <li>user testing</li>
 
-            <div id="skills">
-                <h3>technical skills</h3>
-                <p>
-                    Ruby on Rails, Ruby, Sinatra, React, SQLite, Javascript, Active Record, HTML, CSS, Git/GitHub, web development, wireframing, user testing
-                </p>
 
-            </div>
-            <div id="education">
-                <h3>school</h3>
-                <div className="edu">
-                    <p>
-                        <span>Flatiron School </span>
-                        <br/>
-                        Oct 2022 - Jan 2023
-                        <br />
-                        Full Stack Web Development, Ruby on Rails and JavaScript program 
-                        <br/>
-                    </p>
+                    </ul>
+
                 </div>
-                <div className="edu">
-                    <p>
-                        <span>Carnegie Mellon University</span>
-                        <br/>
-                        May 2012 
-                        <br />
-                        BFA in Painting, Printmaking, Drawing 
-                        <br />
-                        University Honors
-                    </p>
+                <div id="education">
+                    <h3>school</h3>
+                    <div className="edu">
+                        <p>
+                            <span>Flatiron School </span>
+                            <br/>
+                            Oct 2022 - Jan 2023
+                            <br />
+                            Full Stack Web Development, Ruby on Rails and JavaScript program 
+                            <br/>
+                        </p>
+                    </div>
+                    <div className="edu">
+                        <p>
+                            <span>Carnegie Mellon University</span>
+                            <br/>
+                            May 2012 
+                            <br />
+                            BFA in Painting, Printmaking, Drawing 
+                            <br />
+                            University Honors
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -51,6 +69,7 @@ function About (){
             <div id="contact">
                 
             </div>
+            {/* <img id="hand" src={hand} alt="Landing Page"/> */}
 
         </div>
     )

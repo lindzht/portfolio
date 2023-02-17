@@ -1,5 +1,5 @@
 import { useMediaQuery } from 'react-responsive'
-import NavLinks from './nav_links';
+import NavLinks from './Nav';
 
 
 function LandingPage() {

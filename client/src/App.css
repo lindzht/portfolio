@@ -152,7 +152,7 @@ height: 80vh;
   font-weight: 700;
   font-size: 1.1em;
   font-family: 'Beth Ellen', cursive;
-  margin-bottom: -15px;
+  margin-bottom: -8px;
 }
 
 #about-container img {
@@ -177,18 +177,31 @@ height: 80vh;
   font-weight: bold;
 }
 
-#about-container .edu p {
+#about-container .edu p,
+#education h3 {
   text-align: left;
+  margin-right: 5px;
 }
 
-#skills p {
-  font-size: 1em;
+#skills li {
+  font-size: 0.8em;
+  text-align: left;
+  margin-left: -12px;
+}
+
+#skills ul {
+  list-style-type: none;
 }
 
 #education {
   margin-top: -15px;
 }
 
+#about-bottom {
+  display: flex;
+  align-items:flex-end;
+  justify-content: space-around;
+}
 
 
 
