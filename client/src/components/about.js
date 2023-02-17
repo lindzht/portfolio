@@ -5,6 +5,7 @@ import paint from "../images/painbrushicon_100px.png";
 import mailbox from "../images/mailicon_100px.png";
 import linkedin from "../images/linkedinicon.png";
 import github from "../images/githubicon2.png";
+import medium from "../images/mediumicon.png";
 
 
 
@@ -75,6 +76,7 @@ function About (){
                 <img src={linkedin} alt="Landing Page"/>
                 <img src={github} alt="Landing Page"/>
                 <img src={paint} alt="Landing Page"/>
+                <img src={medium} alt="Landing Page"/>
 
 
             </div>
