@@ -7,7 +7,9 @@ function NavLinks (){
     return(
 
         <div id="nav-container">
-            <h3>Projects</h3>
+            <HashLink smooth to="/#projects">
+                <h3>Projects</h3>
+            </HashLink>
             
             <HashLink smooth to="/#about">
                 <h3>About</h3>
