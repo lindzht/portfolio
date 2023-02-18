@@ -1,0 +1,2 @@
+class ProjskillsController < ApplicationController
+end
