@@ -142,7 +142,7 @@ height: 80vh;
   color: rgba(230, 61, 0, 0.977);
   text-shadow: rgb(255, 255, 255) -3px -3px;
   text-transform: lowercase;
-  margin: 1.6em 0 0.3em 0;
+  margin: 1.3em 0 1em 0;
 }
 
 #about-container h3 {
@@ -158,8 +158,8 @@ height: 80vh;
 #about-container #bio-img {
   border: 1px solid rgb(255, 0, 195);
   border-radius: 50%;
-  width: 41%;
-  margin: 3% 0 -3% 0;
+  width: 33%;
+  margin: 25px 0 5px 0;
 }
 
 #bio,
@@ -179,8 +179,8 @@ height: 80vh;
 
 #about-container .edu p,
 #education h3 {
-  text-align: left;
-  margin-right: 5px;
+  text-align: right;
+  margin-right: 25px;
 }
 
 #skills li {
@@ -193,18 +193,14 @@ height: 80vh;
   list-style-type: none;
 }
 
-#education {
-  margin-top: -15px;
-}
-
 #about-bottom {
   display: flex;
-  align-items:flex-end;
+  align-items:flex-start;
   justify-content: space-around;
 }
 
 #contact {
-  margin-top: 2em;
+  margin-top: 1em;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -216,7 +212,7 @@ height: 80vh;
 }
 
 #contact img:hover {
-  margin-top: 5px;
+  margin-top: -5px;
 }
 
 
