@@ -16,13 +16,9 @@ function App() {
         <div id="about">
           <About />
         </div>
-        <div id="projects">
+        {/* <div id="projects">
           <About />
-        </div>
-        {/* <Routes>
-          <Route index element={<LandingPage />} />
-          <Route path='about' element={<About />} />
-        </Routes> */}
+        </div> */}
       </div>
     
     </BrowserRouter>

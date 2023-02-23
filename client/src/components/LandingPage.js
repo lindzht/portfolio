@@ -10,7 +10,7 @@ function LandingPage() {
     })
 
     return (
-        <>
+        <div id="landing-page">
             <NavLinks />
             <div id="landing-page-container">
 
@@ -21,7 +21,7 @@ function LandingPage() {
                         <h1>Taylor</h1>
                     </div>}
             </div>
-        </>
+        </div>
     )
 }
 

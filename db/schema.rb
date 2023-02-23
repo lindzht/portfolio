@@ -15,31 +15,12 @@ ActiveRecord::Schema.define(version: 2023_02_18_225311) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "categories", force: :cascade do |t|
-    t.string "category_name"
-    t.string "cat_type"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "descriptions", force: :cascade do |t|
     t.string "text"
     t.bigint "project_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["project_id"], name: "index_descriptions_on_project_id"
-  end
-
-  create_table "expenses", force: :cascade do |t|
-    t.string "item"
-    t.float "cost"
-    t.string "date_of_expense"
-    t.bigint "user_id", null: false
-    t.bigint "category_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["category_id"], name: "index_expenses_on_category_id"
-    t.index ["user_id"], name: "index_expenses_on_user_id"
   end
 
   create_table "projects", force: :cascade do |t|
@@ -68,18 +49,7 @@ ActiveRecord::Schema.define(version: 2023_02_18_225311) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "name"
-    t.string "password_digest"
-    t.float "income"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   add_foreign_key "descriptions", "projects"
-  add_foreign_key "expenses", "categories"
-  add_foreign_key "expenses", "users"
   add_foreign_key "projskills", "projects"
   add_foreign_key "projskills", "skills"
 end
