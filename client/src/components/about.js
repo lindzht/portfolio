@@ -1,6 +1,6 @@
+import { Link} from 'react-router-dom';
 import profile from "../images/profile.png";
 import hand from "../images/hand.png";
-import { Icon } from 'semantic-ui-react'
 import paint from "../images/painbrushicon_100px.png";
 import mailbox from "../images/mailicon_100px.png";
 import linkedin from "../images/linkedinicon.png";
@@ -12,7 +12,7 @@ import medium from "../images/mediumicon.png";
 function About (){
     return(
         <div id="about-container">
-            <h1>hi there</h1>
+            <h1>hi there!</h1>
 
             <div id="bio">
                     <p>Full Stack Software Engineer with experience in Ruby on Rails and JavaScript based programming, with a background in operations. Experienced working in fast paced environments, building teams from the ground up with minimal resources. Strong cross collaborator, project leader, with experience in data analysis, who thrives in finding solutions at scale. Visual artist with a passion for creative problem solving and building beautiful, accessible apps.
@@ -56,6 +56,7 @@ function About (){
                             <br/>
                         </p>
                     </div>
+                    <br />
                     <div className="edu">
                         <p>
                             <span>Carnegie Mellon University</span>
@@ -72,12 +73,21 @@ function About (){
 
 
             <div id="contact">
-                <img src={mailbox} alt="Landing Page"/>
-                <img src={linkedin} alt="Landing Page"/>
-                <img src={github} alt="Landing Page"/>
-                <img src={paint} alt="Landing Page"/>
-                <img src={medium} alt="Landing Page"/>
-
+            <Link to="#" onClick={() => {window.location.href = "mailto:llindsayttaylor@gmail.com"}}>
+                <img src={mailbox} alt="Email"/>
+            </Link>
+            <Link target="_blank" to="https://www.linkedin.com/in/lindsayhtaylor/" >
+                <img src={linkedin} alt="LinkedIn"/>
+            </Link>
+            <Link target="_blank" to="https://github.com/lindzht" >
+                <img src={github} alt="GitHub"/>
+            </Link>
+            <Link target="_blank" to="https://lindsaytaylor.art/" >
+                <img src={paint} alt="Art Portfolio"/>
+            </Link>
+            <Link target="_blank" to="https://medium.com/@llindsayttaylor" >
+                <img src={medium} alt="Blog"/>
+            </Link>
 
             </div>
 

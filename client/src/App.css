@@ -87,6 +87,10 @@ height: 80vh;
   color:rgb(255, 29, 217);
 }
 
+#nav-container a {
+  text-decoration: none;
+}
+
 
 /* ABOUT PAGE  */
 
@@ -123,8 +127,8 @@ height: 80vh;
 #about-container #bio-img {
   border: 1px solid rgb(255, 0, 195);
   border-radius: 50%;
-  width: 33%;
-  margin: 25px 0 5px 0;
+  width: 30%;
+  margin: 25px 0 5px 12px;
 }
 
 #bio,
