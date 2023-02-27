@@ -3,13 +3,39 @@
 } */
 
 
+
+/* GLOBAL STYLES */
+#about-container h1,
+#projects-container h1 {
+  font-family: 'Rubik Gemstones', cursive;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2.8em;
+  color: rgba(230, 61, 0, 0.977);
+  text-shadow: rgb(255, 255, 255) -3px -3px;
+  text-transform: lowercase;
+  margin: 1.5em 0 0.5em 0;
+}
+
+#about-container,
+#projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 95vw;
+}
+
+/* LANDING PAGE  */
+
 #landing-page-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   word-wrap: normal;
-  /* width: 100vw; */
+  width: 95vw;
   height: 100vh; 
   /* background-image: linear-gradient( #f6e5dd, #ffd62185);   */
 }
@@ -17,7 +43,7 @@
 #bkgr-overlay {
   position: fixed;
   height: 100vh; 
-  width: 96vw;
+  width: 95vw;
   background-image: linear-gradient( #f6e5dd, #ffd62185);  
   z-index: -10;
 }
@@ -26,7 +52,7 @@
   margin-top: 60%;
   position: fixed;
   border-radius: 50% ;
-  border: 3px solid rgb(255, 255, 255);
+  border: 1.5px solid rgb(255, 255, 255);
   height: 370px;
   width: 370px;
   /* background-image: linear-gradient( #f6e5dd, #ffdb3a68);   */
@@ -75,7 +101,7 @@ align-items: center;
 height: 80vh;
 }
 
-#nav-container h3{
+#nav-container h3 {
   color: rgba(156, 42, 0, 0.977);
   text-transform: lowercase;
   font-weight: 700;
@@ -94,25 +120,6 @@ height: 80vh;
 
 /* ABOUT PAGE  */
 
-#about-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100vh;
-  width: 95vw;
-}
-
-#about-container h1 {
-  font-family: 'Rubik Gemstones', cursive;
-  font-weight: 200;
-  font-style: italic;
-  font-size: 2.8em;
-  color: rgba(230, 61, 0, 0.977);
-  text-shadow: rgb(255, 255, 255) -3px -3px;
-  text-transform: lowercase;
-  margin: 1.3em 0 1em 0;
-}
 
 #about-container h3 {
   /* color: rgba(156, 42, 0, 0.977); */
@@ -169,7 +176,7 @@ height: 80vh;
 }
 
 #contact {
-  margin-top: 1em;
+  margin-top: 1.6em;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -185,12 +192,21 @@ height: 80vh;
 }
 
 
+/* PROJECTS LANDING  */
+
+
+#projects-container {
+  height: 100vh;
+  width: 95vw;
+}
+
+
 
 @media only screen and (min-width: 768px) {
 
 
   #bkgr-overlay {
-    width: 99vw;
+    width: 95vw;
   }
 
   #bkgr-circle {

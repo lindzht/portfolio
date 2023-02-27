@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, useParams, Link } from 'react-router-dom'
 import LandingPage from './components/LandingPage';
 import NavLinks from './components/Nav';
 import About from './components/About';
+import Projects from './components/Projects';
 
 
 function App() {
@@ -16,9 +17,9 @@ function App() {
         <div id="about">
           <About />
         </div>
-        {/* <div id="projects">
-          <About />
-        </div> */}
+        <div id="projects">
+          <Projects />
+        </div>
       </div>
     
     </BrowserRouter>

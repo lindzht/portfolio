@@ -14,6 +14,7 @@ function NavLinks (){
             <HashLink smooth to="/#about">
                 <h3>About</h3>
             </HashLink>
+
         </div>
     )
 }
