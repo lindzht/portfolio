@@ -17,7 +17,17 @@ p4 = Project.create(name: "LLocal's Guide", gh: "https://github.com/lindzht/phas
 p5 = Project.create(name: "Bored", gh: "https://github.com/hhw67865/ImBoredProject", demo: "https://www.loom.com/share/58f0610d3cd147b38917f98a6877dc74", header: "Activity generator, based on user selections in a game-like app.")
 
 
-
-
+s1 = Skill.create(name: "React")
+s2 = Skill.create(name: "Ruby on Rails")
+s3 = Skill.create(name: "Sinatra")
+s4 = Skill.create(name: "Active Record")
+s5 = Skill.create(name: "React Router")
+s6 = Skill.create(name: "HTML")
+s7 = Skill.create(name: "CSS")
+s8 = Skill.create(name: "RESTful Routing Conventions")
+s9 = Skill.create(name: "API Communication")
+s10 = Skill.create(name: "Semantic UI")
+s11 = Skill.create(name: "Mobile Web Design")
+s12 = Skill.create(name: "JavaScript")
 
 puts "seeded baby!"
