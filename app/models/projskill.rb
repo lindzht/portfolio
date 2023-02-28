@@ -1,4 +1,4 @@
 class Projskill < ApplicationRecord
-  belongs_to :projects
-  belongs_to :skills
+  belongs_to :project
+  belongs_to :skill
 end
