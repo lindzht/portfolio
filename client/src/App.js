@@ -5,22 +5,22 @@ import LandingPage from './components/LandingPage';
 import NavLinks from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 
 function App() {
 
+  const [projects, setProjects] = useState([])
 
   useEffect(() => {
     fetch('/projects')
     .then(res => {
       if(res.ok){
         res.json()
-        .then(data => {console.log(data)})
+        .then(data => {setProjects(data)})
       }
     })
   }, [])
-
 
 
   return (
@@ -33,7 +33,7 @@ function App() {
           <About />
         </div>
         <div id="projects">
-          <Projects />
+          <Projects projects={projects} />
         </div>
       </div>
     

@@ -5,7 +5,8 @@ class Project < ApplicationRecord
     has_many :images
 
 
-    def self.sort_name
-       self.order(name: :asc) 
+    def self.sort_by_created
+       self.order(created_at: :asc) 
     end
+
 end
