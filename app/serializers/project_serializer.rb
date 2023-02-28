@@ -1,6 +1,8 @@
 class ProjectSerializer < ActiveModel::Serializer
-  attributes :id, :name, :gh, :gh_front, :gh_back, :demo, :header
+  attributes :id, :name, :thumbnail, :gh, :gh_front, :gh_back, :demo, :header, :created_at
 
   has_many :skills
+  has_many :images
+
 
 end
