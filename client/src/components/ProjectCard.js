@@ -1,9 +1,13 @@
 
 
-function ProjectCard ({name}) {
+function ProjectCard ({name, thumbnail}) {
+console.log(thumbnail);
 
     return(
-        <h1>{name}</h1>
+        <div className="proj_card">
+            <h4>{name}</h4>
+            <img src={thumbnail} alt={name} />
+        </div>
     )
 }
 
