@@ -40,7 +40,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<LandingPage projects={projects}/>} />
-          <Route path="/:projectName" element={<ProjectPage />}/>
+          <Route path="/:projectName" element={<ProjectPage projects={projects}/>}/>
         </Routes>
 
 
