@@ -6,7 +6,7 @@ class Project < ApplicationRecord
 
 
     def self.sort_by_created
-       self.order(created_at: :asc) 
+       self.order(created_at: :desc) 
     end
 
 end
