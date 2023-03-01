@@ -1,5 +1,5 @@
 /* .App {
-  text-align: center;
+  border: 8px solid white;
 } */
 
 
@@ -53,8 +53,8 @@
   position: fixed;
   border-radius: 50% ;
   border: 1.5px dotted rgb(255, 255, 255);
-  height: 370px;
-  width: 370px;
+  height: 368px;
+  width: 368px;
   background-image: linear-gradient( #f6e5dd,  #ffc80398, rgb(255, 255, 255));  
   /* background: radial-gradient(circle, rgb(255, 98, 218) 20%, rgba(118, 255, 166, 0.37) 60%, rgb(255, 255, 255) 78%); */
   z-index: -10;

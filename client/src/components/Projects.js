@@ -1,10 +1,13 @@
 import ProjectCard from "./ProjectCard";
+import { Link } from "react-router-dom";
 
 function Projects({ projects }) {
 
     const renderCards = projects.map((project) => {
         return (
-            <ProjectCard {...project} key={project.id} />
+            <Link key={project.id} to={project.name.toLowerCase()}>
+                <ProjectCard {...project} key={project.id} />
+            </Link>
         )
     })
 

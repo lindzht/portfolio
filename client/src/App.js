@@ -6,6 +6,7 @@ import NavLinks from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
 import { useEffect, useState } from 'react';
+import ProjectPage from './components/ProjectPage';
 
 
 function App() {
@@ -28,13 +29,22 @@ function App() {
       <div className="App">
         <div id="bkgr-overlay"></div>
         <div id="bkgr-circle"></div> 
-        <LandingPage />
-        <div id="about">
+        
+        
+        {/* <div id="about">
           <About />
         </div>
         <div id="projects">
           <Projects projects={projects} />
-        </div>
+        </div> */}
+
+        <Routes>
+          <Route path="/" element={<LandingPage projects={projects}/>} />
+          <Route path="/:projectName" element={<ProjectPage />}/>
+        </Routes>
+
+
+
       </div>
     
     </BrowserRouter>
