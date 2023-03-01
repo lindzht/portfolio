@@ -52,13 +52,25 @@
   margin-top: 60%;
   position: fixed;
   border-radius: 50% ;
-  border: 1.5px solid rgb(255, 255, 255);
+  border: 1.5px dotted rgb(255, 255, 255);
   height: 370px;
   width: 370px;
-  /* background-image: linear-gradient( #f6e5dd, #ffdb3a68);   */
-  background: radial-gradient(circle, rgb(255, 98, 218) 20%, rgba(118, 255, 166, 0.37) 60%, rgb(255, 255, 255) 78%);
+  background-image: linear-gradient( #f6e5dd,  #ffc80398, rgb(255, 255, 255));  
+  /* background: radial-gradient(circle, rgb(255, 98, 218) 20%, rgba(118, 255, 166, 0.37) 60%, rgb(255, 255, 255) 78%); */
   z-index: -10;
+  background-size: 300% 300%;
+  -webkit-animation: backgroundAnimation 8s ease infinite;
+  -moz-animation: backgroundAnimation 8s ease infinite;
+  animation: backgroundAnimation 8s ease infinite;
 }
+
+@keyframes backgroundAnimation {
+  0%{background-position:0% 14%}
+  50%{background-position:100% 87%}
+  100%{background-position:0% 14%}
+}
+
+
 
 #landing-page-container h1 {
   /* font-family: 'Monoton', cursive; */
@@ -194,12 +206,31 @@ height: 80vh;
 
 /* PROJECTS LANDING  */
 
-
 #projects-container {
   height: 100vh;
   width: 95vw;
 }
 
+#proj-thumbnails-container {
+  margin-top: 1em;
+}
+
+/* PROJECTS CARD */
+.proj_card {
+  margin: 0.3em;
+}
+
+.proj_card img {
+  border: 1px solid rgb(255, 0, 195);
+  border-radius: 20px;
+  height: 100px;
+  width: 280px;
+  object-fit: cover;
+}
+
+.proj_card img:hover {
+  margin-bottom: 10px;
+}
 
 
 @media only screen and (min-width: 768px) {

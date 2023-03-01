@@ -5,8 +5,7 @@ console.log(thumbnail);
 
     return(
         <div className="proj_card">
-            <h4>{name}</h4>
-            <img style={{width: 30}} src={thumbnail} alt={name} />
+           { thumbnail ? <img src={thumbnail} alt={name} /> : <h4>{name}</h4>}
         </div>
     )
 }

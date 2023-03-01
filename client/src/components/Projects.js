@@ -11,7 +11,9 @@ function Projects({ projects }) {
     return (
         <div id="projects-container">
             <h1>Projects</h1>
-            {renderCards}
+            <div id="proj-thumbnails-container">
+                {renderCards}
+            </div>
         </div>
     )
 }
