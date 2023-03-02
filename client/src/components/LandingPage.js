@@ -4,7 +4,7 @@ import About from './About';
 import Projects from './Projects';
 
 
-function LandingPage({ projects }) {
+function LandingPage({ projects, setCurrentProject }) {
 
 
     const isDesktop = useMediaQuery({
@@ -13,7 +13,7 @@ function LandingPage({ projects }) {
 
     return (
         <div id="landing-page">
-            
+
             <NavLinks />
 
             <div id="landing-page-container">
@@ -30,7 +30,7 @@ function LandingPage({ projects }) {
                 <About />
             </div>
             <div id="projects">
-                <Projects projects={projects} />
+                <Projects projects={projects} setCurrentProject={setCurrentProject} />
             </div>
 
 

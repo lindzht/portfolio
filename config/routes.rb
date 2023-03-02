@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :images
-  resources :projects, only: [:index]
+  resources :projects, only: [:index, :show]
   resources :skills
   
 

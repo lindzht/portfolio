@@ -12,6 +12,8 @@ import ProjectPage from './components/ProjectPage';
 function App() {
 
   const [projects, setProjects] = useState([])
+  // const [currentProject, setCurrentProject] = []
+
 
   useEffect(() => {
     fetch('/projects')
@@ -39,7 +41,7 @@ function App() {
         </div> */}
 
         <Routes>
-          <Route path="/" element={<LandingPage projects={projects}/>} />
+          <Route path="/" element={<LandingPage projects={projects} />} />
           <Route path="/:projectName" element={<ProjectPage projects={projects}/>}/>
         </Routes>
 

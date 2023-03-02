@@ -1,7 +1,6 @@
 
 
 function ProjectCard ({name, thumbnail}) {
-console.log(thumbnail);
 
     return(
         <div className="proj_card">

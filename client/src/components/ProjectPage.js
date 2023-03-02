@@ -1,10 +1,16 @@
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
-function ProjectPage ({projects}) {
+function ProjectPage ({projects }) {
     const params = useParams();
-    const [currentProject, setCurrentProject] = []
+    const [currentProjID, setCurrentProjID] = []
+    
+    useEffect(()=> {
+        
+    })
+
+
     
     // function handleCurrentProject ( ) {
     //     projects.filter ((project) => {
@@ -14,20 +20,30 @@ function ProjectPage ({projects}) {
     //     })
     // }
 
+    useEffect(()=> {
+        filterProject = projects.filter((project) => {
+         return project.name.toLowerCase() === params.projectName
+        })    
+    })
 
-    console.log(currentProject)
+    console.log(filterProject)
 
     // const currentProject = projects.filter((project) => {
     //     return project.name.toLowerCase() === params.projectName
     //  }) 
 
-     
+    if (projects && projects.length > 0) {
+        console.log("test")
+    }
 
     return(
         <div className="projpage-container">
             {projects ? <h1>working</h1> : <h1>not working</h1>}
         </div>
     )
+
+
 }
+
 
 export default ProjectPage;
