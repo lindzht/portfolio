@@ -9,21 +9,24 @@ function ProjectPage({ projects }) {
         return (project.name.toLowerCase() == params.projectName)
     })
     const currentProjObj = currentProjArr[0]
-    
+    // const heroImage = currentProjObj.images[0].hero
+
 
 
     return (
         <div className="projpage-container">
             {currentProjArr && currentProjArr.length > 0 ? 
             
+            <div className="projpage-content">
+
                 <h1>{currentProjObj.name}</h1> 
                 
+                <img src={currentProjObj.images[0].hero} alt="Hero Image" />
                 
                 
                 
                 
-                
-            
+            </div>
             
             : <Loading />}
 
