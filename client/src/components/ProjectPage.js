@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Loading from "./Loading";
 
 
 function ProjectPage({ projects }) {
@@ -13,7 +14,19 @@ function ProjectPage({ projects }) {
 
     return (
         <div className="projpage-container">
-            {currentProjArr && currentProjArr.length > 0 ? <h1>{currentProjObj.name}</h1> : <h1>not working</h1>}
+            {currentProjArr && currentProjArr.length > 0 ? 
+            
+                <h1>{currentProjObj.name}</h1> 
+                
+                
+                
+                
+                
+                
+            
+            
+            : <Loading />}
+
         </div>
     )
 
