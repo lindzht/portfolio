@@ -5,4 +5,8 @@ class ProjectSerializer < ActiveModel::Serializer
   has_many :images
 
 
+  def skills 
+    object.skills.order(name: :asc)
+  end
+
 end
