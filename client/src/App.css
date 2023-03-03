@@ -6,8 +6,7 @@
 
 /* GLOBAL STYLES */
 #about-container h1,
-#projects-container h1,
-.projpage-content h1 {
+#projects-container h1{
   font-family: 'Rubik Gemstones', cursive;
   font-weight: 200;
   font-style: italic;
@@ -252,7 +251,10 @@ height: 80vh;
   margin-top: 1em;
 }
 
+
+
 /* PROJECTS CARD */
+
 .proj_card {
   margin: 0.3em;
 }
@@ -273,23 +275,79 @@ height: 80vh;
 
 /* PROJECTS PAGE */
 
-.projpage-content,
 .projpage-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 2px;
-}
-
-.projpage-details {
+  margin: 0.5em;
   background-color: rgba(255, 255, 255, 0.75);
   padding: 0.5em;
   border-radius: 10px;
 }
 
+
+.projpage-details h2 {
+  font-family: 'Rubik Gemstones', cursive;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2em;
+  color: rgba(230, 61, 0, 0.977);
+  text-shadow: rgb(255, 255, 255) -3px -3px;
+  text-transform: lowercase;
+  text-align: center;
+  margin: 1em 0px 0px 0px;
+}
+
+.projpage-details h4 {
+  color: rgba(230, 61, 0, 0.977);
+  font-size: 1em;
+  width: 90%;
+  text-align: center;
+}
+
+.projpage-details h5 {
+  margin: 5px 0px 0px 0px;
+  font-style: italic;
+  font-size: 0.7em;
+}
+
 .hero {
-  max-width: 90%; 
+  background-color: rgb(255, 98, 0);
+  border-radius: 10px;
+  height: 100px;
+  width: 95vw;
+}
+
+.hero img {
+  height: 100px;
+  width: 95vw;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 80%;
+}
+
+#proj-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.proj-img {
+  width: 100%;
+  padding: 0.7em;
+}
+
+#proj-skills-container {
+  columns: 10px 2;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+#proj-skills-container li {
+  font-size: 0.6em;
 }
 
 
