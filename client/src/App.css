@@ -365,6 +365,11 @@ height: 80vh;
   font-size: 0.6em;
 }
 
+.gh {
+  height: 30px;
+  margin-bottom: 1em;
+}
+
 
 @media only screen and (min-width: 768px) {
 

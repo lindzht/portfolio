@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Loading from "./Loading";
 import hand from '../images/hand.png';
+import github from "../images/githubicon2.png";
 
 
 function ProjectPage({ projects }) {
@@ -42,12 +43,16 @@ function ProjectPage({ projects }) {
                     <h5>Date Created: {currentProjObj.date_created} </h5>
                     <h4>{currentProjObj.header}</h4>
                     
+                    <Link target="_blank" to={currentProjObj.gh} >
+                        <img className="gh" src={github} alt="GitHub"/>
+                    </Link>
+
                     <div id="proj-skills-container" >
                         {renderSkills()}
                     </div>
                     
                     <a href={currentProjObj.demo} target="_blank" rel='noreferrer'>Demo</a>
-                    
+
                     <div id="proj-img-container">
                          {renderImgs()}
                     </div>
