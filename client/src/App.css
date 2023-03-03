@@ -6,7 +6,8 @@
 
 /* GLOBAL STYLES */
 #about-container h1,
-#projects-container h1 {
+#projects-container h1,
+.projpage-content h1 {
   font-family: 'Rubik Gemstones', cursive;
   font-weight: 200;
   font-style: italic;
@@ -14,11 +15,13 @@
   color: rgba(230, 61, 0, 0.977);
   text-shadow: rgb(255, 255, 255) -3px -3px;
   text-transform: lowercase;
+  text-align: center;
   margin: 1.5em 0 0.5em 0;
 }
 
 #about-container,
-#projects-container {
+#projects-container,
+.projpage-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -264,6 +267,29 @@ height: 80vh;
 
 .proj_card img:hover {
   margin-bottom: 10px;
+}
+
+
+
+/* PROJECTS PAGE */
+
+.projpage-content,
+.projpage-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2px;
+}
+
+.projpage-details {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+.hero {
+  max-width: 90%; 
 }
 
 

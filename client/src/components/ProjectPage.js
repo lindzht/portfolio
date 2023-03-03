@@ -21,7 +21,10 @@ function ProjectPage({ projects }) {
 
                 <h1>{currentProjObj.name}</h1> 
                 
-                {/* <img src={currentProjObj.images[0].hero} alt="Hero Detail" /> */}
+                <div className="projpage-details">
+                    <img className="hero" src={currentProjObj.images[0].hero} alt="Hero Detail" />
+                    
+                </div>
                 
                 
                 
