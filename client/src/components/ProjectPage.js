@@ -11,7 +11,7 @@ function ProjectPage({ projects }) {
     const currentProjObj = currentProjArr[0]
     // const heroImage = currentProjObj.images[0].hero
 
-
+    console.log(currentProjObj)
 
     return (
         <div className="projpage-container">
@@ -21,7 +21,7 @@ function ProjectPage({ projects }) {
 
                 <h1>{currentProjObj.name}</h1> 
                 
-                <img src={currentProjObj.images[0].hero} alt="Hero Image" />
+                {/* <img src={currentProjObj.images[0].hero} alt="Hero Detail" /> */}
                 
                 
                 
