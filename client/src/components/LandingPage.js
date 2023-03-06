@@ -13,6 +13,8 @@ function LandingPage({ projects, setCurrentProject }) {
 
     return (
         <div id="landing-page">
+            <div id="bkgr-overlay"></div>
+            <div id="bkgr-circle"></div> 
 
             <NavLinks />
 
