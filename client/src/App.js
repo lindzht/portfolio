@@ -29,8 +29,8 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* <div id="bkgr-overlay"></div>
-        <div id="bkgr-circle"></div>  */}
+        <div id="bkgr-overlay"></div>
+        <div id="bkgr-circle"></div> 
         
         
         {/* <div id="about">
