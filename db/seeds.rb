@@ -10,11 +10,12 @@
 puts "seeding..."
 
 
+
 p6 = Project.create(name: "Bored", gh: "https://github.com/hhw67865/ImBoredProject", demo: "https://www.loom.com/share/58f0610d3cd147b38917f98a6877dc74", header: "Activity generator, based on user selections in a game-like app.", date_created: "Oct 2022")
 p5 = Project.create(name: "LLocal's Guide", gh: "https://github.com/lindzht/phase2-project", demo: "https://www.loom.com/share/94fc8ecc233c4e8c8430781983e35816", header: "Local recommendations and reviews for NYC.", date_created: "Nov 2022")
 p4 = Project.create(name: "Yearbook", gh_front: "https://github.com/lindzht/front-end-yearbook", gh_back: "https://github.com/lindzht/phase-3-sinatra-react-project", demo: "https://www.loom.com/share/b6ceecfae80342d6a142faf6800cc73c", header: "Online “yearbook” for Flatiron School cohorts.", date_created: "Dec 2022")
 p3 = Project.create(name: "Dough", gh: "https://github.com/lindzht/dough", demo: "https://www.loom.com/share/4dbc6b57d946492187da76a55ce6554c", header: "Personal expense management app.", date_created: "Jan 2023")
-p2 = Project.create(name: "Req Board", gh: "https://github.com/lindzht/capstone-project", demo: "https://www.loom.com/share/ab2bd5cc6713480dbd11e5b99b474298", header: "Performance and requisition management tool for small scale Recruitment teams.", thumbnail: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1677691509223-8SI2XKAWQ3RDSCSUW874/Screen+Shot+2023-02-28+at+12.05.20+PM.png?format=2500w", date_created: "Jan 2023")
+p2 = Project.create(name: "Req Board", gh: "https://github.com/lindzht/capstone-project", demo: "https://www.loom.com/embed/ab2bd5cc6713480dbd11e5b99b474298", header: "Performance and requisition management tool for small scale Recruitment teams.", thumbnail: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1677691509223-8SI2XKAWQ3RDSCSUW874/Screen+Shot+2023-02-28+at+12.05.20+PM.png?format=2500w", date_created: "Jan 2023")
 p1 = Project.create(name: "Portfolio",gh: "https://github.com/lindzht/portfolio", header: "Personal portfolio website.", thumbnail: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1677691764598-S6U38JHNUY9P2ACO8690/Screenshot+2023-03-01+at+12.29.12+PM.png?format=1500w", date_created: "March 2023")
 
 s1 = Skill.create(name: "React")

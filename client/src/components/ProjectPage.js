@@ -15,10 +15,12 @@ function ProjectPage({ projects }) {
     const currentProjObj = currentProjArr[0]
 
     function renderImgs () {
-        let images = Object.values(currentProjObj.images[0])
-        return( images.map((img) => {
-            return( img ?  <img className="proj-img" src={img} alt={currentProjObj.name} /> : null)
-        }))
+        if (currentProjObj.images.length > 0) {
+            let images = Object.values(currentProjObj.images[0])
+            return( images.map((img) => {
+                return( img ?  <img className="proj-img" src={img} alt={currentProjObj.name} /> : null)
+            }))
+        }
     }
 
 
@@ -69,9 +71,7 @@ function ProjectPage({ projects }) {
                         {renderSkills()}
                     </div>
                     
-                    {/* <a href={currentProjObj.demo} target="_blank" rel='noreferrer'>Demo</a> */}
-                    <Video demo={currentProjObj.demo} />
-
+                    {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null}
 
                     <div id="proj-img-container">
                          {renderImgs()}
