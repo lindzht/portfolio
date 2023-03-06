@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Loading from "./Loading";
 import hand from '../images/hand.png';
 import github from "../images/githubicon2.png";
+import Video from "./Video";
 
 
 function ProjectPage({ projects }) {
@@ -43,15 +44,34 @@ function ProjectPage({ projects }) {
                     <h5>Date Created: {currentProjObj.date_created} </h5>
                     <h4>{currentProjObj.header}</h4>
                     
-                    <Link target="_blank" to={currentProjObj.gh} >
-                        <img className="gh" src={github} alt="GitHub"/>
-                    </Link>
+                    {currentProjObj.gh_front && currentProjObj.gh_back ? 
+                        <div id="gh-icons">
+                            <div id="frontend">
+                                <p>Frontend</p>
+                                <Link target="_blank" to={currentProjObj.gh_front} >
+                                    <img className="gh" src={github} alt="GitHub"/>
+                                </Link>
+                            </div>
+                            <div id="backend">
+                                <p>Backend</p>
+                                <Link target="_blank" to={currentProjObj.gh_back} >
+                                    <img className="gh" src={github} alt="GitHub"/>
+                                </Link>
+                            </div>
+                        </div>
+                        : 
+                        <Link target="_blank" to={currentProjObj.gh} >
+                            <img className="gh" src={github} alt="GitHub"/>
+                        </Link> 
+                    }
 
                     <div id="proj-skills-container" >
                         {renderSkills()}
                     </div>
                     
-                    <a href={currentProjObj.demo} target="_blank" rel='noreferrer'>Demo</a>
+                    {/* <a href={currentProjObj.demo} target="_blank" rel='noreferrer'>Demo</a> */}
+                    <Video demo={currentProjObj.demo} />
+
 
                     <div id="proj-img-container">
                          {renderImgs()}

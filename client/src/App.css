@@ -92,10 +92,10 @@ margin-right: 10px;
   margin-top: 60%;
   position: fixed;
   border-radius: 50% ;
-  border: 3px double rgb(255, 255, 255);
+  border: 2px solid rgb(207, 255, 224);
   height: 43vh;
   width: 95vw;
-  background-image: linear-gradient( #f6e5dd,  #ffc80398, rgb(255, 255, 255));  
+  background-image: linear-gradient(#ffc80398, #f6e5dd,  rgb(255, 243, 203),#ffc80398, rgba(230, 61, 0, 0.977));  
   /* background: radial-gradient(circle, rgb(255, 98, 218) 20%, rgba(118, 255, 166, 0.37) 60%, rgb(255, 255, 255) 78%); */
   z-index: -10;
   background-size: 300% 300%;
@@ -180,7 +180,7 @@ height: 80vh;
 }
 
 #about-container #bio-img {
-  border: 1px solid rgb(255, 0, 195);
+  border: 1px solid rgb(207, 255, 224);
   border-radius: 50%;
   width: 30%;
   margin: 25px 0 5px 12px;
@@ -295,10 +295,12 @@ height: 80vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0.5em;
+  margin-left: 4px;
   background-color: rgba(255, 255, 255, 0.75);
   padding: 0.5em;
-  border-radius: 10px;
+  border:3px solid rgb(207, 255, 224);
+  /* border-radius: 10px; */
+  width: 92vw;
 }
 
 
@@ -368,6 +370,18 @@ height: 80vh;
 .gh {
   height: 30px;
   margin-bottom: 1em;
+}
+
+#gh-icons {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+#gh-icons p {
+  font-size: 0.6em;
+  font-style: italic;
+  margin: 0px;
 }
 
 
