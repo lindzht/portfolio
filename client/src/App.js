@@ -29,16 +29,8 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <div id="bkgr-overlay"></div>
-        <div id="bkgr-circle"></div> 
-        
-        
-        {/* <div id="about">
-          <About />
-        </div>
-        <div id="projects">
-          <Projects projects={projects} />
-        </div> */}
+        {/* <div id="bkgr-overlay"></div>
+        <div id="bkgr-circle"></div>  */}
 
         <Routes>
           <Route path="/" element={<LandingPage projects={projects} />} />

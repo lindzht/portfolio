@@ -30,7 +30,6 @@ function ProjectPage({ projects }) {
         })) 
     }
 
-    console.log(currentProjObj)
 
     return (
         <div className="projpage-container">
@@ -41,40 +40,46 @@ function ProjectPage({ projects }) {
                     {/* <div className="hero">
                         <img src={currentProjObj.images[0].hero} alt="Hero Detail" />
                     </div> */}
-
-                    <h2>{currentProjObj.name}</h2> 
-                    <h5>Date Created: {currentProjObj.date_created} </h5>
-                    <h4>{currentProjObj.header}</h4>
-                    
-                    {currentProjObj.gh_front && currentProjObj.gh_back ? 
-                        <div id="gh-icons">
-                            <div id="frontend">
-                                <p>Frontend</p>
-                                <Link target="_blank" to={currentProjObj.gh_front} >
-                                    <img className="gh" src={github} alt="GitHub"/>
-                                </Link>
+                    <div id="proj-left">
+                        <h2>{currentProjObj.name}</h2> 
+                        <h5>Date Created: {currentProjObj.date_created} </h5>
+                        <h4>{currentProjObj.header}</h4>
+                        
+                        {currentProjObj.gh_front && currentProjObj.gh_back ? 
+                            <div id="gh-icons">
+                                <div id="frontend">
+                                    <p>Frontend</p>
+                                    <Link target="_blank" to={currentProjObj.gh_front} >
+                                        <img className="gh" src={github} alt="GitHub"/>
+                                    </Link>
+                                </div>
+                                <div id="backend">
+                                    <p>Backend</p>
+                                    <Link target="_blank" to={currentProjObj.gh_back} >
+                                        <img className="gh" src={github} alt="GitHub"/>
+                                    </Link>
+                                </div>
                             </div>
-                            <div id="backend">
-                                <p>Backend</p>
-                                <Link target="_blank" to={currentProjObj.gh_back} >
-                                    <img className="gh" src={github} alt="GitHub"/>
-                                </Link>
-                            </div>
-                        </div>
-                        : 
-                        <Link target="_blank" to={currentProjObj.gh} >
-                            <img className="gh" src={github} alt="GitHub"/>
-                        </Link> 
-                    }
+                            : 
+                            <Link target="_blank" to={currentProjObj.gh} >
+                                <img className="gh" src={github} alt="GitHub"/>
+                            </Link> 
+                        }
 
-                    <div id="proj-skills-container" >
-                        {renderSkills()}
+                            <div id="proj-skills-container" >
+                                {renderSkills()}
+                            </div>
+                            
+                            {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null}
                     </div>
-                    
-                    {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null}
 
-                    <div id="proj-img-container">
-                         {renderImgs()}
+
+                    <div id="proj-right">
+                    
+                        <div id="proj-img-container">
+                            {renderImgs()}
+                        </div>
+
                     </div>
 
 

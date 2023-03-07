@@ -1,6 +1,5 @@
 .App {
   background-image: linear-gradient( #f6e5dd, #ffd62185);  
-
 }
 
 
@@ -20,8 +19,7 @@
 }
 
 #about-container,
-#projects-container,
-.projpage-container {
+#projects-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -279,7 +277,13 @@ height: 80vh;
 /* PROJECTS PAGE */
 
 .projpage-container {
-  background-image: linear-gradient( #f6e5dd, #ffd62185);  
+  /* background-image: linear-gradient( #f6e5dd, #ffd62185);  */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100%; 
 }
 
 #return-icon {
@@ -299,7 +303,7 @@ height: 80vh;
 .projpage-details {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   margin-left: 4px;
   background-color: rgba(255, 255, 255, 0.75);
@@ -400,9 +404,9 @@ height: 80vh;
 @media only screen and (min-width: 768px) {
 
   /* GLOBAL  */
-  .App {
-    background-image: linear-gradient( #f6e5dd, #ffd62185);  
-  }
+  /* .App {
+    width: 100%;
+  } */
 
   #about,
   #projects,
@@ -534,15 +538,98 @@ height: 80vh;
   /* PROJECT PAGES */
 
   .projpage-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
   }
 
   .projpage-details {
+    margin-top: 3em;
     width: 90vw;
-    /* margin-left: 100px; */
+    height: 80%;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #proj-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #proj-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: scroll;
+    margin-top: 3em;
+    height: 75vh;
+  }
+
+  #proj-img-container img {
+    width: 500px;
+  }
+
+  .gh{
+    height: 40px;
+    margin: 1em;
+  }
+  
+  /* #gh-icons p {
+    font-size: 0.6em;
+    font-style: italic;
+    margin: 0px;
+  } */
+
+  #proj-skills-container {
+    width: 500px;
+    font-size: 1.3em;
+  }
+
+  #video {
+    width: 600px;
+    height: 380px;
+  }
+
+  .projpage-details h2 {
+    font-family: 'Rubik Gemstones', cursive;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 4em;
+    color: rgba(230, 61, 0, 0.977);
+    text-shadow: rgb(255, 255, 255) -3px -3px;
+    text-transform: lowercase;
+    text-align: center;
+    margin: 1em 0px 0px 0px;
+  }
+  
+  .projpage-details h4 {
+    color: rgba(230, 61, 0, 0.977);
+    font-size: 1em;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .projpage-details h5 {
+    margin: 5px 0px 0px 0px;
+    font-style: italic;
+    font-size: 1em;
+  }
+
+  #return-icon {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    width: 50px;
+    background-color:  rgb(207, 255, 224);
+    border-radius: 50%;
+    border: 1px dotted black;
+  }
+  
+  #return-icon:hover {
+    animation: handwave 1s infinite;
   }
   
 
