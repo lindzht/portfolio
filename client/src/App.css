@@ -553,6 +553,10 @@ height: 80vh;
 
   /* PROJECT PAGES */
 
+  .projpage-container {
+    height: 100vh;
+  }
+
   .projpage-details {
     margin-top: 3em;
     width: 90vw;
@@ -635,9 +639,7 @@ height: 80vh;
     left: 30px;
     bottom: 30px;
     width: 50px;
-    background-color:  rgb(207, 255, 224);
     border-radius: 50%;
-    border: 1px dotted black;
   }
   
   #return-icon:hover {
