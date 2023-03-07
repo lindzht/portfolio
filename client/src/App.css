@@ -394,12 +394,25 @@ height: 80vh;
 }
 
 
+
+/*************************** DESKTOP STYLES ****************************/
+
 @media only screen and (min-width: 768px) {
 
+  /* GLOBAL  */
   .App {
     background-image: linear-gradient( #f6e5dd, #ffd62185);  
   }
 
+  #about,
+  #projects,
+  .projpage-container,
+  .projpage-details {
+    z-index: 10;
+  }
+
+
+  /* LANDING PAGE  */
   #landing-page {
     /* background-image: linear-gradient( #f6e5dd, #ffd62185);   */
     display: flex;
@@ -410,13 +423,12 @@ height: 80vh;
 
   #bkgr-circle {
     position: fixed;
-    height: 70em;
-    width: 70em;
-    left: 19%;
+    height: 99vh;
+    width: 99vw;
+    /* left: 19%; */
     bottom: 0;
     z-index: 1;
     background-image: linear-gradient(#ffc80398, #f6e5dd,  rgba(255, 243, 203, 0),#ffc8036f, rgba(230, 61, 0, 0.419));  
-
   }
 
   #landing-page-container h1 {
@@ -430,20 +442,37 @@ height: 80vh;
     color: rgba(230, 61, 0, 0.977)
   }
 
+
+  /* NAVIGATION */
   #nav-container {
     position: absolute;
-    left: 100px;
+    left: 80px;
     bottom: 0;
   }
 
-  #about,
-  #projects {
-    z-index: 10;
+  #nav-container-right {
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
   }
 
-  #about-container,
-  #projects-container,
-  .projpage-container {
+  #nav-container-right img {
+    width: 60px;
+  }
+
+  #nav-container-right img:hover {
+    color:rgb(255, 29, 217);
+  }
+
+  
+  /* ABOUT PAGE */
+
+  #about-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -452,12 +481,39 @@ height: 80vh;
     width: 50vw;
   }
 
-  #contact {
-    width: 500px;
+  #about-container #bio-img {
+    width: 25%;
   }
+
+  #contact {
+    width: 400px;
+  }
+
+  #contact p {
+    text-align: center;
+    color: black;
+    font-style: italic;
+    margin-top: 5px;
+    opacity: 0%;
+    text-transform: lowercase;
+  }
+
+  #contact a{
+    text-decoration: none;
+  }
+
+  #contact a:hover p{
+    opacity: 100%;
+  }
+
+
+  /* PROJECT LANDING CARDS  */
 
   .proj_card {
     margin: 2em;
+    background-color: rgb(207, 255, 224);
+    border-radius: 20px;
+    height: 90px;
   }
 
   .proj_card img {
@@ -466,11 +522,27 @@ height: 80vh;
     width: 380px;
     height: 90px;
     object-fit:cover;
+    opacity: 70%;
   }
   
   .proj_card img:hover {
-    margin-bottom: 10px;
-    /* border: 3px solid rgba(255, 0, 195); */
+    opacity: 100%;
+  }
+
+
+
+  /* PROJECT PAGES */
+
+  .projpage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projpage-details {
+    width: 90vw;
+    /* margin-left: 100px; */
   }
   
 

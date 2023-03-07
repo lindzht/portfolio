@@ -16,7 +16,7 @@ function LandingPage({ projects, setCurrentProject }) {
             {/* <div id="bkgr-overlay"></div>
             <div id="bkgr-circle"></div>  */}
 
-            <NavLinks />
+            <NavLinks isDesktop={isDesktop}/>
 
             <div id="landing-page-container">
                 {isDesktop ?
