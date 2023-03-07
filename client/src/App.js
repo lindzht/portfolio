@@ -7,6 +7,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import { useEffect, useState } from 'react';
 import ProjectPage from './components/ProjectPage';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
 
 
       </div>
+      
     
     </BrowserRouter>
   );

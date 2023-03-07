@@ -2,6 +2,7 @@ import { useMediaQuery } from 'react-responsive'
 import NavLinks from './Nav';
 import About from './About';
 import Projects from './Projects';
+import Footer from './Footer';
 
 
 function LandingPage({ projects, setCurrentProject }) {
@@ -34,7 +35,8 @@ function LandingPage({ projects, setCurrentProject }) {
             <div id="projects">
                 <Projects projects={projects} setCurrentProject={setCurrentProject} />
             </div>
-
+            
+            <Footer />
 
         </div>
     )
