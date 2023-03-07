@@ -45,7 +45,7 @@ function About (){
 
                 </div>
                 <div id="education">
-                    <h3>school</h3>
+                    <h3>education</h3>
                     <div className="edu">
                         <p>
                             <span>Flatiron School </span>

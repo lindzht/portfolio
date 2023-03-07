@@ -94,7 +94,7 @@ margin-right: 10px;
   border: 2px solid rgb(207, 255, 224);
   height: 43vh;
   width: 95vw;
-  background-image: linear-gradient(#ffc80398, #f6e5dd,  rgb(255, 243, 203),#ffc80398, rgba(230, 61, 0, 0.977));  
+  background-image: linear-gradient(#00053c,#ffc803, rgba(230, 61, 0, 0.977));  
   /* background: radial-gradient(circle, rgb(255, 98, 218) 20%, rgba(118, 255, 166, 0.37) 60%, rgb(255, 255, 255) 78%); */
   z-index: -10;
   background-size: 300% 300%;
@@ -236,6 +236,10 @@ height: 80vh;
 
 #contact img:hover {
   margin-top: -5px;
+}
+
+#contact p {
+  display:  none;
 }
 
 
@@ -415,6 +419,11 @@ height: 80vh;
     z-index: 10;
   }
 
+  #about-container,
+  #projects-container {
+    margin-top: 3em;
+  }
+
 
   /* LANDING PAGE  */
   #landing-page {
@@ -510,6 +519,10 @@ height: 80vh;
     opacity: 100%;
   }
 
+  #skills h3 {
+    text-align: left;
+  }
+
 
   /* PROJECT LANDING CARDS  */
 
@@ -536,10 +549,6 @@ height: 80vh;
 
 
   /* PROJECT PAGES */
-
-  .projpage-container {
-
-  }
 
   .projpage-details {
     margin-top: 3em;
