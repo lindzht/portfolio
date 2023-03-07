@@ -454,8 +454,9 @@ height: 80vh;
   }
 
   #bkgr-circle {
+    /* margin-top: 30px; */
     position: fixed;
-    height: 99vh;
+    height: 98.5vh;
     width: 90vw;
     /* left: 19%; */
     bottom: 0;
@@ -497,8 +498,9 @@ height: 80vh;
     width: 60px;
   }
 
+
   #nav-container-right img:hover {
-    color:rgb(255, 29, 217);
+    animation: handwave 1s infinite;
   }
 
   
