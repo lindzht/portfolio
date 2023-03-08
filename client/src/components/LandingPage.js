@@ -3,6 +3,9 @@ import NavLinks from './Nav';
 import About from './About';
 import Projects from './Projects';
 import Footer from './Footer';
+import { HashLink } from 'react-router-hash-link';
+import star from '../images/star.png';
+
 
 
 function LandingPage({ projects, setCurrentProject }) {
@@ -35,6 +38,7 @@ function LandingPage({ projects, setCurrentProject }) {
             <div id="projects">
                 <Projects projects={projects} setCurrentProject={setCurrentProject} />
             </div>
+            
             
             <Footer />
 

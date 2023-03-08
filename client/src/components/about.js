@@ -1,11 +1,12 @@
 import { Link} from 'react-router-dom';
 import profile from "../images/profile.png";
-import hand from "../images/hand.png";
 import paint from "../images/painbrushicon_100px.png";
 import mailbox from "../images/mailicon_100px.png";
 import linkedin from "../images/linkedinicon.png";
 import github from "../images/githubicon2.png";
 import medium from "../images/mediumicon.png";
+import { HashLink } from 'react-router-hash-link';
+import star from '../images/star.png';
 
 
 
@@ -73,27 +74,33 @@ function About (){
 
 
             <div id="contact">
-            <Link to="#" onClick={() => {window.location.href = "mailto:llindsayttaylor@gmail.com"}}>
-                <img src={mailbox} alt="Email"/>
-                <p>email me!</p>
-            </Link>
-            <Link target="_blank" to="https://www.linkedin.com/in/lindsayhtaylor/" >
-                <img src={linkedin} alt="LinkedIn"/>
-                <p>LinkedIn</p>
-            </Link>
-            <Link target="_blank" to="https://github.com/lindzht" >
-                <img src={github} alt="GitHub"/>
-                <p>GitHub</p>
-            </Link>
-            <Link target="_blank" to="https://lindsaytaylor.art/" >
-                <img src={paint} alt="Art Portfolio"/>
-                <p>Art Portfolio</p>
-            </Link>
-            <Link target="_blank" to="https://medium.com/@llindsayttaylor" >
-                <img src={medium} alt="Blog"/>
-                <p>Blog</p>
-            </Link>
+                <Link to="#" onClick={() => {window.location.href = "mailto:llindsayttaylor@gmail.com"}}>
+                    <img src={mailbox} alt="Email"/>
+                    <p>email me!</p>
+                </Link>
+                <Link target="_blank" to="https://www.linkedin.com/in/lindsayhtaylor/" >
+                    <img src={linkedin} alt="LinkedIn"/>
+                    <p>LinkedIn</p>
+                </Link>
+                <Link target="_blank" to="https://github.com/lindzht" >
+                    <img src={github} alt="GitHub"/>
+                    <p>GitHub</p>
+                </Link>
+                <Link target="_blank" to="https://lindsaytaylor.art/" >
+                    <img src={paint} alt="Art Portfolio"/>
+                    <p>Art Portfolio</p>
+                </Link>
+                <Link target="_blank" to="https://medium.com/@llindsayttaylor" >
+                    <img src={medium} alt="Blog"/>
+                    <p>Blog</p>
+                </Link>
 
+            </div>
+
+            <div id="return">
+                <HashLink smooth to="/#landing-page-container">
+                    <img id="return-icon-landing" src={star} alt="Home" />
+                </HashLink>
             </div>
 
         </div>

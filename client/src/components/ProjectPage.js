@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Loading from "./Loading";
-import hand from '../images/hand.png';
+import star from '../images/star.png';
 import github from "../images/githubicon2.png";
 import Video from "./Video";
 
@@ -85,7 +85,7 @@ function ProjectPage({ projects }) {
 
 
                     <Link to="/">
-                        <img id="return-icon" src={hand} alt="Home" />
+                        <img id="return-icon" src={star} alt="Home" />
                     </Link>
                 </div>
                 
