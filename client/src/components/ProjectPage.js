@@ -75,8 +75,9 @@ function ProjectPage({ projects }) {
 
 
                     <div id="proj-right">
+                        {/* {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null} */}
                     
-                        <div id="proj-img-container">
+                        <div id="proj-img-container" className="scrollbar">
                             {renderImgs()}
                         </div>
 
