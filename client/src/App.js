@@ -1,13 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { BrowserRouter, Routes, Route, useParams, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import LandingPage from './components/LandingPage';
-import NavLinks from './components/Nav';
-import About from './components/About';
-import Projects from './components/Projects';
 import { useEffect, useState } from 'react';
 import ProjectPage from './components/ProjectPage';
-import Footer from './components/Footer';
 
 
 function App() {
