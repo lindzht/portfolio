@@ -1,10 +1,9 @@
 import { useMediaQuery } from 'react-responsive'
 import NavLinks from './Nav';
-import About from './About';
 import Projects from './Projects';
 import Footer from './Footer';
-import { HashLink } from 'react-router-hash-link';
-import star from '../images/star.png';
+import About from './AboutPage';
+
 
 
 
