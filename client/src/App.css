@@ -163,6 +163,7 @@ margin-right: 10px;
 
 #return-icon-landing:hover {
   animation: handwave 1s infinite;
+  background-color: orangered;
 }
 
 
