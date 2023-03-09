@@ -48,16 +48,16 @@ function ProjectPage({ projects }) {
                         {currentProjObj.gh_front && currentProjObj.gh_back ? 
                             <div id="gh-icons">
                                 <div id="frontend">
-                                    <p>Frontend</p>
                                     <Link target="_blank" to={currentProjObj.gh_front} >
                                         <img className="gh" src={github} alt="GitHub"/>
                                     </Link>
+                                    <p>Frontend</p>
                                 </div>
                                 <div id="backend">
-                                    <p>Backend</p>
                                     <Link target="_blank" to={currentProjObj.gh_back} >
                                         <img className="gh" src={github} alt="GitHub"/>
                                     </Link>
+                                    <p>Backend</p>
                                 </div>
                             </div>
                             : 
