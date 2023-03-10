@@ -15,7 +15,7 @@
   text-shadow: rgb(255, 255, 255) -3px -3px;
   text-transform: lowercase;
   text-align: center;
-  margin: 1.5em 0 0.5em 0;
+  margin: 1em 0 0.5em 0;
 }
 
 #about-container,
@@ -32,7 +32,7 @@
 #footer-container {
   background-image: linear-gradient(60deg, #00053c34,#ffc803, rgba(230, 61, 0, 0.323));  
   height: 100%;
-  width: 97vw;
+  /* width: 97vw; */
   padding: 10px;
   text-align: center;
 }
@@ -91,7 +91,7 @@ margin-right: 10px;
   align-items: center;
   word-wrap: normal;
   width: 95vw;
-  height: 100vh; 
+  height: 95vh; 
   /* background-image: linear-gradient( #f6e5dd, #ffd62185);   */
 }
 
@@ -104,7 +104,7 @@ margin-right: 10px;
 }
 
 #bkgr-circle {
-  margin-top: 60%;
+  margin-top: 50%;
   position: fixed;
   border-radius: 50% ;
   border: 2px solid rgb(207, 255, 224);
@@ -277,7 +277,7 @@ height: 80vh;
 /* PROJECTS LANDING  */
 
 #projects-container {
-  height: 100vh;
+  height: 95vh;
   width: 95vw;
 }
 
@@ -537,7 +537,7 @@ height: 80vh;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
     width: 50vw;
   }
 
