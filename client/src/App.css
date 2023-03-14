@@ -612,12 +612,11 @@ height: 80vh;
     width: 380px;
     height: 80px;
     object-fit:cover;
-    opacity: 90%;
   }
   
-  .proj_card img:hover {
+  /* .proj_card img:hover {
     opacity: 100%;
-  }
+  } */
 
 
 
