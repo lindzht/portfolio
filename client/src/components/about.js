@@ -27,16 +27,12 @@ function About (){
                     <h3>technical skills</h3>
                     <ul>
                         <li>Ruby on Rails</li>
-                        <li>JavaScript</li> 
                         <li>Ruby</li>
-                        <li>React</li>
                         <li>Sinatra</li>
+                        <li>React</li>
+                        <li>JavaScript</li> 
                         <li>SQLite</li>
                         <li>ActiveRecord</li>
-                        <li>APIs</li>
-                        <li>MVC</li>
-                        <li>RESTful conventions</li>
-                        <li>Object oriented programming</li>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>Git/GitHub</li>
@@ -44,7 +40,7 @@ function About (){
                         <li>mobile web design</li>
                         <li>wireframing</li>
                         <li>user testing</li>
-                        <li>TypeScript <span>(Learning!)</span></li>
+
 
                     </ul>
 
@@ -101,11 +97,11 @@ function About (){
 
             </div>
 
-            <div id="return">
+            {/* <div id="return">
                 <HashLink smooth to="/#landing-page-container">
                     <img id="return-icon-landing" src={star} alt="Home" />
                 </HashLink>
-            </div>
+            </div> */}
 
         </div>
     )

@@ -32,7 +32,7 @@
 #footer-container {
   background-image: linear-gradient(60deg, #00053c34,#ffc803, rgba(230, 61, 0, 0.323));  
   height: 100%;
-  /* width: 97vw; */
+  width: 100%;
   padding: 10px;
   text-align: center;
 }
@@ -91,17 +91,18 @@ margin-right: 10px;
   align-items: center;
   word-wrap: normal;
   width: 95vw;
-  height: 95vh; 
+  height: 90vh; 
+  margin-bottom: 3em;
   /* background-image: linear-gradient( #f6e5dd, #ffd62185);   */
 }
 
-#bkgr-overlay {
+/* #bkgr-overlay {
   position: fixed;
-  height: 100vh; 
+  height: 100; 
   width: 96vw;
-  /* background-image: linear-gradient( #f6e5dd, #ffd62185);   */
+  background-image: linear-gradient( #f6e5dd, #ffd62185);  
   z-index: -10;
-}
+} */
 
 #bkgr-circle {
   margin-top: 50%;
@@ -154,7 +155,7 @@ margin-right: 10px;
 #return-icon-landing {
   position: fixed;
   left: 20px;
-  bottom: 10px;
+  bottom: 50px;
   width: 38px;
   background-color: rgba(255, 68, 0, 0.331);
   border-radius: 50%;
@@ -171,7 +172,7 @@ margin-right: 10px;
 
 #nav-container {
 position: absolute;
-top: 100px;
+top: 70px;
 left: 43%;
 display: flex;
 flex-direction: column;
@@ -214,7 +215,7 @@ height: 80vh;
   border: 1px solid rgb(207, 255, 224);
   border-radius: 50%;
   width: 30%;
-  margin: 25px 0 5px 12px;
+  margin: 15px 0 5px 230px;
 }
 
 #bio,
@@ -238,6 +239,10 @@ height: 80vh;
   margin-right: 25px;
 }
 
+#skills {
+  margin: -100px 0 2em 0;
+}
+
 #skills li {
   font-size: 0.8em;
   text-align: left;
@@ -246,6 +251,12 @@ height: 80vh;
 
 #skills ul {
   list-style-type: none;
+}
+
+#skills span {
+  font-style: italic;
+  font-weight: bold;
+  color: orangered;
 }
 
 #about-bottom {
@@ -317,7 +328,7 @@ height: 80vh;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   width: 100%; 
 }
 
@@ -498,7 +509,7 @@ height: 80vh;
   #return-icon-landing {
     position: relative;
     left: 50px;
-    bottom: -50px;
+    bottom: 50px;
   }
 
 
@@ -537,13 +548,13 @@ height: 80vh;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 95vh;
+    height: 100vh;
     width: 50vw;
   }
 
   #about-container #bio-img {
     width: 20%;
-    margin: 0.3em;
+    margin: 2em;
   }
 
   #contact {
