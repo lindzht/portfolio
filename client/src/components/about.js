@@ -8,7 +8,7 @@ import medium from "../images/mediumicon.png";
 import { HashLink } from 'react-router-hash-link';
 import star from '../images/star.png';
 
-
+//test
 
 function About (){
     return(
