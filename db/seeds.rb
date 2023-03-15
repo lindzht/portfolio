@@ -41,6 +41,9 @@ puts "seeding..."
 # s18 = Skill.create(name: "Flexbox")
 # s19 = Skill.create(name: "Mobile Design")
 # s20 = Skill.create(name: "Built DB.json")
+# s21 = Skill.create(name: "User authentication & authorization")
+# s22 = Skill.create(name: "Admin access")
+# s23 = Skill.create(name: "BCrypt Gem")
 
 # #p1 skills
 # Projskill.create!(project_id: p1.id, skill_id: s1.id)
@@ -63,6 +66,10 @@ puts "seeding..."
 # Projskill.create!(project_id: p2.id, skill_id: s9.id)
 # Projskill.create!(project_id: p2.id, skill_id: s14.id)
 # Projskill.create!(project_id: p2.id, skill_id: s18.id)
+# Projskill.create!(project_id: p2.id, skill_id: s21.id)
+# Projskill.create!(project_id: p2.id, skill_id: s22.id)
+# Projskill.create!(project_id: p2.id, skill_id: s23.id)
+
 
 # # p3 skills
 # Projskill.create!(project_id: p3.id, skill_id: s1.id)
@@ -113,5 +120,10 @@ puts "seeding..."
 
 # #p6 Images
 # Image.create(hero: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1678121907113-QHT71MA8L5BZ4G3JOKUG/Screen+Shot+2023-03-06+at+11.56.18+AM.png?format=1500w", detail_1: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1678121909375-YVN9FL2E4R4Y52XWUB7G/Screen+Shot+2023-03-06+at+11.57.49+AM.png?format=1000w", detail_2: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1678121908138-1F1EG8PWUE7ZQ8CY1OPF/Screen+Shot+2023-03-06+at+11.56.52+AM.png?format=1000w", detail_3: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1678121908666-ZVKUMO246HHEGY6SORQU/Screen+Shot+2023-03-06+at+11.57.06+AM.png?format=1000w", detail_4: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1678121908868-41SAKASQ38N9CBU44U1F/Screen+Shot+2023-03-06+at+11.57.31+AM.png?format=1000w", project_id: p6.id)
+
+
+
+#p1 Descriptions
+
 
 puts "seeded baby!"

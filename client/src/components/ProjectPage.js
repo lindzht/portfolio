@@ -34,17 +34,11 @@ function ProjectPage({ projects }) {
     return (
         <div className="projpage-container">
             {currentProjArr && currentProjArr.length > 0 ? 
-            
-           
-                <div className="projpage-details">
-                    {/* <div className="hero">
-                        <img src={currentProjObj.images[0].hero} alt="Hero Detail" />
-                    </div> */}
-                    <div id="proj-left">
+                <>
+
+                <div className="projpage-header">
+                    <div className="proj-title">
                         <h2>{currentProjObj.name}</h2> 
-                        <h5>Date Created: {currentProjObj.date_created} </h5>
-                        <h4>{currentProjObj.header}</h4>
-                        
                         {currentProjObj.gh_front && currentProjObj.gh_back ? 
                             <div id="gh-icons">
                                 <div id="frontend">
@@ -65,26 +59,38 @@ function ProjectPage({ projects }) {
                                 <img className="gh" src={github} alt="GitHub"/>
                             </Link> 
                         }
-
+                    </div>
+                    <h4>{currentProjObj.header}</h4>
+                    {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null}
+                </div>
+            
+                <div className="projpage-details">
+                   <div id="proj-left">
+                        <h5>Date Created: {currentProjObj.date_created} </h5>
+                        <h5>Tech</h5>
+                        <div id="proj-skills-container" >
+                            {renderSkills()}
+                        </div>
+                        {currentProjObj.descriptions && currentProjObj.descriptions > 0 ? 
+                        <>
+                            <h5>Features</h5>
                             <div id="proj-skills-container" >
                                 {renderSkills()}
                             </div>
+                        </>
+                        : null}
+                   </div>
                             
-                            {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null}
-                    </div>
-
-
-                    <div id="proj-right">
-                        {/* {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null} */}
-                    
-                        <div id="proj-img-container" className="scrollbar">
-                            {renderImgs()}
+                    {currentProjObj.images && currentProjObj.images > 0 ? 
+                        <div id="proj-right">            
+                            <div id="proj-img-container" className="scrollbar">
+                                {renderImgs()}
+                            </div>
                         </div>
+                    : null}
 
-                    </div>
 
-
-                    <Link to="/">
+                    <Link to="/#home">
                         <img id="return-icon" src={star} alt="Home" />
                     </Link>
                 </div>
@@ -93,7 +99,7 @@ function ProjectPage({ projects }) {
                 
                 
             
-            
+            </>
             : <Loading />}
 
         </div>
@@ -107,3 +113,70 @@ export default ProjectPage;
 
 
 
+// return (
+//     <div className="projpage-container">
+//         {currentProjArr && currentProjArr.length > 0 ? 
+        
+//             <div className="projpage-details">
+//                     <h2>{currentProjObj.name}</h2> 
+               
+//                     <h5>Date Created: {currentProjObj.date_created} </h5>
+//                     <h4>{currentProjObj.header}</h4>
+                    
+//                     {currentProjObj.gh_front && currentProjObj.gh_back ? 
+//                         <div id="gh-icons">
+//                             <div id="frontend">
+//                                 <Link target="_blank" to={currentProjObj.gh_front} >
+//                                     <img className="gh" src={github} alt="GitHub"/>
+//                                 </Link>
+//                                 <p>Frontend</p>
+//                             </div>
+//                             <div id="backend">
+//                                 <Link target="_blank" to={currentProjObj.gh_back} >
+//                                     <img className="gh" src={github} alt="GitHub"/>
+//                                 </Link>
+//                                 <p>Backend</p>
+//                             </div>
+//                         </div>
+//                         : 
+//                         <Link target="_blank" to={currentProjObj.gh} >
+//                             <img className="gh" src={github} alt="GitHub"/>
+//                         </Link> 
+//                     }
+
+//                         <h5>Tech</h5>
+//                         <div id="proj-skills-container" >
+//                             {renderSkills()}
+//                         </div>
+                        
+//                         {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null}
+                
+
+
+//                 <div id="proj-right">
+//                     {/* {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null} */}
+                
+//                     <div id="proj-img-container" className="scrollbar">
+//                         {renderImgs()}
+//                     </div>
+
+//                 </div>
+
+
+//                 <Link to="/">
+//                     <img id="return-icon" src={star} alt="Home" />
+//                 </Link>
+//             </div>
+            
+            
+            
+            
+        
+        
+//         : <Loading />}
+
+//     </div>
+// )
+
+
+// }

@@ -323,7 +323,6 @@ height: 80vh;
 /* PROJECTS PAGE */
 
 .projpage-container {
-  /* background-image: linear-gradient( #f6e5dd, #ffd62185);  */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -347,14 +346,10 @@ height: 80vh;
 }
 
 .projpage-details {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   margin-top: 0.5em;
-  background-color: rgba(255, 255, 255, 0.75);
   padding: 0.5em;
-  border:3px solid rgb(207, 255, 224);
+  /* background-color: rgba(255, 255, 255, 0.75);
+  border:3px solid rgb(207, 255, 224); */
   height: 100%;
   width: 90%;
 }
@@ -366,7 +361,7 @@ height: 80vh;
 }
 
 
-.projpage-details h2 {
+.projpage-header h2 {
   font-family: 'Rubik Gemstones', cursive;
   font-weight: 200;
   font-style: italic;
@@ -378,10 +373,9 @@ height: 80vh;
   margin: 1em 0px 0px 0px;
 }
 
-.projpage-details h4 {
+.projpage-header h4 {
   color: rgba(230, 61, 0, 0.977);
   font-size: 1em;
-  width: 90%;
   text-align: center;
 }
 
@@ -390,21 +384,6 @@ height: 80vh;
   font-style: italic;
   font-size: 0.7em;
 }
-
-/* .hero {
-  background-color: rgb(255, 98, 0);
-  border-radius: 10px;
-  height: 100px;
-  width: 95vw;
-}
-
-.hero img {
-  height: 100px;
-  width: 95vw;
-  object-fit: cover;
-  border-radius: 10px;
-  opacity: 80%;
-} */
 
 #proj-img-container {
   display: flex;
@@ -647,44 +626,109 @@ height: 80vh;
   /* PROJECT PAGES */
 
   .projpage-container {
-    height: 100%;
-    padding-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#fefefe,#ffc8031c, rgba(255, 255, 255, 0.977));  
+  }
+
+  .projpage-header {
+    width: 60%;
+  }
+
+  .proj-title h2 {
+    font-family: 'Rubik Gemstones', cursive;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 3em;
+    color: rgba(230, 61, 0, 0.977);
+    text-shadow: rgb(255, 255, 255) -3px -3px;
+    text-transform: lowercase;
+    text-align: left;
+    margin: 1em 0px 0px 0px;
+  }
+  
+  .projpage-header h4 {
+    color: rgba(230, 61, 0, 0.977);
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .proj-title{
+    display: flex;
+  }
+
+  .gh{
+    height: 40px;
+    margin: 53px 0 0 30px;
+  }
+
+  #gh-icons {
+    width: 130px;
+    margin-left: 30px;
+  }
+
+  #gh-icons img {
+    margin: 53px 0 0 3px;
+  }
+  
+  #gh-icons p {
+    font-size: 0.6em;
+    font-style: italic;
+    position: relative;
+    bottom: -20px;
+    text-align: center;
+  }
+
+  #video {
+    width: 100%;
+    height: 34.8em;
+    border: 0.5em solid rgb(207, 255, 224);
   }
 
   .projpage-details {
     margin-top: 3em;
-    width: 90vw;
+    width: 60%;
     height: 100%;
     padding: 2em;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
   }
 
   #proj-left {
-    width: 50%;
+    width: 130%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: -50px;
+    align-items: flex-start;
+    /* margin-top: -50px; */
   }
 
-  #proj-right {
-    margin-top: -50px;
+  .projpage-details h5 {
+    margin: 1em 0 1em 0;
+    font-style: italic;
+    font-size: 1em;
   }
+
+  #proj-skills-container {
+    columns: 10px 1;
+    font-size: 1.3em;
+  }
+
 
   #proj-img-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     overflow-y: scroll;
-    margin-top: 3em;
-    height: 75vh;
+    height: 70vh;
   }
 
   #proj-img-container img {
-    width: 500px;
+    width: 95%;
   }
 
   .scrollbar::-webkit-scrollbar{
@@ -697,68 +741,17 @@ height: 80vh;
     background: #000;
   }
 
-  .gh{
-    height: 40px;
-    margin-bottom: 1.1em;
-  }
-  
-  /* #gh-icons p {
-    font-size: 0.6em;
-    font-style: italic;
-    margin: 0px;
-  } */
 
-  
-  #gh-icons p {
-    font-size: 0.6em;
-    font-style: italic;
-    position: relative;
-    left: 5px;
-    text-align: left;
-  }
-  
 
-  #proj-skills-container {
-    width: 500px;
-    font-size: 1.3em;
-  }
 
-  #video {
-    width: 500px;
-    height: 280px;
-  }
 
-  .projpage-details h2 {
-    font-family: 'Rubik Gemstones', cursive;
-    font-weight: 200;
-    font-style: italic;
-    font-size: 3em;
-    color: rgba(230, 61, 0, 0.977);
-    text-shadow: rgb(255, 255, 255) -3px -3px;
-    text-transform: lowercase;
-    text-align: center;
-    margin: 1em 0px 0px 0px;
-  }
-  
-  .projpage-details h4 {
-    color: rgba(230, 61, 0, 0.977);
-    font-size: 1em;
-    width: 90%;
-    text-align: center;
-  }
-  
-  .projpage-details h5 {
-    margin: 5px 0px 0px 0px;
-    font-style: italic;
-    font-size: 1em;
-  }
-/* 
   #return-icon {
     position: fixed;
     left: 30px;
     bottom: 30px;
     width: 38px;
     background-color: orangered;
+    background-color: rgba(255, 68, 0, 0.331);
     border-radius: 50%;
     }
 
@@ -768,7 +761,8 @@ height: 80vh;
   
   #return-icon:hover {
     animation: handwave 1s infinite;
+    background-color: orangered;
   }
-   */
+  
 
 }
