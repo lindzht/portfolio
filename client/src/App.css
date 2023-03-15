@@ -496,8 +496,8 @@ height: 80vh;
 
   #return-icon-landing {
     position: relative;
+    bottom: 0px;
     left: 50px;
-    bottom: 50px;
   }
 
 
@@ -623,20 +623,20 @@ height: 80vh;
   }
 
   .proj_card .p_details {
-    margin: -40px 3px 0 0;
+    margin: -90px 3px 0 0;
     text-align: right;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
   }
 
   .proj_card .p_details .p-icon{
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
     background-color: rgb(207, 255, 224);
-    /* margin: 0.1em; */
-    padding: 0.3em;
+    margin: 0.1em;
+    padding: 0.2em;
     z-index: 10;
     border-radius: 50%;
   }
@@ -752,7 +752,7 @@ height: 80vh;
     font-style: italic;
     font-size: 1em;
   }
-
+/* 
   #return-icon {
     position: fixed;
     left: 30px;
@@ -769,6 +769,6 @@ height: 80vh;
   #return-icon:hover {
     animation: handwave 1s infinite;
   }
-  
+   */
 
 }

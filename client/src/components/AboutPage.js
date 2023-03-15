@@ -34,16 +34,16 @@ function About (){
                         <li>SQLite</li>
                         <li>ActiveRecord</li>
                         <li>APIs</li>
-                        <li>MVC</li>
+                        <li>MVC framework</li>
                         <li>RESTful conventions</li>
                         <li>Object oriented programming</li>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>Git/GitHub</li>
-                        <li>web development</li>
-                        <li>mobile web design</li>
-                        <li>wireframing</li>
-                        <li>user testing</li>
+                        <li>Web development</li>
+                        <li>Mobile web design</li>
+                        <li>Wireframing</li>
+                        <li>User testing</li>
                         <li>TypeScript <span>(Learning!)</span></li>
 
                     </ul>
