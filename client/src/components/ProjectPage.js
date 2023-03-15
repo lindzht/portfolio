@@ -81,11 +81,13 @@ function ProjectPage({ projects }) {
                         : null}
                    </div>
                             
-                    <div id="proj-right">            
-                        <div id="proj-img-container" className="scrollbar">
-                            {renderImgs()}
+                    {currentProjObj.images && currentProjObj.images > 0 ? 
+                        <div id="proj-right">            
+                            <div id="proj-img-container" className="scrollbar">
+                                {renderImgs()}
+                            </div>
                         </div>
-                    </div>
+                    : null}
 
 
                     <Link to="/#home">
