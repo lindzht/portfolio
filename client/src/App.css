@@ -1,5 +1,5 @@
 .App {
-  background-image: linear-gradient( #f6e5dd, #ffd62185);  
+  background-image: linear-gradient( #f6e5dd, #ffd62185);
 }
 
 
@@ -84,7 +84,7 @@ margin-right: 10px;
 
 /* LANDING PAGE  */
 
-#landing-page-container {
+#home {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,7 +128,7 @@ margin-right: 10px;
 
 
 
-#landing-page-container h1 {
+#home h1 {
   font-family: 'Rubik Gemstones', cursive;
   font-weight: 300;
   font-style: italic;
@@ -137,17 +137,17 @@ margin-right: 10px;
   text-transform: lowercase;
 }
 
-#landing-page-container #landing-name h1 {
+#homer #landing-name h1 {
   line-height: 18%;
   font-size: 5em;
   color: rgba(230, 61, 0, 0.977)
 }
 
-#landing-page-container #landing-name {
+#home #landing-name {
   z-index: 1;
 }
 
-#landing-page-container #landing-name h1:first-child{
+#home #landing-name h1:first-child{
   font-size: 4.7em;
 }
 
@@ -240,13 +240,13 @@ height: 80vh;
 }
 
 #skills {
-  margin: -100px 0 2em 0;
+  margin: -50px 0 2em 0;
 }
 
 #skills li {
   font-size: 0.8em;
   text-align: left;
-  margin-left: -12px;
+  margin-left: -30px;
 }
 
 #skills ul {
@@ -453,9 +453,6 @@ height: 80vh;
 @media only screen and (min-width: 768px) {
 
   /* GLOBAL  */
-  /* .App {
-    width: 100%;
-  } */
 
   #about,
   #projects,
@@ -464,15 +461,8 @@ height: 80vh;
     z-index: 10;
   }
 
-  /* #about-container,
-  #projects-container {
-    width: 500px;
-  } */
-
-
   /* LANDING PAGE  */
   #landing-page {
-    /* background-image: linear-gradient( #f6e5dd, #ffd62185);   */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -480,17 +470,15 @@ height: 80vh;
   }
 
   #bkgr-circle {
-    /* margin-top: 30px; */
     position: fixed;
     height: 98.5vh;
     width: 90vw;
-    /* left: 19%; */
     bottom: 0;
     z-index: 1;
     background-image: linear-gradient(#ffc80398, #f6e5dd,  rgba(255, 243, 203, 0),#ffc8036f, rgba(230, 61, 0, 0.419));  
   }
 
-  #landing-page-container h1 {
+  #home h1 {
     font-family: 'Rubik Gemstones', cursive;
     font-weight: 300;
     font-style: italic;
@@ -552,6 +540,17 @@ height: 80vh;
     width: 50vw;
   }
 
+  #about-container h1 {
+    margin-top: 2em;
+  }
+
+
+  #bio p {
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 18px;
+  }
+
   #about-container #bio-img {
     width: 20%;
     margin: 2em;
@@ -595,13 +594,15 @@ height: 80vh;
     margin-bottom: 2em;
   }
 
+  #projects-container h1 {
+    margin-top: 2em;
+  }
+
   #proj-thumbnails-container {
     margin-top: 10px;
   }
 
   .proj_card {
-    /* margin: 2em; */
-    /* background-color: rgb(207, 255, 224); */
     border-radius: 20px;
     height: 80px;
   }
@@ -612,11 +613,22 @@ height: 80vh;
     width: 380px;
     height: 80px;
     object-fit:cover;
+    opacity: 70%;
   }
   
-  /* .proj_card img:hover {
+  .proj_card img:hover {
     opacity: 100%;
-  } */
+  }
+
+
+  .proj_card .p_details {
+    position: relative;
+    margin: -80px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
 
 
 

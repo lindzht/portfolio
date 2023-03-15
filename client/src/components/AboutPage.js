@@ -16,7 +16,7 @@ function About (){
             <h1>hi there!</h1>
 
             <div id="bio">
-                    <p>Full Stack Software Engineer with experience in Ruby on Rails and JavaScript based programming, with a background in operations. Experienced working in fast paced environments, building teams from the ground up with minimal resources. Strong cross collaborator, project leader, with experience in data analysis, who thrives in finding solutions at scale. Visual artist with a passion for creative problem solving and building beautiful, accessible apps.
+                    <p>I am a Full Stack Software Engineer with experience in Ruby on Rails and JavaScript based programming, with a background in operations and art. I enjoy working in fast paced environments, wearing many hats, and building teams from the ground up. Strong cross collaborator, project leader, with experience in data analysis, and finding solutions at scale. Visual artist with a passion for creative problem solving and building beautiful, accessible apps.
                 </p>
             </div>
 
@@ -102,7 +102,7 @@ function About (){
             </div>
 
             <div id="return">
-                <HashLink smooth to="/#landing-page-container">
+                <HashLink smooth to="/#home">
                     <img id="return-icon-landing" src={star} alt="Home" />
                 </HashLink>
             </div>

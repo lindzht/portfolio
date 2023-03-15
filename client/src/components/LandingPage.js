@@ -3,6 +3,8 @@ import NavLinks from './Nav';
 import Projects from './Projects';
 import Footer from './Footer';
 import About from './AboutPage';
+import MobileLogo from '../images/name_stacked_orng.png'
+import Logo from '../images/name_orng.png'
 
 
 
@@ -21,12 +23,11 @@ function LandingPage({ projects, setCurrentProject }) {
 
             <NavLinks isDesktop={isDesktop}/>
 
-            <div id="landing-page-container">
+            <div id="home">
                 {isDesktop ?
-                    <h1>Lindsay Taylor</h1>
+                        <img style={{width: 500}} src={Logo} alt="Lindsay Taylor" />
                     : <div id="landing-name">
-                        <h1>Lindsay</h1>
-                        <h1>Taylor</h1>
+                        <img style={{width: 280}} src={MobileLogo} alt="Lindsay Taylor" />
                     </div>}
             </div>
 

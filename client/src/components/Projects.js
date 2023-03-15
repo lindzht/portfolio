@@ -22,7 +22,7 @@ function Projects({ projects }) {
             </div>
 
             <div id="return">
-                <HashLink smooth to="/#landing-page-container">
+                <HashLink smooth to="/#home">
                     <img id="return-icon-landing" src={star} alt="Home" />
                 </HashLink>
             </div>
