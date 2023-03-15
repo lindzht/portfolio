@@ -664,13 +664,22 @@ height: 80vh;
     height: 40px;
     margin: 53px 0 0 30px;
   }
+
+  #gh-icons {
+    width: 130px;
+    margin-left: 30px;
+  }
+
+  #gh-icons img {
+    margin: 53px 0 0 3px;
+  }
   
   #gh-icons p {
     font-size: 0.6em;
     font-style: italic;
     position: relative;
-    left: 5px;
-    text-align: left;
+    bottom: -20px;
+    text-align: center;
   }
 
   #video {
