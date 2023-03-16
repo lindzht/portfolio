@@ -201,7 +201,9 @@ height: 70vh;
 /* ABOUT PAGE  */
 
 #about-container {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
