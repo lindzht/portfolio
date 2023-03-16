@@ -202,9 +202,8 @@ height: 70vh;
 
 #about-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 0 1em 0 1em;
+  padding: 2em 1em 0 1em;
 }
 
 
@@ -219,17 +218,25 @@ height: 70vh;
 }
 
 #about-container #bio-img {
+  box-shadow: rgb(207, 255, 224) -3px -3px;
   border: 1px solid rgb(207, 255, 224);
   border-radius: 50%;
   width: 7em;
   height: 7em;
-  margin: 0 0 20px 130px;
+  margin: 0.2em;
+  /* margin: 10px 0 30px 100px; */
 }
 
-#bio,
+
 #skills,
 #education {
   width: 100%;
+}
+
+#bio {
+  line-height: 1em;
+  margin-top: -10px;
+  width: 90%;
 }
 
 #about-container p {
@@ -248,7 +255,7 @@ height: 70vh;
 }
 
 #skills {
-  margin: -70px 0 2em 1em;
+  margin: -10px 0 2em 1em;
 }
 
 #skills h3 {
@@ -278,7 +285,7 @@ height: 70vh;
 }
 
 #education {
-  margin: -15px -8px;
+  margin: -10px -8px;
 }
 
 #contact {
