@@ -21,7 +21,7 @@ function ProjectCard({ name, thumbnail, date_created, skills }) {
         <div className="proj_card">
             {thumbnail ?
                
-                <img className="img_card" src={thumbnail} alt={name} />
+                <img className="img_card" src={thumbnail} alt={name} style={{"opacity" : "70%"}}/>
                 
                 
                 : <h4>{name}</h4>}
