@@ -123,7 +123,10 @@ puts "seeding..."
 
 
 
-#p1 Descriptions
+
+
+# UPDATES
+Project.last.update(header: "This website! :) ")
 
 
 puts "seeded baby!"
