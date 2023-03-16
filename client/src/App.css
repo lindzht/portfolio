@@ -25,7 +25,7 @@
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  width: 95vw;
+  width: 80vw;
 }
 
 
@@ -55,14 +55,14 @@
 }
 
 #load-container h1 {
-font-family: 'Rubik Gemstones', cursive;
-font-weight: 200;
-font-style: italic;
-font-size: 2.8em;
-color: rgba(230, 61, 0, 0.977);
-text-shadow: rgb(255, 255, 255) -3px -3px;
-text-transform: lowercase;
-margin-right: 10px;
+  font-family: 'Rubik Gemstones', cursive;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2.8em;
+  color: rgba(230, 61, 0, 0.977);
+  text-shadow: rgb(255, 255, 255) -3px -3px;
+  text-transform: lowercase;
+  margin-right: 10px;
 }
 
 #load-container img {
@@ -105,7 +105,7 @@ margin-right: 10px;
 } */
 
 #bkgr-circle {
-  margin-top: 50%;
+  margin-top: 40%;
   position: fixed;
   border-radius: 50% ;
   border: 2px solid rgb(207, 255, 224);
@@ -172,13 +172,13 @@ margin-right: 10px;
 
 #nav-container {
 position: absolute;
-top: 70px;
+top: 10%;
 left: 43%;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-height: 80vh;
+height: 70vh;
 }
 
 #nav-container h3 {
@@ -200,6 +200,12 @@ height: 80vh;
 
 /* ABOUT PAGE  */
 
+#about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 #about-container h3 {
   /* color: rgba(156, 42, 0, 0.977); */
@@ -215,7 +221,7 @@ height: 80vh;
   border: 1px solid rgb(207, 255, 224);
   border-radius: 50%;
   width: 30%;
-  margin: 15px 0 5px 230px;
+  margin: 15px 0 5px 110px;
 }
 
 #bio,
@@ -301,7 +307,7 @@ height: 80vh;
 /* PROJECTS CARD */
 
 .proj_card {
-  margin: 0.5em;
+  margin: -1em;
 }
 
 .proj_card .img_card {
@@ -311,11 +317,36 @@ height: 80vh;
   width: 180px;
   height: 70px;
   object-fit:cover;
+  opacity: 70%;
 }
 
 .proj_card .img_card:hover {
-  margin-bottom: 10px;
-  /* border: 3px solid rgba(255, 0, 195); */
+  opacity: 100%;
+}
+
+.proj_card .p_details {
+  position: relative;
+  top: -70px;
+  right: -155px;
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  /* margin: -70px 3px 2em 0;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end; */
+}
+
+.proj_card .p_details .p-icon{
+  width: 14px;
+  height: 14px;
+  background-color: rgb(207, 255, 224);
+  margin: 0.1em;
+  padding: 0.2em;
+  z-index: 10;
+  border-radius: 50%;
 }
 
 
@@ -516,7 +547,7 @@ height: 80vh;
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
-    width: 50vw;
+    /* width: 50vw; */
   }
 
   #about-container h1 {
