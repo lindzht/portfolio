@@ -228,7 +228,7 @@ height: 70vh;
   border-radius: 50%;
   width: 7em;
   height: 7em;
-  margin: 0 0 1em 0;
+  margin: 1em;
   /* margin: 0.2em; */
   /* margin: 10px 0 30px 100px; */
 }
@@ -251,6 +251,7 @@ height: 70vh;
 
 .edu span {
   font-weight: bold;
+  color: rgba(230, 61, 0, 0.977);
 }
 
 #about-container .edu p,
@@ -298,11 +299,11 @@ height: 70vh;
   display: flex;
   justify-content: space-around;
   width: 85%;
-  margin: 2em;
+  margin: 1em;
 }
 
 #contact img {
-  height: 45px;
+  height: 40px;
 }
 
 #contact img:hover {
@@ -318,6 +319,7 @@ height: 70vh;
 
 #projects {
   height: 100%;
+  margin-top: 2em;
 }
 
 
@@ -556,6 +558,10 @@ height: 70vh;
     position: relative;
     bottom: 80px;
     left: 50px;
+  }
+
+  #home img {
+    margin-top: 4em;
   }
 
 
