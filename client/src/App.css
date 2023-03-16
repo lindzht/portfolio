@@ -15,7 +15,7 @@
   text-shadow: rgb(255, 255, 255) -3px -3px;
   text-transform: lowercase;
   text-align: center;
-  margin: 1em 0 0.5em 0;
+  margin: 0 0 0.5em 0;
 }
 
 #about-container,
@@ -204,7 +204,7 @@ height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1em;
+  padding: 0 1em 0 1em;
 }
 
 
@@ -221,7 +221,8 @@ height: 70vh;
 #about-container #bio-img {
   border: 1px solid rgb(207, 255, 224);
   border-radius: 50%;
-  width: 30%;
+  width: 7em;
+  height: 7em;
   margin: 0 0 5px 130px;
 }
 
@@ -318,12 +319,12 @@ height: 70vh;
 
 .proj_card .img_card {
   /* border: 3px solid rgba(255, 0, 195, 0.323); */
+  opacity: 70%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   border-radius: 20px;
   width: 180px;
   height: 70px;
   object-fit:cover;
-  opacity: 70%;
 }
 
 .proj_card .img_card:hover {
@@ -557,7 +558,7 @@ height: 70vh;
   }
 
   #about-container h1 {
-    margin-top: 1em;
+    /* margin-top: 1em; */
   }
 
 
