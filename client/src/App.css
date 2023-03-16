@@ -306,9 +306,9 @@ height: 70vh;
   margin-top: -5px;
 }
 
-/* #contact p {
+#contact p {
   display: none;
-} */
+}
 
 
 /* PROJECTS LANDING  */
@@ -609,7 +609,7 @@ height: 70vh;
   }
 
   #bio {
-    width: 50%;
+    width: 40%;
   }
 
   #bio p {
@@ -619,21 +619,22 @@ height: 70vh;
   }
 
   #about-container #bio-img {
-    width: 7.3em;
-    height: 7.3em;
+    width: 7em;
+    height: 7em;
     margin: 0.5em;
   }
 
   #contact {
     width: 400px;
-    margin: 2em 0 1em 0;
+    margin: 1em 0 0 0;
   }
 
   #contact img {
-    height: 45px;
+    height: 43px;
   }
 
   #contact p {
+    display:block;
     text-align: center;
     color: black;
     font-style: italic;
@@ -648,6 +649,10 @@ height: 70vh;
 
   #contact a:hover p{
     opacity: 100%;
+  }
+
+  #about-bottom {
+    width: 40%;
   }
 
   #skills h3 {
@@ -679,7 +684,7 @@ height: 70vh;
 
   .proj_card {
     border-radius: 20px;
-    height: 80px;
+    height: 4.5em;
     margin: 1em;
   }
 
@@ -687,14 +692,13 @@ height: 70vh;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     border-radius: 20px;
     width: 380px;
-    height: 80px;
+    height: 4.5em;
     object-fit:cover;
     /* opacity: 70%; */
   }
   
   .proj_card .img_card:hover {
     margin: 0;
-    opacity: 100%;
   }
 
   .proj_card .p_details {
@@ -790,7 +794,7 @@ height: 70vh;
 
   .projpage-details {
     margin-top: 3em;
-    width: 75%;
+    width: 68%;
     height: 100%;
     padding: 2em;
     display: flex;
@@ -809,12 +813,12 @@ height: 70vh;
   .projpage-details h5 {
     margin: 1em 0 1em 0;
     font-style: italic;
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   #proj-skills-container {
     columns: 10px 1;
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
 
@@ -841,10 +845,6 @@ height: 70vh;
     background: #000;
   }
 
-
-
-
-
   #return-icon {
     position: fixed;
     left: 30px;
@@ -864,5 +864,11 @@ height: 70vh;
     background-color: orangered;
   }
   
+
+  /* FOOTER */
+
+  #footer-container{
+    width: 100%;
+  }
 
 }

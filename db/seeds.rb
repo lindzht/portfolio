@@ -1,15 +1,13 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+
+
+
 
 
 puts "seeding..."
 
-
+####################################################################
 
 # p6 = Project.create(name: "Bored", gh: "https://github.com/hhw67865/ImBoredProject", demo: "https://www.loom.com/embed/58f0610d3cd147b38917f98a6877dc74", header: "Activity generator, based on user selections in a game-like app.", thumbnail: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1678121948032-X0Z1Z2ID5TNE442KUDCY/Screen+Shot+2023-03-06+at+11.58.58+AM.png?format=1500w", date_created: "Oct 2022")
 # p5 = Project.create(name: "LLocal's Guide", gh: "https://github.com/lindzht/phase2-project", demo: "https://www.loom.com/embed/94fc8ecc233c4e8c8430781983e35816", header: "Local recommendations and reviews for NYC.", thumbnail: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1678121156109-HXV8CJ81GJ47XR71Q9YI/Screen+Shot+2023-03-06+at+11.42.00+AM.png?format=2500w", date_created: "Nov 2022")
@@ -122,11 +120,13 @@ puts "seeding..."
 # Image.create(hero: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1678121907113-QHT71MA8L5BZ4G3JOKUG/Screen+Shot+2023-03-06+at+11.56.18+AM.png?format=1500w", detail_1: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1678121909375-YVN9FL2E4R4Y52XWUB7G/Screen+Shot+2023-03-06+at+11.57.49+AM.png?format=1000w", detail_2: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1678121908138-1F1EG8PWUE7ZQ8CY1OPF/Screen+Shot+2023-03-06+at+11.56.52+AM.png?format=1000w", detail_3: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1678121908666-ZVKUMO246HHEGY6SORQU/Screen+Shot+2023-03-06+at+11.57.06+AM.png?format=1000w", detail_4: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1678121908868-41SAKASQ38N9CBU44U1F/Screen+Shot+2023-03-06+at+11.57.31+AM.png?format=1000w", project_id: p6.id)
 
 
+##################### UPDATES #########################
 
 
-
-# UPDATES
+#3.16.23:
 Project.last.update(header: "This website! :) ")
+Image.create(hero: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1679007088048-CRD4M1SNTK1UJEZF3971/Screenshot+2023-03-16+at+6.47.00+PM.png?format=2500w", detail_1: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1679007088052-NXYZEME0EG4K548XR7BC/Screenshot+2023-03-16+at+6.47.18+PM.png?format=1000w", detail_2: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1679007087239-N7PB65V5VP1ZUZHD7Q1J/Screenshot+2023-03-16+at+6.47.36+PM.png?format=1000w", detail_3: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1679007087144-KMBOXL3UZW979ESZNK1V/Screenshot+2023-03-16+at+6.47.51+PM.png?format=1000w", detail_4: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1679007086338-CT3ENPP5YVKJPV9WRNK3/Screenshot+2023-03-16+at+6.48.43+PM.png?format=500w", detail_5: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1679007085564-2WQ83FKL2XNMBR2FZUIE/Screenshot+2023-03-16+at+6.50.13+PM.png?format=500w", detail_6: "https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1679007086404-YO5MTA89UBUZFW4WWLVG/Screenshot+2023-03-16+at+6.48.13+PM.png?format=500w", project_id: Project.last.id)
+
 
 
 puts "seeded baby!"
