@@ -14,13 +14,11 @@ function ProjectPage({ projects }) {
     
     const currentProjObj = currentProjArr[0]
 
-    function renderImgs () {
-        if (currentProjObj.images.length > 0) {
-            let images = Object.values(currentProjObj.images[0])
-            return( images.map((img) => {
-                return( img ?  <img className="proj-img" src={img} alt={currentProjObj.name} /> : null)
-            }))
-        }
+    function renderImgs () { 
+        let images = Object.values(currentProjObj.images[0])
+        return( images.map((img) => {
+            return( img ?  <img className="proj-img" src={img} alt={currentProjObj.name} /> : null)
+        }))     
     }
 
 
@@ -61,7 +59,9 @@ function ProjectPage({ projects }) {
                         }
                     </div>
                     <h4>{currentProjObj.header}</h4>
+
                     {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null}
+
                 </div>
             
                 <div className="projpage-details">
@@ -85,11 +85,12 @@ function ProjectPage({ projects }) {
                    </div>
                             
                     
-                    <div id="proj-right">            
+                    {currentProjObj.images.length > 0 ? <div id="proj-right">            
                         <div id="proj-img-container" className="scrollbar">
                             {renderImgs()}
                         </div>
                     </div>
+                    : null}
                     
 
 
