@@ -229,14 +229,10 @@ height: 70vh;
   width: 7em;
   height: 7em;
   margin: 1em;
-  /* margin: 0.2em; */
-  /* margin: 10px 0 30px 100px; */
 }
 
-
-#skills,
 #education {
-  width: 100%;
+  width: 55%;
 }
 
 #bio {
@@ -310,9 +306,9 @@ height: 70vh;
   margin-top: -5px;
 }
 
-#contact p {
-  display:  none;
-}
+/* #contact p {
+  display: none;
+} */
 
 
 /* PROJECTS LANDING  */
@@ -440,6 +436,15 @@ height: 70vh;
   align-items: center;
 }
 
+#proj-left a {
+  text-decoration: none;
+  color: black;
+}
+
+#proj-left a:hover {
+  color: rgb(255, 29, 217);
+}
+
 .projpage-header h2 {
   font-family: 'Rubik Gemstones', cursive;
   font-weight: 200;
@@ -463,7 +468,6 @@ height: 70vh;
   font-style: italic;
   font-size: 0.7em;
 }
-
 
 #proj-img-container {
   display: flex;
@@ -615,22 +619,27 @@ height: 70vh;
   }
 
   #about-container #bio-img {
-    width: 7em;
-    height: 7em;
+    width: 7.3em;
+    height: 7.3em;
+    margin: 0.5em;
   }
 
   #contact {
     width: 400px;
-    margin: 2em;
+    margin: 2em 0 1em 0;
+  }
+
+  #contact img {
+    height: 45px;
   }
 
   #contact p {
     text-align: center;
     color: black;
     font-style: italic;
-    margin-top: 5px;
     opacity: 0%;
     text-transform: lowercase;
+    margin: 0;
   }
 
   #contact a{
@@ -645,8 +654,12 @@ height: 70vh;
     text-align: left;
   }
 
-  #education .edu {
-    margin-bottom: 3em;
+  .edu {
+    margin-bottom: 1.5em;
+  }
+
+  .edu p {
+    margin-bottom: 1.5em;
   }
 
 
@@ -744,6 +757,7 @@ height: 70vh;
   .proj-title{
     display: flex;
     flex-direction: row;
+    margin-bottom: 0;
   }
 
   .gh{
@@ -776,7 +790,7 @@ height: 70vh;
 
   .projpage-details {
     margin-top: 3em;
-    width: 60%;
+    width: 75%;
     height: 100%;
     padding: 2em;
     display: flex;
@@ -786,7 +800,7 @@ height: 70vh;
   }
 
   #proj-left {
-    width: 130%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -810,6 +824,7 @@ height: 70vh;
     justify-content: flex-start;
     overflow-y: scroll;
     height: 70vh;
+    margin-top: 0;
   }
 
   #proj-img-container img {

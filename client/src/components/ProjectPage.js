@@ -67,6 +67,9 @@ function ProjectPage({ projects }) {
                 <div className="projpage-details">
                    <div id="proj-left">
                         <h5>Date Created: {currentProjObj.date_created} </h5>
+                        <Link target="_blank" to={currentProjObj.gh_front ? currentProjObj.gh_front : currentProjObj.gh} >
+                            <h5>GitHub</h5>
+                        </Link>
                         <h5>Tech:</h5>
                         <div id="proj-skills-container" >
                             {renderSkills()}

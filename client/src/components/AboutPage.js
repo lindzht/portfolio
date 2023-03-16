@@ -28,7 +28,7 @@ function About (){
             <div id="contact">
                 <Link to="#" onClick={() => {window.location.href = "mailto:llindsayttaylor@gmail.com"}}>
                     <img src={mailbox} alt="Email"/>
-                    <p>email me!</p>
+                    <p>email</p>
                 </Link>
                 <Link target="_blank" to="https://www.linkedin.com/in/lindsayhtaylor/" >
                     <img src={linkedin} alt="LinkedIn"/>
@@ -40,7 +40,7 @@ function About (){
                 </Link>
                 <Link target="_blank" to="https://lindsaytaylor.art/" >
                     <img src={paint} alt="Art Portfolio"/>
-                    <p>Art Portfolio</p>
+                    <p>Art</p>
                 </Link>
                 <Link target="_blank" to="https://medium.com/@llindsayttaylor" >
                     <img src={medium} alt="Blog"/>
@@ -78,8 +78,8 @@ function About (){
 
                 </div>
                 <div id="education">
-                    <h3>education</h3>
                     <div className="edu">
+                        <h3>education</h3>
                         <p>
                             <span>Flatiron School </span>
                             <br/>
@@ -88,8 +88,7 @@ function About (){
                             Full Stack Web Development, Ruby on Rails and JavaScript program 
                             <br/>
                         </p>
-                    </div>
-                    <div className="edu">
+                        
                         <p>
                             <span>Carnegie Mellon University</span>
                             <br/>
@@ -97,12 +96,12 @@ function About (){
                             <br />
                             BFA in Painting, Printmaking, Drawing 
                             <br />
-                            University Honors
+                            <em>University Honors</em>
                         </p>
                     </div>
-
-                    <h3>learning</h3>
+                    
                     <div className="edu">
+                        <h3>learning</h3>
                         <p>TypeScript</p>
                     </div>
                     
@@ -110,29 +109,6 @@ function About (){
                 </div>
             </div>
 
-
-            {/* <div id="contact">
-                <Link to="#" onClick={() => {window.location.href = "mailto:llindsayttaylor@gmail.com"}}>
-                    <img src={mailbox} alt="Email"/>
-                    <p>email me!</p>
-                </Link>
-                <Link target="_blank" to="https://www.linkedin.com/in/lindsayhtaylor/" >
-                    <img src={linkedin} alt="LinkedIn"/>
-                    <p>LinkedIn</p>
-                </Link>
-                <Link target="_blank" to="https://github.com/lindzht" >
-                    <img src={github} alt="GitHub"/>
-                    <p>GitHub</p>
-                </Link>
-                <Link target="_blank" to="https://lindsaytaylor.art/" >
-                    <img src={paint} alt="Art Portfolio"/>
-                    <p>Art Portfolio</p>
-                </Link>
-                <Link target="_blank" to="https://medium.com/@llindsayttaylor" >
-                    <img src={medium} alt="Blog"/>
-                    <p>Blog</p>
-                </Link>
-            </div> */}
 
             <div id="return">
                 <HashLink smooth to="/#home">
