@@ -13,7 +13,7 @@ function LandingPage({ projects, setCurrentProject }) {
 
 
     const isDesktop = useMediaQuery({
-        query: '(min-width: 1224px)'
+        query: '(min-width: 768px)'
     })
 
     return (
