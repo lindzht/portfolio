@@ -16,7 +16,10 @@ function About (){
             <h1>hi there!</h1>
 
             <div id="bio">
-                    <p>I am a Full Stack Software Engineer with experience in Ruby on Rails and JavaScript based programming, with a background in operations and art. I enjoy working in fast paced environments, wearing many hats, and building teams from the ground up. Strong cross collaborator, project leader, with experience in data analysis, and finding solutions at scale. Visual artist with a passion for creative problem solving and building beautiful, accessible apps.
+                <p>
+                    I'm a Full Stack Software Engineer with experience in Ruby on Rails and JavaScript based programming, with a background in operations and art. Strong cross collaborator, project leader, with experience in data analysis, and finding solutions at scale. Visual artist with a passion for creative problem solving and building beautiful, accessible apps.
+                    
+                    {/* I am a Full Stack Software Engineer with experience in Ruby on Rails and JavaScript based programming, with a background in operations and art. I enjoy working in fast paced environments, wearing many hats, and building teams from the ground up. Strong cross collaborator, project leader, with experience in data analysis, and finding solutions at scale. Visual artist with a passion for creative problem solving and building beautiful, accessible apps. */}
                 </p>
             </div>
 
@@ -61,7 +64,6 @@ function About (){
                             <br/>
                         </p>
                     </div>
-                    <br />
                     <div className="edu">
                         <p>
                             <span>Carnegie Mellon University</span>
