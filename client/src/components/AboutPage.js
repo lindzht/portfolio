@@ -14,6 +14,7 @@ function About (){
     return(
         <div id="about-container">
             <h1>hi there!</h1>
+            <img id="bio-img" src={profile} alt="Lindsay Taylor" />
 
             <div id="bio">
                 <p>
@@ -23,8 +24,32 @@ function About (){
                 </p>
             </div>
 
-            <img id="bio-img" src={profile} alt="Lindsay Taylor" />
             
+            <div id="contact">
+                <Link to="#" onClick={() => {window.location.href = "mailto:llindsayttaylor@gmail.com"}}>
+                    <img src={mailbox} alt="Email"/>
+                    <p>email me!</p>
+                </Link>
+                <Link target="_blank" to="https://www.linkedin.com/in/lindsayhtaylor/" >
+                    <img src={linkedin} alt="LinkedIn"/>
+                    <p>LinkedIn</p>
+                </Link>
+                <Link target="_blank" to="https://github.com/lindzht" >
+                    <img src={github} alt="GitHub"/>
+                    <p>GitHub</p>
+                </Link>
+                <Link target="_blank" to="https://lindsaytaylor.art/" >
+                    <img src={paint} alt="Art Portfolio"/>
+                    <p>Art Portfolio</p>
+                </Link>
+                <Link target="_blank" to="https://medium.com/@llindsayttaylor" >
+                    <img src={medium} alt="Blog"/>
+                    <p>Blog</p>
+                </Link>
+            </div>
+
+
+
             <div id="about-bottom">
                 <div id="skills">
                     <h3>technical skills</h3>
@@ -75,11 +100,12 @@ function About (){
                             University Honors
                         </p>
                     </div>
+                    
                 </div>
             </div>
 
 
-            <div id="contact">
+            {/* <div id="contact">
                 <Link to="#" onClick={() => {window.location.href = "mailto:llindsayttaylor@gmail.com"}}>
                     <img src={mailbox} alt="Email"/>
                     <p>email me!</p>
@@ -100,8 +126,7 @@ function About (){
                     <img src={medium} alt="Blog"/>
                     <p>Blog</p>
                 </Link>
-
-            </div>
+            </div> */}
 
             <div id="return">
                 <HashLink smooth to="/#home">
