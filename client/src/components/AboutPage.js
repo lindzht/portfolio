@@ -14,7 +14,6 @@ function About (){
     return(
         <div id="about-container">
             <h1>hi there!</h1>
-            <img id="bio-img" src={profile} alt="Lindsay Taylor" />
 
             <div id="bio">
                 <p>
@@ -24,7 +23,8 @@ function About (){
                 </p>
             </div>
 
-            
+            <img id="bio-img" src={profile} alt="Lindsay Taylor" />
+ 
             <div id="contact">
                 <Link to="#" onClick={() => {window.location.href = "mailto:llindsayttaylor@gmail.com"}}>
                     <img src={mailbox} alt="Email"/>
@@ -72,7 +72,7 @@ function About (){
                         <li>Mobile web design</li>
                         <li>Wireframing</li>
                         <li>User testing</li>
-                        <li>TypeScript <span>(Learning!)</span></li>
+                        {/* <li>TypeScript <span>(Learning!)</span></li> */}
 
                     </ul>
 
@@ -100,6 +100,12 @@ function About (){
                             University Honors
                         </p>
                     </div>
+
+                    <h3>learning</h3>
+                    <div className="edu">
+                        <p>TypeScript</p>
+                    </div>
+                    
                     
                 </div>
             </div>
