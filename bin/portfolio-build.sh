@@ -9,5 +9,5 @@ cp -a client/build/. public/
 
 # backend build commands
 bundle install
-bundle exec rake db:migrate 
-# bundle exec rake db:migrate db:seed
+# bundle exec rake db:migrate 
+bundle exec rake db:migrate db:seed
