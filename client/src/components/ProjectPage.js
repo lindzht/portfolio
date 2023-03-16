@@ -67,7 +67,7 @@ function ProjectPage({ projects }) {
                 <div className="projpage-details">
                    <div id="proj-left">
                         <h5>Date Created: {currentProjObj.date_created} </h5>
-                        <h5>Tech</h5>
+                        <h5>Tech:</h5>
                         <div id="proj-skills-container" >
                             {renderSkills()}
                         </div>
@@ -81,13 +81,13 @@ function ProjectPage({ projects }) {
                         : null}
                    </div>
                             
-                    {currentProjObj.images && currentProjObj.images > 0 ? 
-                        <div id="proj-right">            
-                            <div id="proj-img-container" className="scrollbar">
-                                {renderImgs()}
-                            </div>
+                    
+                    <div id="proj-right">            
+                        <div id="proj-img-container" className="scrollbar">
+                            {renderImgs()}
                         </div>
-                    : null}
+                    </div>
+                    
 
 
                     <Link to="/#home">

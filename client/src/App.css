@@ -137,7 +137,7 @@
   text-transform: lowercase;
 }
 
-#homer #landing-name h1 {
+#home #landing-name h1 {
   line-height: 18%;
   font-size: 5em;
   color: rgba(230, 61, 0, 0.977)
@@ -223,13 +223,13 @@ height: 70vh;
   border-radius: 50%;
   width: 7em;
   height: 7em;
-  margin: 0 0 5px 130px;
+  margin: 0 0 20px 130px;
 }
 
 #bio,
 #skills,
 #education {
-  width: 80%;
+  width: 100%;
 }
 
 #about-container p {
@@ -258,7 +258,7 @@ height: 70vh;
 #skills li {
   font-size: 0.8em;
   text-align: left;
-  margin-left: -30px;
+  margin-left: -40px;
 }
 
 #skills ul {
@@ -274,7 +274,11 @@ height: 70vh;
 #about-bottom {
   display: flex;
   align-items:flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+#education {
+  margin: -15px -8px;
 }
 
 #contact {
@@ -300,6 +304,11 @@ height: 70vh;
 
 /* PROJECTS LANDING  */
 
+#projects {
+  height: 100%;
+}
+
+
 #projects-container {
   height: 95vh;
   width: 95vw;
@@ -314,11 +323,10 @@ height: 70vh;
 /* PROJECTS CARD */
 
 .proj_card {
-  margin: -1em;
+  margin: -0.6em;
 }
 
 .proj_card .img_card {
-  /* border: 3px solid rgba(255, 0, 195, 0.323); */
   opacity: 70%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   border-radius: 20px;
@@ -366,7 +374,22 @@ height: 70vh;
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  width: 100%; 
+  width: 100%;
+  background-image: linear-gradient(#fefefe,#ffc8031c, rgba(255, 255, 255, 0.977));  
+}
+
+.proj-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -20px;
+}
+
+#video {
+  width: 92vw;
+  height: 100%;
+  border: 0.5em solid rgb(207, 255, 224);
+  margin: 0.5em 0 0.5em 0;
 }
 
 #return-icon {
@@ -418,7 +441,7 @@ height: 70vh;
 }
 
 .projpage-details h5 {
-  margin: 5px 0px 0px 0px;
+  margin: 5px 0px 10px 0px;
   font-style: italic;
   font-size: 0.7em;
 }
@@ -453,8 +476,9 @@ height: 70vh;
 
 #gh-icons {
   display: flex;
-  width: 50%;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 #gh-icons p {
@@ -533,7 +557,7 @@ height: 70vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 80vh;
+    height: 70vh;
   }
 
   #nav-container-right img {
