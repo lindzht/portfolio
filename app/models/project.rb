@@ -1,8 +1,8 @@
 class Project < ApplicationRecord
-    has_many :projskills
-    has_many :skills, through: :projskills
-    has_many :descriptions
-    has_many :images
+    has_many :projskills, dependent: :destroy
+    has_many :skills, through: :projskills, dependent: :destroy
+    has_many :descriptions, dependent: :destroy
+    has_many :images, dependent: :destroy
 
 
     def self.sort_by_created
