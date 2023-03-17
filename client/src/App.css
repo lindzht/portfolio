@@ -11,7 +11,7 @@
   font-family: 'Rubik Gemstones', cursive;
   font-weight: 200;
   font-style: italic;
-  font-size: 2.8em;
+  font-size: 3.3em;
   color: rgba(230, 61, 0, 0.977);
   text-shadow: rgb(255, 255, 255) -3px -3px;
   text-transform: lowercase;
@@ -234,7 +234,7 @@ height: 70vh;
   letter-spacing: 1px;
   text-align: center;
   font-family: 'Beth Ellen', cursive;
-  margin: 5px 0 30px 0;
+  margin: 5px 0 0 0;
 }
 
 #bio span {
@@ -252,7 +252,7 @@ height: 70vh;
   border-radius: 50%;
   width: 7em;
   height: 7em;
-  margin: 2em 0 1em 0;
+  margin: 1em 0 1em 0;
 }
 
 #about-bottom {
