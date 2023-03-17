@@ -11,7 +11,7 @@
   font-family: 'Rubik Gemstones', cursive;
   font-weight: 200;
   font-style: italic;
-  font-size: 3em;
+  font-size: 2.8em;
   color: rgba(230, 61, 0, 0.977);
   text-shadow: rgb(255, 255, 255) -3px -3px;
   text-transform: lowercase;
@@ -558,6 +558,12 @@ height: 70vh;
     z-index: 10;
   }
 
+  #about-container h1,
+  #projects-container h1 {
+    font-size: 4em;
+    margin: 0;
+  }
+
   /* LANDING PAGE  */
   #landing-page {
     display: flex;
@@ -579,16 +585,16 @@ height: 70vh;
     height: 100vh;
   }
 
-  #home h1 {
+  /* #home h1 {
     font-family: 'Rubik Gemstones', cursive;
     font-weight: 300;
     font-style: italic;
     letter-spacing: -3px;
     text-shadow: rgb(255, 255, 255) -3px -3px;
     text-transform: lowercase;
-    font-size: 5em;
+    font-size: 7em;
     color: rgba(230, 61, 0, 0.977)
-  }
+  } */
 
   #return {
     width: 95vw;
@@ -649,7 +655,7 @@ height: 70vh;
   }
 
   #bio h5 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin: 10px 0 20px 0;
   }
 
@@ -657,12 +663,12 @@ height: 70vh;
     text-align: justify;
     font-size: 0.8em;
     line-height: 20px;
-    padding: 0 5em 0 5em;
+    padding: 0 10%;
   }
 
   #about-container #bio-img {
-    width: 7em;
-    height: 7em;
+    width: 8em;
+    height: 8em;
     margin: 5em 0 0.5em 0;
     border: 4px double rgb(207, 255, 224);
   }
