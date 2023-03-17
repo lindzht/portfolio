@@ -655,7 +655,7 @@ height: 70vh;
     text-align: justify;
     font-size: 0.8em;
     line-height: 20px;
-    padding: 0 2em 0 2em;
+    padding: 0 4em 0 4em;
   }
 
   #about-container #bio-img {
@@ -694,7 +694,7 @@ height: 70vh;
 
   #about-bottom {
     width: 48%;
-    margin: -12em 0 0 0;
+    margin: -12.8em 0 0 0;
   }
 
   #skills h3 {
@@ -767,9 +767,6 @@ height: 70vh;
     z-index: 10;
     border-radius: 50%;
   }
-
-
-
 
   /* PROJECT PAGES */
 
@@ -868,7 +865,6 @@ height: 70vh;
     font-size: 1.2em;
   }
 
-
   #proj-img-container {
     display: flex;
     flex-direction: column;
@@ -879,7 +875,7 @@ height: 70vh;
   }
 
   #proj-img-container img {
-    width: 95%;
+    width: 93%;
   }
 
   .scrollbar::-webkit-scrollbar{
