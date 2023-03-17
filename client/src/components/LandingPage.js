@@ -33,7 +33,7 @@ function LandingPage({ projects, setCurrentProject }) {
 
 
             <div id="about">
-                <About />
+                <About isDesktop={isDesktop}/>
             </div>
             <div id="projects">
                 <Projects projects={projects} setCurrentProject={setCurrentProject} />

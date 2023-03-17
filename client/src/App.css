@@ -210,12 +210,11 @@ height: 70vh;
 #about-container {
   display: flex;
   align-items: center;
-  padding: 2em 1em 0 1em;
+  padding: 2em 1em 2em 1em;
 }
 
 
-#about-container h3 {
-  /* color: rgba(156, 42, 0, 0.977); */
+#about-bottom h3 {
   text-transform: lowercase;
   text-align: center;
   font-weight: 700;
@@ -224,22 +223,43 @@ height: 70vh;
   margin-bottom: -8px;
 }
 
+#bio {
+  line-height: 1em;
+  width: 90%;
+}
+
+#bio h5 {
+  font-size: 1.1em;
+  line-height: 2em;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: 'Beth Ellen', cursive;
+  margin: 5px 0 30px 0;
+}
+
+#bio span {
+  color: rgba(230, 61, 0, 0.977);
+  font-weight: bold;
+}
+
 #about-container #bio-img {
   box-shadow: rgb(207, 255, 224) -3px -3px;
   border: 1px solid rgb(207, 255, 224);
   border-radius: 50%;
   width: 7em;
   height: 7em;
-  margin: 1em;
+  margin: 1.3em;
+}
+
+#about-bottom {
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-between;
+  margin-top: -10px;
 }
 
 #education {
   width: 55%;
-}
-
-#bio {
-  line-height: 1em;
-  width: 90%;
 }
 
 #about-container p {
@@ -282,11 +302,7 @@ height: 70vh;
   color: orangered;
 }
 
-#about-bottom {
-  display: flex;
-  align-items:flex-start;
-  justify-content: space-between;
-}
+
 
 #education {
   margin: -10px -8px;
@@ -296,8 +312,8 @@ height: 70vh;
   text-align: center;
   display: flex;
   justify-content: space-around;
-  width: 85%;
-  margin: 1em;
+  width: 95%;
+  margin: 1em 0 2em 0;
 }
 
 #contact img {
@@ -385,7 +401,7 @@ height: 70vh;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-image: linear-gradient(#fefefe,#ffc8031c, rgba(255, 255, 255, 0.977));  
 }
@@ -446,6 +462,13 @@ height: 70vh;
 #proj-left a:hover {
   color: rgb(255, 29, 217);
 }
+
+#proj-right,
+#proj-right #proj-img-container {
+  height: 100%;
+  margin-bottom: 3em;
+}
+
 
 .projpage-header h2 {
   font-family: 'Rubik Gemstones', cursive;
@@ -613,28 +636,37 @@ height: 70vh;
   }
 
   #bio {
-    width: 40%;
+    width: 51%;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  #bio h5 {
+    font-size: 1.2em;
+    margin: 10px 0 20px 0;
   }
 
   #bio p {
     text-align: justify;
     font-size: 0.8em;
-    line-height: 18px;
+    line-height: 20px;
+    padding: 0 2em 0 2em;
   }
 
   #about-container #bio-img {
     width: 7em;
     height: 7em;
-    margin: 0.5em;
+    margin: 5em 0 0.5em 0;
+    border: 4px double rgb(207, 255, 224);
   }
 
   #contact {
-    width: 400px;
-    margin: 1em 0 0 0;
+    width: 430px;
+    margin: -1.5em 0 1em 0;
   }
 
   #contact img {
-    height: 43px;
+    height: 45px;
   }
 
   #contact p {
@@ -656,11 +688,16 @@ height: 70vh;
   }
 
   #about-bottom {
-    width: 40%;
+    width: 48%;
+    margin: -12em 0 0 0;
   }
 
   #skills h3 {
     text-align: left;
+  }
+
+  #education {
+    width: 35%;
   }
 
   .edu {

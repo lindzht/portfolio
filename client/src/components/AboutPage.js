@@ -5,27 +5,30 @@ import mailbox from "../images/mailicon_100px.png";
 import linkedin from "../images/linkedinicon.png";
 import github from "../images/githubicon2.png";
 import medium from "../images/mediumicon.png";
+import resume from "../images/resume.png";
+import resume2 from "../images/resume2.png";
 import { HashLink } from 'react-router-hash-link';
 import star from '../images/star.png';
+import ContactIcons from './ContactIcons';
 
 
 
-function About (){
+function About ({isDesktop}){
     return(
         <div id="about-container">
             <h1>hi there!</h1>
 
             <div id="bio">
+                <h5>Software engineer + artist currently based in NYC</h5>
                 <p>
-                    I'm a Full Stack Software Engineer with experience in Ruby on Rails and JavaScript based programming, with a background in operations and art. Strong cross collaborator, project leader, with experience in data analysis, and finding solutions at scale. Visual artist with a passion for creative problem solving and building beautiful, accessible apps.
-                    
-                    {/* I am a Full Stack Software Engineer with experience in Ruby on Rails and JavaScript based programming, with a background in operations and art. I enjoy working in fast paced environments, wearing many hats, and building teams from the ground up. Strong cross collaborator, project leader, with experience in data analysis, and finding solutions at scale. Visual artist with a passion for creative problem solving and building beautiful, accessible apps. */}
+                    Experienced in Ruby on Rails and JavaScript based programming, with a background in operations management, strategy, and fine art. Passionate about building beautiful, accessible, user-centric apps with purpose. Obsessed with big laughs, bad tv, and great coffee. Currently <span>looking for my next job opportunity</span>!
                 </p>
             </div>
 
             <img id="bio-img" src={profile} alt="Lindsay Taylor" />
- 
-            <div id="contact">
+
+            {isDesktop ? null : <ContactIcons />}
+            {/* <div id="contact">
                 <Link to="#" onClick={() => {window.location.href = "mailto:llindsayttaylor@gmail.com"}}>
                     <img src={mailbox} alt="Email"/>
                     <p>email</p>
@@ -46,19 +49,24 @@ function About (){
                     <img src={medium} alt="Blog"/>
                     <p>Blog</p>
                 </Link>
-            </div>
+                <Link target="_blank" to="https://docs.google.com/document/d/1rzUqkJfQ0PIlzN8wrN8C-MMwz3qqT4jysvsQJuOWgHA/edit?usp=sharing" >
+                    <img src={resume2} alt="Resume"/>
+                    <p>Resume</p>
+                </Link>
+            </div> */}
 
 
 
             <div id="about-bottom">
                 <div id="skills">
-                    <h3>technical skills</h3>
+                    <h3>tech skills</h3>
                     <ul>
                         <li>Ruby on Rails</li>
                         <li>JavaScript</li> 
                         <li>Ruby</li>
                         <li>React</li>
                         <li>Sinatra</li>
+                        <li>PostgreSQL</li>
                         <li>SQLite</li>
                         <li>ActiveRecord</li>
                         <li>APIs</li>
@@ -72,7 +80,6 @@ function About (){
                         <li>Mobile web design</li>
                         <li>Wireframing</li>
                         <li>User testing</li>
-                        {/* <li>TypeScript <span>(Learning!)</span></li> */}
 
                     </ul>
 
@@ -108,6 +115,34 @@ function About (){
                     
                 </div>
             </div>
+
+            {isDesktop ? <ContactIcons /> : null}
+            {/* <div id="contact">
+                <Link to="#" onClick={() => {window.location.href = "mailto:llindsayttaylor@gmail.com"}}>
+                    <img src={mailbox} alt="Email"/>
+                    <p>email</p>
+                </Link>
+                <Link target="_blank" to="https://www.linkedin.com/in/lindsayhtaylor/" >
+                    <img src={linkedin} alt="LinkedIn"/>
+                    <p>LinkedIn</p>
+                </Link>
+                <Link target="_blank" to="https://github.com/lindzht" >
+                    <img src={github} alt="GitHub"/>
+                    <p>GitHub</p>
+                </Link>
+                <Link target="_blank" to="https://lindsaytaylor.art/" >
+                    <img src={paint} alt="Art Portfolio"/>
+                    <p>Art</p>
+                </Link>
+                <Link target="_blank" to="https://medium.com/@llindsayttaylor" >
+                    <img src={medium} alt="Blog"/>
+                    <p>Blog</p>
+                </Link>
+                <Link target="_blank" to="https://docs.google.com/document/d/1rzUqkJfQ0PIlzN8wrN8C-MMwz3qqT4jysvsQJuOWgHA/edit?usp=sharing" >
+                    <img src={resume2} alt="Resume"/>
+                    <p>Resume</p>
+                </Link>
+            </div> */}
 
 
             <div id="return">
