@@ -4,6 +4,7 @@ import Loading from "./Loading";
 import star from '../images/star.png';
 import github from "../images/githubicon2.png";
 import Video from "./Video";
+import NavLinks from "./Nav";
 
 
 function ProjectPage({ projects }) {
@@ -31,74 +32,78 @@ function ProjectPage({ projects }) {
 
     return (
         <div className="projpage-container">
+            <NavLinks />
             {currentProjArr && currentProjArr.length > 0 ? 
-                <>
-                    <div className="projpage-header">
-                        <div className="proj-title">
-                            <h2>{currentProjObj.name}</h2> 
-                            {currentProjObj.gh_front && currentProjObj.gh_back ? 
-                                <div id="gh-icons">
-                                    <div id="frontend">
-                                        <Link target="_blank" to={currentProjObj.gh_front} >
-                                            <img className="gh" src={github} alt="GitHub"/>
-                                        </Link>
-                                        <p>Frontend</p>
-                                    </div>
-                                    <div id="backend">
-                                        <Link target="_blank" to={currentProjObj.gh_back} >
-                                            <img className="gh" src={github} alt="GitHub"/>
-                                        </Link>
-                                        <p>Backend</p>
-                                    </div>
-                                </div>
-                                : 
-                                <Link target="_blank" to={currentProjObj.gh} >
-                                    <img className="gh" src={github} alt="GitHub"/>
-                                </Link> 
-                            }
-                        </div>
-                        <h4>{currentProjObj.header}</h4>
+                
+                    // <div className="projpage-header">
+                    //     <div className="proj-title">
+                    //         <h2>{currentProjObj.name}</h2> 
+                    //         {currentProjObj.gh_front && currentProjObj.gh_back ? 
+                    //             <div id="gh-icons">
+                    //                 <div id="frontend">
+                    //                     <Link target="_blank" to={currentProjObj.gh_front} >
+                    //                         <img className="gh" src={github} alt="GitHub"/>
+                    //                     </Link>
+                    //                     <p>Frontend</p>
+                    //                 </div>
+                    //                 <div id="backend">
+                    //                     <Link target="_blank" to={currentProjObj.gh_back} >
+                    //                         <img className="gh" src={github} alt="GitHub"/>
+                    //                     </Link>
+                    //                     <p>Backend</p>
+                    //                 </div>
+                    //             </div>
+                    //             : 
+                    //             <Link target="_blank" to={currentProjObj.gh} >
+                    //                 <img className="gh" src={github} alt="GitHub"/>
+                    //             </Link> 
+                    //         }
+                    //     </div>
+                    //     <h4>{currentProjObj.header}</h4>
 
-                        {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null}
+                    //     {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null}
 
-                    </div>
+                    // </div>
                 
                     <div className="projpage-details">
-                    <div id="proj-left">
-                            <h5>Date Created: {currentProjObj.date_created} </h5>
-                            <Link target="_blank" to={currentProjObj.gh_front ? currentProjObj.gh_front : currentProjObj.gh} >
-                                <h5>GitHub</h5>
-                            </Link>
-                            <h5>Tech:</h5>
-                            <div id="proj-skills-container" >
-                                {renderSkills()}
-                            </div>
-                            {currentProjObj.descriptions && currentProjObj.descriptions > 0 ? 
-                            <>
-                                <h5>Features</h5>
+                        
+
+
+                        <div id="proj-left">
+                                <h5>Date Created: {currentProjObj.date_created} </h5>
+                                <Link target="_blank" to={currentProjObj.gh_front ? currentProjObj.gh_front : currentProjObj.gh} >
+                                    <h5>GitHub</h5>
+                                </Link>
+                                <h5>Tech:</h5>
                                 <div id="proj-skills-container" >
                                     {renderSkills()}
                                 </div>
-                            </>
-                            : null}
-                    </div>
-                                
+                                {currentProjObj.descriptions && currentProjObj.descriptions > 0 ? 
+                                <>
+                                    <h5>Features</h5>
+                                    <div id="proj-skills-container" >
+                                        {renderSkills()}
+                                    </div>
+                                </>
+                                : null}
+                        </div>        
                         
-                        {currentProjObj.images.length > 0 ? <div id="proj-right">            
+                        {currentProjObj.images.length > 0 ? 
+                            <div id="proj-right">            
                             <div id="proj-img-container" className="scrollbar">
                                 {renderImgs()}
                             </div>
-                        </div>
-                        : null}
-                        
+                            </div>
+                            : null
+                        }
 
-
-                        <Link to="/#home">
+                        <Link to="/">
                             <img id="return-icon" src={star} alt="Home" />
                         </Link>
+
                     </div>
-            
-                </>
+                
+                
             : <Loading />}
 
         </div>
