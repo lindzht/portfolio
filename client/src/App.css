@@ -26,7 +26,6 @@
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  /* width: 80vw; */
 }
 
 
@@ -786,10 +785,13 @@ height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 100vh;
+    align-items: center;
+    height: 100%;
     width: 100%;
     background-image: linear-gradient(#fefefe,#ffc8031c, rgba(255, 255, 255, 0.977));  
   }
+
+  
 
   .projpage-header {
     width: 67%;

@@ -3,8 +3,8 @@ import NavLinks from './Nav';
 import Projects from './Projects';
 import Footer from './Footer';
 import About from './AboutPage';
-import MobileLogo from '../images/name_stacked_orng.png'
-import Logo from '../images/name_orng.png'
+import MobileLogo from '../images/name_stacked_orng_shadow.png'
+import Logo from '../images/name_orng_shadow.png'
 
 
 
