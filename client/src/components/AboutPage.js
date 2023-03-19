@@ -28,35 +28,7 @@ function About ({isDesktop}){
             <img id="bio-img" src={profile} alt="Lindsay Taylor" />
 
             {isDesktop ? null : <ContactIcons />}
-            {/* <div id="contact">
-                <Link to="#" onClick={() => {window.location.href = "mailto:llindsayttaylor@gmail.com"}}>
-                    <img src={mailbox} alt="Email"/>
-                    <p>email</p>
-                </Link>
-                <Link target="_blank" to="https://www.linkedin.com/in/lindsayhtaylor/" >
-                    <img src={linkedin} alt="LinkedIn"/>
-                    <p>LinkedIn</p>
-                </Link>
-                <Link target="_blank" to="https://github.com/lindzht" >
-                    <img src={github} alt="GitHub"/>
-                    <p>GitHub</p>
-                </Link>
-                <Link target="_blank" to="https://lindsaytaylor.art/" >
-                    <img src={paint} alt="Art Portfolio"/>
-                    <p>Art</p>
-                </Link>
-                <Link target="_blank" to="https://medium.com/@llindsayttaylor" >
-                    <img src={medium} alt="Blog"/>
-                    <p>Blog</p>
-                </Link>
-                <Link target="_blank" to="https://docs.google.com/document/d/1rzUqkJfQ0PIlzN8wrN8C-MMwz3qqT4jysvsQJuOWgHA/edit?usp=sharing" >
-                    <img src={resume2} alt="Resume"/>
-                    <p>Resume</p>
-                </Link>
-            </div> */}
-
-
-
+    
             <div id="about-bottom">
                 <div id="skills">
                     <h3>tech skills</h3>
@@ -80,7 +52,6 @@ function About ({isDesktop}){
                         <li>Mobile web design</li>
                         <li>Wireframing</li>
                         <li>User testing</li>
-
                     </ul>
 
                 </div>
@@ -109,7 +80,10 @@ function About ({isDesktop}){
                     
                     <div className="edu">
                         <h3>learning</h3>
-                        <p>TypeScript</p>
+                            <ul>
+                                <li>Redux</li>
+                                <li>TypeScript</li>
+                            </ul>
                     </div>
                     
                     

@@ -1,4 +1,4 @@
-import { useMediaQuery } from 'react-responsive'
+
 import NavLinks from './Nav';
 import Projects from './Projects';
 import Footer from './Footer';
@@ -9,12 +9,8 @@ import Logo from '../images/name_orng_shadow.png'
 
 
 
-function LandingPage({ projects, setCurrentProject }) {
+function LandingPage({ projects, setCurrentProject, isDesktop }) {
 
-
-    const isDesktop = useMediaQuery({
-        query: '(min-width: 768px)'
-    })
 
     return (
         <div id="landing-page">

@@ -196,6 +196,7 @@ height: 70vh;
 
 #nav-container h3:hover {
   color:rgb(255, 29, 217);
+  cursor: grab;
 }
 
 #nav-container a {
@@ -296,7 +297,14 @@ height: 70vh;
   margin-left: -40px;
 }
 
-#skills ul {
+#education li {
+  font-size: 0.8em;
+  text-align: right;
+  margin-right: 28px;
+}
+
+#skills ul,
+#education ul {
   list-style-type: none;
 }
 
@@ -500,7 +508,7 @@ height: 70vh;
   font-size: 0.7em;
 }
 
-#proj-img-container {
+#proj-right #proj-img-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -650,7 +658,7 @@ height: 70vh;
   #bio {
     width: 51%;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
 
   #bio h5 {
@@ -669,12 +677,12 @@ height: 70vh;
     width: 8em;
     height: 8em;
     margin: 5em 0 0.5em 0;
-    border: 4px double rgb(207, 255, 224);
+    border: 5px double rgb(207, 255, 224);
   }
 
   #contact {
     width: 430px;
-    margin: -1.5em 0 1em 0;
+    margin: -1.8em 0 1em 0;
   }
 
   #contact img {
@@ -781,6 +789,36 @@ height: 70vh;
 
   /* PROJECT PAGES */
 
+  #proj-nav {
+    position: fixed;
+    left: 0;
+    top: 7%;
+  }
+
+  #proj-links {
+    height: 80%;
+  }
+
+  .proj-nav-link {
+    color: orangered;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 0.8em;
+    font-family: 'Beth Ellen', cursive;
+    text-align: center;
+    padding: 0.6em 0;
+  }
+  
+  .proj-nav-link:hover {
+    color:rgb(255, 29, 217);
+    cursor: grab;
+  }
+
+  .projpage-header,
+  .projpage-details {
+    margin-left: 5%;
+  }
+
   .projpage-container {
     display: flex;
     flex-direction: column;
@@ -790,8 +828,6 @@ height: 70vh;
     width: 100%;
     background-image: linear-gradient(#fefefe,#ffc8031c, rgba(255, 255, 255, 0.977));  
   }
-
-  
 
   .projpage-header {
     width: 67%;
@@ -879,12 +915,12 @@ height: 70vh;
     font-size: 1.2em;
   }
 
-  #proj-img-container {
+  #proj-right #proj-img-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     overflow-y: scroll;
-    height: 70vh;
+    height: 40em;
     margin-top: 0;
   }
 
@@ -902,21 +938,21 @@ height: 70vh;
     background: #000;
   }
 
-  #return-icon {
-    position: fixed;
+  #return-icon-nav {
+    /* position: fixed;
     left: 30px;
-    bottom: 30px;
+    bottom: 30px; */
     width: 38px;
-    background-color: orangered;
     background-color: rgba(255, 68, 0, 0.331);
     border-radius: 50%;
+    border: 1px solid orangered;
     }
 
-  #return-icon img {
+  /* #return-icon-nav img {
     width: 50px;
-  }
+  } */
   
-  #return-icon:hover {
+  #return-icon-nav:hover {
     animation: handwave 1s infinite;
     background-color: orangered;
   }

@@ -8,8 +8,8 @@ function Projects({ projects }) {
 
     const renderCards = projects.map((project) => {
         return (
-            <Link key={project.id} to={project.name.toLowerCase()}>
-                <ProjectCard {...project} key={project.id} />
+            <Link key={project.id} to={project.name.toLowerCase()} onClick={() => {window.scrollTo({top: 0, left: 0})}} >
+                <ProjectCard {...project} key={project.name}  />
             </Link>
         )
     })

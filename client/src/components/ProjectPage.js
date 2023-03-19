@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Loading from "./Loading";
@@ -5,9 +6,11 @@ import star from '../images/star.png';
 import github from "../images/githubicon2.png";
 import Video from "./Video";
 import NavLinks from "./Nav";
+import NavProjPage from "./NavProjPage";
 
 
-function ProjectPage({ projects }) {
+function ProjectPage({ projects, isDesktop }) {
+
     let params = useParams()
     const currentProjArr = projects.filter((project) => {
         return (project.name.toLowerCase() === params.projectName)
@@ -18,57 +21,54 @@ function ProjectPage({ projects }) {
     function renderImgs () { 
         let images = Object.values(currentProjObj.images[0])
         return( images.map((img) => {
-            return( img ?  <img className="proj-img" src={img} alt={currentProjObj.name} /> : null)
+            return( img ?  <img className="proj-img" src={img} alt={currentProjObj.name} key={img.id}/> : null)
         }))     
     }
 
 
     function renderSkills () {
         return( currentProjObj.skills.map((skill) => {
-           return( <li>{skill.name}</li>)
+           return( <li key={skill.id}>{skill.name}</li>)
         })) 
     }
 
 
     return (
         <div className="projpage-container">
-            <NavLinks />
+            {isDesktop ? <NavProjPage projects={projects}/> : null}
             {currentProjArr && currentProjArr.length > 0 ? 
-                
-                    // <div className="projpage-header">
-                    //     <div className="proj-title">
-                    //         <h2>{currentProjObj.name}</h2> 
-                    //         {currentProjObj.gh_front && currentProjObj.gh_back ? 
-                    //             <div id="gh-icons">
-                    //                 <div id="frontend">
-                    //                     <Link target="_blank" to={currentProjObj.gh_front} >
-                    //                         <img className="gh" src={github} alt="GitHub"/>
-                    //                     </Link>
-                    //                     <p>Frontend</p>
-                    //                 </div>
-                    //                 <div id="backend">
-                    //                     <Link target="_blank" to={currentProjObj.gh_back} >
-                    //                         <img className="gh" src={github} alt="GitHub"/>
-                    //                     </Link>
-                    //                     <p>Backend</p>
-                    //                 </div>
-                    //             </div>
-                    //             : 
-                    //             <Link target="_blank" to={currentProjObj.gh} >
-                    //                 <img className="gh" src={github} alt="GitHub"/>
-                    //             </Link> 
-                    //         }
-                    //     </div>
-                    //     <h4>{currentProjObj.header}</h4>
+                <>
+                    <div className="projpage-header">
+                        <div className="proj-title">
+                            <h2>{currentProjObj.name}</h2> 
+                            {currentProjObj.gh_front && currentProjObj.gh_back ? 
+                                <div id="gh-icons">
+                                    <div id="frontend">
+                                        <Link target="_blank" to={currentProjObj.gh_front} >
+                                            <img className="gh" src={github} alt="GitHub"/>
+                                        </Link>
+                                        <p>Frontend</p>
+                                    </div>
+                                    <div id="backend">
+                                        <Link target="_blank" to={currentProjObj.gh_back} >
+                                            <img className="gh" src={github} alt="GitHub"/>
+                                        </Link>
+                                        <p>Backend</p>
+                                    </div>
+                                </div>
+                                : 
+                                <Link target="_blank" to={currentProjObj.gh} >
+                                    <img className="gh" src={github} alt="GitHub"/>
+                                </Link> 
+                            }
+                        </div>
+                        <h4>{currentProjObj.header}</h4>
 
-                    //     {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null}
+                        {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null}
 
-                    // </div>
+                    </div>
                 
                     <div className="projpage-details">
-                        
-
-
                         <div id="proj-left">
                                 <h5>Date Created: {currentProjObj.date_created} </h5>
                                 <Link target="_blank" to={currentProjObj.gh_front ? currentProjObj.gh_front : currentProjObj.gh} >
@@ -90,19 +90,19 @@ function ProjectPage({ projects }) {
                         
                         {currentProjObj.images.length > 0 ? 
                             <div id="proj-right">            
-                            <div id="proj-img-container" className="scrollbar">
-                                {renderImgs()}
-                            </div>
+                                <div id="proj-img-container" className="scrollbar">
+                                    {renderImgs()}
+                                </div>
                             </div>
                             : null
                         }
 
-                        <Link to="/">
+                        {!isDesktop ? <Link to="/">
                             <img id="return-icon" src={star} alt="Home" />
-                        </Link>
+                        </Link> : null}
 
                     </div>
-                
+                </>
                 
             : <Loading />}
 
