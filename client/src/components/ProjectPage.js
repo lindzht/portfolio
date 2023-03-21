@@ -98,7 +98,8 @@ function ProjectPage({ projects, isDesktop }) {
                             : null
                         }
 
-                        {!isDesktop ? <Link to="/">
+                        {!isDesktop ? 
+                        <Link to="/" onClick={() => {window.scrollTo({top: 0, left: 0})}}>
                             <img id="return-icon" src={star} alt="Home" />
                         </Link> : null}
 
