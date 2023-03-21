@@ -2,6 +2,8 @@
 
 <br>
 
+https://lindsay-taylor.com/
+
 ## About
 
 Personal portfolio website :) 
