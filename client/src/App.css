@@ -433,9 +433,10 @@ height: 70vh;
   margin-bottom: -20px;
 }
 
+/* test */
 #video {
   width: 92vw;
-  height: 24.6vh;
+  height: 24.6vh; 
   border: 0.5em solid rgb(207, 255, 224);
   margin: 0.5em 0 0 0;
 }
