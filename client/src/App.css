@@ -142,8 +142,8 @@
 }
 
 #home img {
-  width: 18em;
-  margin-left: 15px;
+  width: 17em;
+  /* margin-left: 7px; */
 }
 
 
@@ -613,7 +613,7 @@ height: 70vh;
   }
 
   #home img {
-    width: 40%;
+    width: 37%;
   }
 
   #return {
