@@ -78,13 +78,14 @@ function ProjectPage({ projects, isDesktop }) {
                                 <div id="proj-skills-container" >
                                     {renderSkills()}
                                 </div>
+
                                 {currentProjObj.descriptions && currentProjObj.descriptions > 0 ? 
-                                <>
-                                    <h5>Features</h5>
-                                    <div id="proj-skills-container" >
-                                        {renderSkills()}
-                                    </div>
-                                </>
+                                    <>
+                                        <h5>Features</h5>
+                                        <div id="proj-skills-container" >
+                                            {renderSkills()}
+                                        </div>
+                                    </>
                                 : null}
                         </div>        
                         

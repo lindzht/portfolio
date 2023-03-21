@@ -21,9 +21,10 @@ function LandingPage({ projects, setCurrentProject, isDesktop }) {
 
             <div id="home">
                 {isDesktop ?
-                        <img style={{width: 500}} src={Logo} alt="Lindsay Taylor" />
-                    : <div id="landing-name">
-                        <img style={{width: 280}} src={MobileLogo} alt="Lindsay Taylor" />
+                        <img src={Logo} alt="Lindsay Taylor" />
+                    : 
+                    <div id="landing-name">
+                        <img src={MobileLogo} alt="Lindsay Taylor" />
                     </div>}
             </div>
 
