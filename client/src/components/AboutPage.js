@@ -63,7 +63,7 @@ function About ({isDesktop}){
                             <br/>
                             Oct 2022 - Jan 2023
                             <br />
-                            Full Stack Web Development, Ruby on Rails and JavaScript program 
+                            Full Stack Web Development, Ruby on Rails and JavaScript programming 
                             <br/>
                         </p>
                         
