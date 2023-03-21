@@ -1,6 +1,4 @@
-# Req Board
-
-### Lindsay Taylor Portfolio
+# Lindsay Taylor Portfolio
 
 <br>
 
