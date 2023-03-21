@@ -122,9 +122,9 @@
 }
 
 @keyframes backgroundAnimation {
-  0%{background-position:10% 94%}
-  50%{background-position:100% 7%}
-  100%{background-position:10% 94%}
+  0%{background-position:0% 14%}
+  50%{background-position:100% 87%}
+  100%{background-position:0% 14%}
 }
 
 
@@ -247,7 +247,7 @@ height: 70vh;
 }
 
 #about-container #bio-img {
-  box-shadow: rgb(207, 255, 224) -3px -3px;
+  /* box-shadow: rgb(207, 255, 224) -3px -3px; */
   border: 1px solid rgb(207, 255, 224);
   border-radius: 50%;
   width: 7em;
@@ -560,7 +560,9 @@ height: 70vh;
 
   #about,
   #projects,
-  #footer-content
+  #footer-content,
+  #nav-container,
+  #nav-container-right,
   .projpage-container,
   .projpage-details {
     z-index: 10;
@@ -593,11 +595,17 @@ height: 70vh;
     width: 98.5vw;
     bottom: 0;
     z-index: 3;
-    background-image: linear-gradient(#00053c32,rgba(255, 219, 158, 0.714), #ffc80324, rgba(2, 2, 22, 0.542));  
+    background-image: linear-gradient( #00053c32,rgba(224, 255, 230, 0.285), #ffc8034f, rgba(145, 11, 11, 0.248), rgba(11, 22, 145, 0.126), rgba(11, 22, 145, 0.195));  
     background-size: 300% 300%;
-    -webkit-animation: backgroundAnimation 8s ease infinite;
-    -moz-animation: backgroundAnimation 8s ease infinite;
-    animation: backgroundAnimation 8s ease infinite;    
+    -webkit-animation: backgroundAnimationOverlay 8s ease infinite;
+    -moz-animation: backgroundAnimationOverlay 8s ease infinite;
+    animation: backgroundAnimationOverlay 8s ease infinite;    
+  }
+
+  @keyframes backgroundAnimationOverlay {
+    0%{background-position: 10% 4%}
+    50%{background-position: 0% 67%}
+    100%{background-position: 10% 4%}
   }
 
   #bkgr-circle {
@@ -606,7 +614,7 @@ height: 70vh;
     width: 98.5vw;
     bottom: 0;
     z-index: 3;
-    background-image: linear-gradient(45deg, #ffc80398, #f6e5dd,  rgba(255, 243, 203, 0),#ffc8033c, rgba(252, 151, 101, 0.451), rgba(255, 233, 218, 0.63));  
+    background-image: linear-gradient(90deg, #ffc80398, #f6e5dd,  rgba(255, 243, 203, 0),#ffc8033c, rgba(255, 103, 86, 0.286), rgba(255, 233, 218, 0.63));  
   }
 
   #home {
@@ -735,7 +743,12 @@ height: 70vh;
   }
 
   .edu p {
-    margin-bottom: 1.5em;
+    margin-bottom: 2.5em;
+  }
+
+  .edu span {
+    font-size: 1.02em;
+    color: black;
   }
 
 
@@ -777,14 +790,8 @@ height: 70vh;
   }
 
   .proj_card .p_details {
-    /* margin: -90px 30px 0 0; */
     position: relative;
     left: 260px;
-    /* text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end; */
   }
 
   .proj_card .p_details .p-icon{
@@ -871,6 +878,10 @@ height: 70vh;
   .gh{
     height: 40px;
     margin: 53px 0 0 30px;
+  }
+
+  .gh:hover {
+    animation: handwave 1s infinite;
   }
 
   #gh-icons {
