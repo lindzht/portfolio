@@ -634,7 +634,7 @@ height: 70vh;
     position: absolute;
     left: 70px;
     bottom: 0;
-    height: 83vh;
+    height: 80vh;
   }
 
   #nav-container-right {
@@ -645,7 +645,7 @@ height: 70vh;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 79vh;
+    height: 80vh;
   }
 
   #nav-container-right img {
