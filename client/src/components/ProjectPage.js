@@ -1,12 +1,11 @@
-import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Loading from "./Loading";
 import star from '../images/star.png';
 import github from "../images/githubicon2.png";
 import Video from "./Video";
-import NavLinks from "./Nav";
 import NavProjPage from "./NavProjPage";
+import Footer from "./Footer";
 
 
 function ProjectPage({ projects, isDesktop }) {
@@ -104,6 +103,8 @@ function ProjectPage({ projects, isDesktop }) {
                         </Link> : null}
 
                     </div>
+
+                    {isDesktop ? <Footer /> : null}
                 </>
                 
             : <Loading />}
@@ -117,72 +118,3 @@ function ProjectPage({ projects, isDesktop }) {
 
 export default ProjectPage;
 
-
-
-// return (
-//     <div className="projpage-container">
-//         {currentProjArr && currentProjArr.length > 0 ? 
-        
-//             <div className="projpage-details">
-//                     <h2>{currentProjObj.name}</h2> 
-               
-//                     <h5>Date Created: {currentProjObj.date_created} </h5>
-//                     <h4>{currentProjObj.header}</h4>
-                    
-//                     {currentProjObj.gh_front && currentProjObj.gh_back ? 
-//                         <div id="gh-icons">
-//                             <div id="frontend">
-//                                 <Link target="_blank" to={currentProjObj.gh_front} >
-//                                     <img className="gh" src={github} alt="GitHub"/>
-//                                 </Link>
-//                                 <p>Frontend</p>
-//                             </div>
-//                             <div id="backend">
-//                                 <Link target="_blank" to={currentProjObj.gh_back} >
-//                                     <img className="gh" src={github} alt="GitHub"/>
-//                                 </Link>
-//                                 <p>Backend</p>
-//                             </div>
-//                         </div>
-//                         : 
-//                         <Link target="_blank" to={currentProjObj.gh} >
-//                             <img className="gh" src={github} alt="GitHub"/>
-//                         </Link> 
-//                     }
-
-//                         <h5>Tech</h5>
-//                         <div id="proj-skills-container" >
-//                             {renderSkills()}
-//                         </div>
-                        
-//                         {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null}
-                
-
-
-//                 <div id="proj-right">
-//                     {/* {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null} */}
-                
-//                     <div id="proj-img-container" className="scrollbar">
-//                         {renderImgs()}
-//                     </div>
-
-//                 </div>
-
-
-//                 <Link to="/">
-//                     <img id="return-icon" src={star} alt="Home" />
-//                 </Link>
-//             </div>
-            
-            
-            
-            
-        
-        
-//         : <Loading />}
-
-//     </div>
-// )
-
-
-// }
