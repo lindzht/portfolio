@@ -673,7 +673,7 @@ height: 70vh;
   #bio {
     width: 51%;
     text-align: center;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
   }
 
   #bio h5 {
@@ -724,7 +724,7 @@ height: 70vh;
 
   #about-bottom {
     width: 48%;
-    margin: -12.8em 0 0 0;
+    margin: -14em 0 0 0;
   }
 
   #skills h3 {
