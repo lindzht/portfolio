@@ -52,6 +52,8 @@ function About ({isDesktop}){
                         <li>Mobile web design</li>
                         <li>Wireframing</li>
                         <li>User testing</li>
+                        <li>Typography</li>
+                        <li>Web Design</li>
                     </ul>
 
                 </div>
