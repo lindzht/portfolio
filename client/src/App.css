@@ -765,19 +765,28 @@ height: 70vh;
 
   #proj-thumbnails-container {
     margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 338px [col-start]);
   }
 
   .proj_card {
     border-radius: 20px;
-    height: 4.5em;
+    height: 6em;
     margin: 1em;
+    border: 3px solid rgb(207, 255, 224);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  }
+
+  .proj_card:hover {
+    margin-top: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; */
   }
 
   .proj_card .img_card {
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    border-radius: 20px;
-    width: 300px;
-    height: 4.5em;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; */
+    border-radius: 15px 0 0 15px;
+    width: 250px;
+    height: 6em;
     object-fit:cover;
     /* opacity: 70%; */
   }
@@ -788,12 +797,13 @@ height: 70vh;
 
   .proj_card .p_details {
     position: relative;
-    left: 260px;
+    left: 255px;
+    top: -90px;
   }
 
   .proj_card .p_details .p-icon{
-    width: 23px;
-    height: 23px;
+    width: 30px;
+    height: 30px;
     background-color: rgb(207, 255, 224);
     margin: 0.1em;
     padding: 0.2em;
