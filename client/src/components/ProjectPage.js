@@ -62,8 +62,8 @@ function ProjectPage({ projects, isDesktop }) {
                             }
                         </div>
                         <h4>{currentProjObj.header}</h4>
-
-                        {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : null}
+                            
+                        {currentProjObj.demo ? <Video demo={currentProjObj.demo} /> : <img src={`${currentProjObj.images[0].hero}`} alt="Image Header" className="header_img"/>}
 
                     </div>
                 

@@ -33,10 +33,10 @@ function About ({isDesktop}){
                 <div id="skills">
                     <h3>tech skills</h3>
                     <ul>
-                        <li>Ruby on Rails</li>
                         <li>JavaScript</li> 
-                        <li>Ruby</li>
                         <li>React</li>
+                        <li>Ruby</li>
+                        <li>Ruby on Rails</li>
                         <li>Sinatra</li>
                         <li>PostgreSQL</li>
                         <li>SQLite</li>
@@ -83,6 +83,7 @@ function About ({isDesktop}){
                     <div className="edu">
                         <h3>learning</h3>
                             <ul>
+                                <li>Python</li>
                                 <li>Redux</li>
                                 <li>TypeScript</li>
                             </ul>

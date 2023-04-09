@@ -359,7 +359,7 @@ height: 70vh;
 }
 
 .proj_card .img_card {
-  opacity: 70%;
+  opacity: 80%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   border-radius: 20px;
   width: 180px;
@@ -759,12 +759,16 @@ height: 70vh;
     justify-content: center;
   }
 
+  #projects-container #return {
+    margin: 200px 0 0 0;
+  }
+
   #projects-container h1 {
-    margin-top: 1em;
+    margin-top: 1.8em;
   }
 
   #proj-thumbnails-container {
-    margin-top: 10px;
+    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(3, 338px [col-start]);
   }
@@ -783,12 +787,12 @@ height: 70vh;
   }
 
   .proj_card .img_card {
-    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; */
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 3px 3px 0px;
     border-radius: 15px 0 0 15px;
     width: 250px;
     height: 6em;
     object-fit:cover;
-    /* opacity: 70%; */
+    opacity: 100%;
   }
   
   .proj_card .img_card:hover {
@@ -908,6 +912,12 @@ height: 70vh;
     text-align: center;
   }
 
+  .header_img{
+    width: 100%;
+    border: 0.8em solid rgb(207, 255, 224);
+    border-radius: 20px;
+  }
+
   #video {
     width: 100%;
     height: 34.8em;
@@ -934,15 +944,16 @@ height: 70vh;
   }
 
   .projpage-details h5 {
-    margin: 1em 0 1em 0;
+    margin: 1em 0 0.4em 0;
     font-style: italic;
     font-size: 0.9em;
   }
 
   #proj-skills-container {
     columns: 10px 1;
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 1em;
+    margin-left: 20px;
   }
 
   #proj-right #proj-img-container {
@@ -968,18 +979,15 @@ height: 70vh;
     background: #000;
   }
 
-  #return-icon-nav {
-    width: 38px;
+  .return-icon-nav {
+    width: 33px;
     background-color: rgba(228, 63, 3, 0.581);
     border-radius: 50%;
-    border: 1px solid rgba(156, 42, 0, 0.977)
+    border: 1px solid rgba(156, 42, 0, 0.977);
     }
 
-  /* #return-icon-nav img {
-    width: 50px;
-  } */
-  
-  #return-icon-nav:hover {
+
+  .return-icon-nav:hover {
     animation: handwave 1s infinite;
     background-color: rgba(156, 42, 0, 0.977);
   }

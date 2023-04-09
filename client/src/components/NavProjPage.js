@@ -30,12 +30,9 @@ function NavProjPage({projects}) {
                 </div>
 
                 <Link to="/#home">
-                    <img id="return-icon-nav" src={star} alt="Home" />
+                    <img className="return-icon-nav" src={star} alt="Home" />
                 </Link>
                 
-                {/* <HashLink smooth to="/#about">
-                    <h3>About</h3>
-                </HashLink> */}
             </div>
         </div>
     )
