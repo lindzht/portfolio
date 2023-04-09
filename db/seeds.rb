@@ -50,6 +50,7 @@ s22 = Skill.create(name: "Admin access")
 s23 = Skill.create(name: "BCrypt Gem")
 s24 = Skill.create(name: "Typography")
 s25 = Skill.create(name: "Graphic Design")
+s26 = Skill.create(name: "Deployed using Render")
 
 #p1 skills
 Projskill.create!(project_id: p1.id, skill_id: s1.id)
@@ -63,6 +64,7 @@ Projskill.create!(project_id: p1.id, skill_id: s14.id)
 Projskill.create!(project_id: p1.id, skill_id: s18.id)
 Projskill.create!(project_id: p1.id, skill_id: s24.id)
 Projskill.create!(project_id: p1.id, skill_id: s25.id)
+Projskill.create!(project_id: p1.id, skill_id: s26.id)
 
 # p2 skills 
 Projskill.create!(project_id: p2.id, skill_id: s1.id)
