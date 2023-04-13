@@ -1,8 +1,11 @@
+import { useState } from 'react'
 import javascript from '../images/javascript.png'
 import React from '../images/react.png'
 import rails from '../images/rails.png'
 
-function ProjectCard({ name, thumbnail, date_created, skills }) {
+function ProjectCard({ name, thumbnail, date_created, skills, isDesktop }) {
+
+    const [flipCard, setFlipCard] = useState(false)
 
     function renderSkills() {
         return (skills.map((skill) => {
@@ -16,19 +19,46 @@ function ProjectCard({ name, thumbnail, date_created, skills }) {
         }))
     }
 
-
-    return (
-        <div className="proj_card">
-            {thumbnail ?
-               
-                <img className="img_card" src={thumbnail} alt={name} style={{"opacity" : "70%"}}/>
-                
-                
-                : <h4>{name}</h4>}
+    const ProjCardBack = () => {       
+        return(
+            <div className="proj_card_back">
                 <div className="p_details">
+                    <a>{name}</a>
+                    {date_created}
+                </div>
+                <div className='p_skills'>
                     {renderSkills()}
                 </div>
-        </div>
+            </div>
+    )}
+
+
+    <div className="proj_card" onMouseEnter={()=>{setFlipCard(true)}} onMouseLeave={()=>{setFlipCard(false)}}>
+    {flipCard ? 
+        <ProjCardBack />
+        : 
+        <img className="img_card" src={thumbnail} alt={name} />}
+    </div>
+
+    return (
+        <>
+           {isDesktop ? 
+                <div className="proj_card" onMouseEnter={()=>{setFlipCard(true)}} onMouseLeave={()=>{setFlipCard(false)}}>
+                    {flipCard ? 
+                        <ProjCardBack />
+                        : 
+                        <img className="img_card" src={thumbnail} alt={name} />}
+                </div>
+
+           : <div className="proj_card">
+                {thumbnail ?            
+                    <img className="img_card" src={thumbnail} alt={name} />
+                    : <h4>{name}</h4>}
+                    <div className="p_details">
+                        {renderSkills()}
+                    </div>
+            </div>}
+        </>
     )
 }
 

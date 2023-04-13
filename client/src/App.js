@@ -11,8 +11,6 @@ function App() {
 
   const [projects, setProjects] = useState([])
 
-
-
   useEffect(() => {
     fetch('/projects')
     .then(res => {

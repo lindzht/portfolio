@@ -4,12 +4,12 @@ import { HashLink } from 'react-router-hash-link';
 import star from '../images/star.png';
 
 
-function Projects({ projects }) {
+function Projects({ projects, isDesktop }) {
 
     const renderCards = projects.map((project) => {
         return (
             <Link key={project.id} to={project.name.toLowerCase()} onClick={() => {window.scrollTo({top: 0, left: 0})}} >
-                <ProjectCard {...project} key={project.name}  />
+                <ProjectCard {...project} key={project.name} isDesktop={isDesktop}  />
             </Link>
         )
     })
