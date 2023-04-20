@@ -30,7 +30,7 @@ function ContactIcons () {
                     <img src={medium} alt="Blog"/>
                     <p>Blog</p>
                 </Link>
-                <Link target="_blank" to="https://docs.google.com/document/d/1rzUqkJfQ0PIlzN8wrN8C-MMwz3qqT4jysvsQJuOWgHA/edit?usp=sharing" >
+                <Link target="_blank" to="https://docs.google.com/document/d/1Zum7rKJtenBH-6vFn47tzDPHpZ99zJ8AiUn_U_DsXBY/edit?usp=sharing" >
                     <img src={resume2} alt="Resume"/>
                     <p>Resume</p>
                 </Link>
