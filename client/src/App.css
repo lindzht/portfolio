@@ -238,7 +238,6 @@ height: 70vh;
 }
 
 #about-container #bio-img {
-  /* box-shadow: rgb(207, 255, 224) -3px -3px; */
   border: 1px solid rgb(207, 255, 224);
   border-radius: 50%;
   width: 7em;
@@ -673,7 +672,7 @@ height: 70vh;
   #bio {
     width: 51%;
     text-align: center;
-    margin-bottom: 0.8em;
+    margin-bottom: 5px;
   }
 
   #bio h5 {
@@ -685,7 +684,6 @@ height: 70vh;
     text-align: justify;
     font-size: 0.9em;
     line-height: 20px;
-    padding: 0 10%;
   }
 
   #about-container #bio-img {
@@ -701,7 +699,7 @@ height: 70vh;
   }
 
   #contact img {
-    height: 45px;
+    height: 48px;
   }
 
   #contact p {
@@ -723,7 +721,7 @@ height: 70vh;
   }
 
   #about-bottom {
-    width: 48%;
+    width: 51%;
     margin: -14em 0 0 0;
   }
 
