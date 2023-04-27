@@ -1,12 +1,4 @@
-import { Link} from 'react-router-dom';
 import profile from "../images/profile.png";
-import paint from "../images/painbrushicon_100px.png";
-import mailbox from "../images/mailicon_100px.png";
-import linkedin from "../images/linkedinicon.png";
-import github from "../images/githubicon2.png";
-import medium from "../images/mediumicon.png";
-import resume from "../images/resume.png";
-import resume2 from "../images/resume2.png";
 import { HashLink } from 'react-router-hash-link';
 import star from '../images/star.png';
 import ContactIcons from './ContactIcons';

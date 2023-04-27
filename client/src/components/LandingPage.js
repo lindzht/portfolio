@@ -1,4 +1,3 @@
-
 import NavLinks from './Nav';
 import Projects from './Projects';
 import Footer from './Footer';
