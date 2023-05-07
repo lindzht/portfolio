@@ -223,9 +223,9 @@ height: 70vh;
   text-transform: lowercase;
   text-align: center;
   font-weight: 700;
-  font-size: 0.9em;
+  font-size: 0.95em;
   font-family: 'Beth Ellen', cursive;
-  margin-bottom: -8px;
+  margin-bottom: -14px;
   color: rgba(230, 61, 0, 0.977)
 }
 
@@ -639,7 +639,7 @@ height: 70vh;
   }
 
   #home img {
-    width: 35%;
+    width: 33%;
     margin-top: -2%;
   }
 
@@ -727,15 +727,15 @@ height: 70vh;
   }
 
   #about-container #bio-img {
-    width: 9em;
-    height: 9em;
+    width: 9.3em;
+    height: 9.3em;
     margin: 4em 0 0.3em 0;
     border: 5px double rgb(207, 255, 224);
   }
 
   #contact {
-    width: 530px;
-    margin: -1.8em 0 1em 0;
+    width: 550px;
+    margin: -2em 0 1em 0;
   }
 
   #contact img {
