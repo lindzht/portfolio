@@ -26,26 +26,26 @@ function About ({isDesktop}){
                     <h3>tech skills</h3>
                     <ul>
                         <li>JavaScript</li> 
-                        <li>React</li>
+                        <li>React.js</li>
                         <li>Ruby</li>
                         <li>Ruby on Rails</li>
                         <li>Sinatra</li>
+                        <li>SQL</li>
                         <li>PostgreSQL</li>
                         <li>SQLite</li>
                         <li>ActiveRecord</li>
                         <li>APIs</li>
                         <li>MVC framework</li>
                         <li>RESTful conventions</li>
-                        <li>Object oriented programming</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Git/GitHub</li>
+                        <li>HTML/HTML5</li>
+                        <li>CSS/CSS3</li>
+                        <li>GitHub</li>
+                        <li>Git</li>
                         <li>Web development</li>
                         <li>Mobile web design</li>
                         <li>Wireframing</li>
                         <li>User testing</li>
-                        <li>Typography</li>
-                        <li>Web Design</li>
+                        <li>Notion</li>
                     </ul>
 
                 </div>
@@ -55,8 +55,6 @@ function About ({isDesktop}){
                         <p>
                             <span>Flatiron School </span>
                             <br/>
-                            Oct 2022 - Jan 2023
-                            <br />
                             Full Stack Software Engineering 
                             <br/>
                             <em>Scholarship Recipient</em>
@@ -64,11 +62,15 @@ function About ({isDesktop}){
                         <p>
                             <span>Carnegie Mellon University</span>
                             <br/>
-                            May 2012 
-                            <br />
-                            BFA in Painting, Printmaking, Drawing 
+                            BFA in Painting, Printmaking, Drawing
                             <br />
                             <em>University Honors</em>
+                        </p>
+                        <p>
+                            <span>Skillcrush</span>
+                            <br/>
+                            User Research
+                            <br />
                         </p>
                     </div>
                     

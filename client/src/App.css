@@ -1,8 +1,6 @@
 .App {
   background-image: linear-gradient( #f6e5dd, #ffd62185);
   overflow-x: clip;
-  /* border-radius: 30px; */
-  border: 1px solid rgb(207, 255, 224);
 }
 
 body {
@@ -596,17 +594,19 @@ height: 70vh;
   #bkgr-overlay {
     /* margin-top: 45%; */
     position: fixed;
-    border-radius: 20px;
-    top: 10px;
-    height: 97vh;
-    width: 98.5vw;
+    /* border-radius: 20px; */
+    top: -15px;
+    height: 95vh;
+    width: 96.5vw;
     bottom: 0;
     z-index: 3;
     background-image: linear-gradient( #00053c32,rgba(224, 255, 230, 0.285), #ffc80330, rgba(130, 8, 8, 0.203), rgba(11, 22, 145, 0.126), rgba(11, 22, 145, 0.125));  
     background-size: 300% 300%;
     -webkit-animation: backgroundAnimationOverlay 8s ease infinite;
     -moz-animation: backgroundAnimationOverlay 8s ease infinite;
-    animation: backgroundAnimationOverlay 8s ease infinite;    
+    animation: backgroundAnimationOverlay 8s ease infinite;   
+    border: 30px solid white; 
+    padding: 10px;
   }
 
   @keyframes backgroundAnimationOverlay {
@@ -620,7 +620,7 @@ height: 70vh;
     height: 97vh;
     width: 98.5vw;
     /* border-radius: 0px; */
-    bottom: 10px;
+    bottom: 12px;
     z-index: 3;
     background-image: linear-gradient(90deg, #ffc80398, #f6e5dd,  rgba(255, 243, 203, 0),#ffc8032a, rgba(255, 103, 86, 0.163), rgba(255, 233, 218, 0.388));  
     border-left: 50px transparent;
