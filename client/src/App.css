@@ -596,7 +596,7 @@ height: 70vh;
     position: fixed;
     /* border-radius: 20px; */
     top: -15px;
-    height: 95vh;
+    height: 93vh;
     width: 96.5vw;
     bottom: 0;
     z-index: 3;
@@ -617,10 +617,9 @@ height: 70vh;
 
   #bkgr-circle {
     position: fixed;
-    height: 97vh;
+    height: 95vh;
     width: 98.5vw;
-    /* border-radius: 0px; */
-    bottom: 12px;
+    bottom: 20px;
     z-index: 3;
     background-image: linear-gradient(90deg, #ffc80398, #f6e5dd,  rgba(255, 243, 203, 0),#ffc8032a, rgba(255, 103, 86, 0.163), rgba(255, 233, 218, 0.388));  
     border-left: 50px transparent;
@@ -691,7 +690,6 @@ height: 70vh;
   #nav-container h3 {
     color: black;
     font-size: 1.1em;
-    /* text-shadow: rgb(255, 255, 255) -2px -2px; */
   }
 
   
@@ -852,14 +850,43 @@ height: 70vh;
 
   /* PROJECT PAGES */
 
-  #proj-nav {
+  /* #proj-nav {
     position: fixed;
     left: 0;
     top: 7%;
+  } */
+
+  #proj-nav-container{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 10vw;
+    z-index: 100;
+    background-color: white;
   }
+
+  #proj-nav-container h3,
+  #proj-nav-container img {
+    position: relative;
+    left: 35px;
+    top: 10px;
+  }
+
 
   #proj-links {
     height: 80%;
+    position: relative;
+    left: 5px;
+  }
+
+  #proj-nav-container h3 {
+    color: black;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 1em;
+    font-family: 'Beth Ellen', cursive;
+    cursor: grab;
   }
 
   .proj-nav-link {
@@ -870,6 +897,11 @@ height: 70vh;
     font-family: 'Beth Ellen', cursive;
     text-align: center;
     padding: 0.6em 0;
+    text-decoration: none;
+  }
+
+  div#proj-links a {
+    text-decoration: none;
   }
   
   .proj-nav-link:hover {
@@ -892,6 +924,7 @@ height: 70vh;
     background-image: linear-gradient(#fefefe,#ffc8031c, rgba(255, 255, 255, 0.977));  
   }
 
+
   .projpage-header {
     width: 67%;
   }
@@ -913,6 +946,7 @@ height: 70vh;
     font-size: 1em;
     text-align: left;
     padding: 0px;
+    margin-top: 20px;
   }
 
   .proj-title{
@@ -949,8 +983,9 @@ height: 70vh;
 
   .header_img{
     width: 100%;
-    border: 0.8em solid rgb(207, 255, 224);
+    border: 20px solid white;
     border-radius: 20px;
+    margin-top: -10px;
   }
 
   #video {
@@ -1015,10 +1050,10 @@ height: 70vh;
   }
 
   .return-icon-nav {
-    width: 33px;
-    background-color: rgba(228, 63, 3, 0.581);
+    width: 30px;
+    background-color: rgba(156, 42, 0, 0.977);
     border-radius: 50%;
-    border: 1px solid rgba(156, 42, 0, 0.977);
+    margin-left: 15px;
     }
 
 

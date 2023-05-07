@@ -20,10 +20,7 @@ function NavProjPage({projects}) {
     }
 
     return(
-        <div id="proj-nav">
-            <div id="nav-container">
-
-                
+            <div id="proj-nav-container">
                 <h3 onClick={handleDisplay}>Projects</h3>
                 <div id="proj-links">
                     {display ? renderLinks : null}
@@ -34,7 +31,6 @@ function NavProjPage({projects}) {
                 </Link>
                 
             </div>
-        </div>
     )
 }
 
