@@ -13,7 +13,7 @@ function About ({isDesktop}){
             <div id="bio">
                 <h5>Software engineer + artist currently based in NYC</h5>
                 <p>
-                    Experienced in Ruby on Rails and JavaScript based programming, with a background in operations management, strategy, and fine art. Passionate about building beautiful, accessible, user-centric apps with purpose. Obsessed with big laughs, bad tv, and great coffee. Currently <span>looking for my next job opportunity</span>!
+                    Experienced in Ruby on Rails and JavaScript based programming, with a background in operations management, strategy, and fine art. Passionate about building beautiful, accessible, user-centric apps with purpose. Obsessed with big laughs, bad tv, and great coffee. <span>Currently looking for my next job opportunity</span>!
                 </p>
             </div>
 
@@ -26,26 +26,26 @@ function About ({isDesktop}){
                     <h3>tech skills</h3>
                     <ul>
                         <li>JavaScript</li> 
-                        <li>React</li>
+                        <li>React.js</li>
                         <li>Ruby</li>
                         <li>Ruby on Rails</li>
                         <li>Sinatra</li>
+                        <li>SQL</li>
                         <li>PostgreSQL</li>
                         <li>SQLite</li>
                         <li>ActiveRecord</li>
                         <li>APIs</li>
                         <li>MVC framework</li>
                         <li>RESTful conventions</li>
-                        <li>Object oriented programming</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Git/GitHub</li>
+                        <li>HTML/HTML5</li>
+                        <li>CSS/CSS3</li>
+                        <li>GitHub</li>
+                        <li>Git</li>
                         <li>Web development</li>
                         <li>Mobile web design</li>
                         <li>Wireframing</li>
                         <li>User testing</li>
-                        <li>Typography</li>
-                        <li>Web Design</li>
+                        <li>Notion</li>
                     </ul>
 
                 </div>
@@ -55,20 +55,22 @@ function About ({isDesktop}){
                         <p>
                             <span>Flatiron School </span>
                             <br/>
-                            Oct 2022 - Jan 2023
-                            <br />
-                            Full Stack Web Development, Ruby on Rails and JavaScript programming 
+                            Full Stack Software Engineering 
                             <br/>
-                        </p>
-                        
+                            <em>Scholarship Recipient</em>
+                        </p>   
                         <p>
                             <span>Carnegie Mellon University</span>
                             <br/>
-                            May 2012 
-                            <br />
-                            BFA in Painting, Printmaking, Drawing 
+                            BFA in Painting, Printmaking, Drawing
                             <br />
                             <em>University Honors</em>
+                        </p>
+                        <p>
+                            <span>Skillcrush</span>
+                            <br/>
+                            User Research
+                            <br />
                         </p>
                     </div>
                     
