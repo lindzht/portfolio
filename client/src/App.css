@@ -1,7 +1,15 @@
 .App {
   background-image: linear-gradient( #f6e5dd, #ffd62185);
   overflow-x: clip;
+  /* border-radius: 30px; */
+  border: 1px solid rgb(207, 255, 224);
 }
+
+body {
+  margin: 0;
+
+}
+
 
 
 
@@ -98,7 +106,7 @@
   margin-top: 45%;
   position: fixed;
   border-radius: 50% ;
-  border: 1px solid rgb(207, 255, 224);
+  /* border: 1px solid rgb(207, 255, 224); */
   height: 44vh;
   width: 95vw;
   background-image: linear-gradient(#00053c,#ffc803, rgba(230, 61, 0, 0.977));  
@@ -107,6 +115,7 @@
   -webkit-animation: backgroundAnimation 8s ease infinite;
   -moz-animation: backgroundAnimation 8s ease infinite;
   animation: backgroundAnimation 8s ease infinite;
+  
 }
 
 @keyframes backgroundAnimation {
@@ -208,9 +217,10 @@ height: 70vh;
   text-transform: lowercase;
   text-align: center;
   font-weight: 700;
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: 'Beth Ellen', cursive;
   margin-bottom: -8px;
+  color: rgba(230, 61, 0, 0.977)
 }
 
 #bio {
@@ -228,8 +238,9 @@ height: 70vh;
 }
 
 #bio span {
-  color: rgba(230, 61, 0, 0.977);
-  font-weight: bold;
+  /* color: rgba(230, 61, 0, 0.977); */
+  /* font-weight: bold; */
+  text-decoration: underline;
 }
 
 #bio p {
@@ -579,9 +590,9 @@ height: 70vh;
   #bkgr-overlay {
     /* margin-top: 45%; */
     position: fixed;
-    border-radius: 50% ;
-    /* border: 1px solid rgb(207, 255, 224); */
-    height: 98.5vh;
+    border-radius: 20px;
+    top: 10px;
+    height: 97vh;
     width: 98.5vw;
     bottom: 0;
     z-index: 3;
@@ -600,11 +611,16 @@ height: 70vh;
 
   #bkgr-circle {
     position: fixed;
-    height: 98.5vh;
+    height: 97vh;
     width: 98.5vw;
-    bottom: 0;
+    /* border-radius: 0px; */
+    bottom: 10px;
     z-index: 3;
     background-image: linear-gradient(90deg, #ffc80398, #f6e5dd,  rgba(255, 243, 203, 0),#ffc8032a, rgba(255, 103, 86, 0.163), rgba(255, 233, 218, 0.388));  
+    border-left: 50px transparent;
+    border-right: 50px transparent;
+    border-bottom: 100px;
+    
   }
 
   #home {
@@ -612,7 +628,7 @@ height: 70vh;
   }
 
   #home img {
-    width: 60%;
+    width: 80%;
     margin-top: -2%;
   }
 
@@ -622,30 +638,33 @@ height: 70vh;
   }
 
   #return-icon-landing {
-    position: relative;
+    /* position: relative;
     bottom: 5em;
-    left: 2%;
+    left: 2%; */
+    display: none;
   }
 
 
 
   /* NAVIGATION */
   #nav-container {
-    position: absolute;
-    left: 70px;
+    position: fixed;
+    left: 50px;
     bottom: 0;
-    height: 80vh;
+    height: 81vh;
+    z-index: 100;
   }
 
   #nav-container-right {
-    position: absolute;
+    position: fixed;
     top: 100px;
-    right: 70px;
+    right: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 80vh;
+    height: 77vh;
+    z-index: 100;
   }
 
   #nav-container-right img {
@@ -655,6 +674,12 @@ height: 70vh;
 
   #nav-container-right img:hover {
     animation: handwave 1s infinite;
+  }
+
+  #nav-container h3 {
+    color: black;
+    font-size: 1.1em;
+    /* text-shadow: rgb(255, 255, 255) -2px -2px; */
   }
 
   
@@ -668,8 +693,12 @@ height: 70vh;
     height: 100vh;
   }
 
+  #about-container h1 {
+    margin-top: -50px;
+  }
+
   #bio {
-    width: 51%;
+    width: 58%;
     text-align: center;
     margin-bottom: 5px;
   }
@@ -686,14 +715,14 @@ height: 70vh;
   }
 
   #about-container #bio-img {
-    width: 8em;
-    height: 8em;
-    margin: 5em 0 0.5em 0;
+    width: 9em;
+    height: 9em;
+    margin: 4em 0 0.3em 0;
     border: 5px double rgb(207, 255, 224);
   }
 
   #contact {
-    width: 430px;
+    width: 530px;
     margin: -1.8em 0 1em 0;
   }
 
@@ -720,7 +749,7 @@ height: 70vh;
   }
 
   #about-bottom {
-    width: 51%;
+    width: 58%;
     margin: -14em 0 0 0;
   }
 
@@ -732,12 +761,8 @@ height: 70vh;
     width: 35%;
   }
 
-  .edu {
-    margin-bottom: 1.5em;
-  }
-
   .edu p {
-    margin-bottom: 2.5em;
+    margin-bottom: 1.5em;
   }
 
   .edu span {
@@ -757,11 +782,12 @@ height: 70vh;
   }
 
   #projects-container #return {
-    margin: 200px 0 0 0;
+    /* margin: 200px 0 0 0; */
+    display: none;
   }
 
   #projects-container h1 {
-    margin-top: 1.8em;
+    margin: -80px 0 -30px 0;
   }
 
   #proj-thumbnails-container {
@@ -774,7 +800,7 @@ height: 70vh;
     border-radius: 20px;
     height: 6em;
     margin: 1em;
-    border: 3px solid rgb(207, 255, 224);
+    border: 4px double rgb(207, 255, 224);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   }
 

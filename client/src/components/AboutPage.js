@@ -13,7 +13,7 @@ function About ({isDesktop}){
             <div id="bio">
                 <h5>Software engineer + artist currently based in NYC</h5>
                 <p>
-                    Experienced in Ruby on Rails and JavaScript based programming, with a background in operations management, strategy, and fine art. Passionate about building beautiful, accessible, user-centric apps with purpose. Obsessed with big laughs, bad tv, and great coffee. Currently <span>looking for my next job opportunity</span>!
+                    Experienced in Ruby on Rails and JavaScript based programming, with a background in operations management, strategy, and fine art. Passionate about building beautiful, accessible, user-centric apps with purpose. Obsessed with big laughs, bad tv, and great coffee. <span>Currently looking for my next job opportunity</span>!
                 </p>
             </div>
 
@@ -57,10 +57,10 @@ function About ({isDesktop}){
                             <br/>
                             Oct 2022 - Jan 2023
                             <br />
-                            Full Stack Web Development, Ruby on Rails and JavaScript programming 
+                            Full Stack Software Engineering 
                             <br/>
-                        </p>
-                        
+                            <em>Scholarship Recipient</em>
+                        </p>   
                         <p>
                             <span>Carnegie Mellon University</span>
                             <br/>
