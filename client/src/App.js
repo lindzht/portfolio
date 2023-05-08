@@ -30,15 +30,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* <div id="bkgr-overlay"></div>
-        <div id="bkgr-circle"></div>  */}
-
         <Routes>
           <Route path="/" element={<LandingPage projects={projects} isDesktop={isDesktop}/>} />
           <Route path="/:projectName" element={<ProjectPage projects={projects} isDesktop={isDesktop}/>}/>
         </Routes>
-
-
 
       </div>
       
