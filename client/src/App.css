@@ -617,10 +617,10 @@ height: 70vh;
 
   #bkgr-circle {
     position: fixed;
-    height: 97vh;
+    height: 97.5vh;
     width: 98.5vw;
     /* border-radius: 0px; */
-    bottom: 12px;
+    bottom: 3px;
     z-index: 3;
     background-image: linear-gradient(90deg, #ffc80398, #f6e5dd,  rgba(255, 243, 203, 0),#ffc8032a, rgba(255, 103, 86, 0.163), rgba(255, 233, 218, 0.388));  
     border-left: 50px transparent;
