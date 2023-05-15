@@ -619,7 +619,6 @@ height: 70vh;
     position: fixed;
     height: 97.5vh;
     width: 98.5vw;
-    /* border-radius: 0px; */
     bottom: 3px;
     z-index: 3;
     background-image: linear-gradient(90deg, #ffc80398, #f6e5dd,  rgba(255, 243, 203, 0),#ffc8032a, rgba(255, 103, 86, 0.163), rgba(255, 233, 218, 0.388));  
@@ -854,8 +853,18 @@ height: 70vh;
 
   #proj-nav {
     position: fixed;
-    left: 0;
-    top: 7%;
+  }
+
+  #proj-nav #nav-container {
+    width: 130px;
+    left: 0px;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.782);
+  }
+
+  #proj-nav #nav-container h3 {
+    margin-top: 30px;
   }
 
   #proj-links {
@@ -876,6 +885,18 @@ height: 70vh;
     color:rgb(255, 29, 217);
     cursor: grab;
   }
+  
+  .return-icon-nav {
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    }
+
+  .return-icon-nav:hover {
+    animation: handwave 1s infinite;
+    background-color: rgb(255, 29, 217);
+  }
 
   .projpage-header,
   .projpage-details {
@@ -894,6 +915,7 @@ height: 70vh;
 
   .projpage-header {
     width: 67%;
+    margin-left: 72px;
   }
 
   .proj-title h2 {
@@ -949,44 +971,49 @@ height: 70vh;
 
   .header_img{
     width: 100%;
-    border: 0.8em solid rgb(207, 255, 224);
-    border-radius: 20px;
+    border: 0.5em double white;
+    /* border-radius: 20px; */
   }
 
   #video {
     width: 100%;
     height: 34.8em;
-    border: 0.8em solid rgb(207, 255, 224);
-    border-radius: 20px;
+    border: 0.5em double white;
+    /* border-radius: 20px; */
   }
 
   .projpage-details {
-    margin-top: 3em;
-    width: 67%;
+    margin-top: 1em;
+    width: 68.5%;
     height: 100%;
-    padding: 2em;
+    padding: 1em 0.1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    margin-left: 90px;
+    background-color: rgba(255, 255, 255, 0.782);
   }
 
   #proj-left {
-    width: 100%;
+    width: 102%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 1em;
+    border-radius: 20px;
+    height: 38em;
   }
 
   .projpage-details h5 {
     margin: 1em 0 0.4em 0;
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   #proj-skills-container {
     columns: 10px 1;
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1em;
     margin-left: 20px;
   }
@@ -1014,18 +1041,7 @@ height: 70vh;
     background: #000;
   }
 
-  .return-icon-nav {
-    width: 33px;
-    background-color: rgba(228, 63, 3, 0.581);
-    border-radius: 50%;
-    border: 1px solid rgba(156, 42, 0, 0.977);
-    }
 
-
-  .return-icon-nav:hover {
-    animation: handwave 1s infinite;
-    background-color: rgba(156, 42, 0, 0.977);
-  }
   
 
   /* FOOTER */
