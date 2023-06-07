@@ -996,7 +996,7 @@ height: 70vh;
   }
 
   #proj-left {
-    width: 102%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1015,7 +1015,7 @@ height: 70vh;
     columns: 10px 1;
     font-size: 1.2em;
     line-height: 1em;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   #proj-right #proj-img-container {
@@ -1023,12 +1023,12 @@ height: 70vh;
     flex-direction: column;
     justify-content: flex-start;
     overflow-y: scroll;
-    height: 40em;
+    height: 45em;
     margin-top: 0;
   }
 
   #proj-img-container img {
-    width: 93%;
+    width: 97%;
   }
 
   .scrollbar::-webkit-scrollbar{
