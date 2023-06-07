@@ -31,12 +31,12 @@ function About ({isDesktop}){
                         <li>Ruby on Rails</li>
                         <li>Sinatra</li>
                         <li>SQL</li>
-                        <li>PostgreSQL</li>
                         <li>SQLite</li>
+                        <li>PostgreSQL</li>
                         <li>ActiveRecord</li>
                         <li>APIs</li>
-                        <li>MVC framework</li>
                         <li>RESTful conventions</li>
+                        <li>MVC framework</li>
                         <li>HTML/HTML5</li>
                         <li>CSS/CSS3</li>
                         <li>GitHub</li>
@@ -45,7 +45,7 @@ function About ({isDesktop}){
                         <li>Mobile web design</li>
                         <li>Wireframing</li>
                         <li>User testing</li>
-                        <li>Notion</li>
+                        {/* <li>Notion</li> */}
                     </ul>
 
                 </div>
