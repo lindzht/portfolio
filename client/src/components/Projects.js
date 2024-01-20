@@ -30,18 +30,12 @@ function Projects({ projects, isDesktop }) {
 
     return (
         <div id="projects-container">
-            <h1>Projects</h1>
+            {selectedProject.length > 0 ? <h1 onClick={()=>{setSelectedProject([])}}>{selectedProject}</h1> : <h1>Projects</h1>}
+           {renderProject()}
             <div id="proj-thumbnails-container">
                 {renderCards}
             </div>
 
-            {/* {selectedProject && selectedProject.length > 0 ? 
-            <div id="project-deets">
-                <ProjectPage selectedProject ={selectedProject} isDesktop={isDesktop}/>
-            </div> 
-            : null} */}
-
-           {renderProject()}
 
             <div id="return">
                 <HashLink smooth to="/#home">

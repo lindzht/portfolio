@@ -39,13 +39,12 @@ function ProjectPage({ projects, isDesktop, selectedProject }) {
 
     return (
         <div className="projpage-container">
-            {console.log(selectedProject + "test")}
             {isDesktop ? <NavProjPage projects={projects}/> : null}
             {currentProjArr && currentProjArr.length > 0 ? 
                 <>
-                    <div className="projpage-header">
-                        <div className="proj-title">
-                            <h2>{currentProjObj.name}</h2> 
+                
+                    <div className="projpage-details">
+                        <div className="projpage-header">
                             {currentProjObj.gh_front && currentProjObj.gh_back ? 
                                 <div id="gh-icons">
                                     <div id="frontend">
@@ -66,15 +65,21 @@ function ProjectPage({ projects, isDesktop, selectedProject }) {
                                     <img className="gh" src={github} alt="GitHub"/>
                                 </Link> 
                             }
+                            <h5>Date Created: {currentProjObj.date_created} </h5>  
+                            <h4>{currentProjObj.header}</h4> 
+                            <ul>
+                                {renderSkills()}
+                            </ul>
                         </div>
-                        <h4>{currentProjObj.header}</h4>
-                            
-                        {currentProjObj.demo && currentProjObj ? <Video demo={currentProjObj.demo} /> : <img src={`${currentProjObj.images[0].hero}`} alt="Hero" className="header_img"/>}
+                        {currentProjObj.images.length > 0 ?                         
+                                <div id="proj-img-container" className="scrollbar">
+                                    {currentProjObj.demo && currentProjObj ? <Video demo={currentProjObj.demo} /> : <img src={`${currentProjObj.images[0].hero}`} alt="Hero" className="header_img"/>}
+                                    {renderImgs()}
+                                </div>
+                            : null
+                        }
                         
-                    </div>
-                
-                    <div className="projpage-details">
-                        <div id="proj-left">
+                        {/* <div id="proj-left">
                                 <h5>Date Created: {currentProjObj.date_created} </h5>
                                 <Link target="_blank" to={currentProjObj.gh_front ? currentProjObj.gh_front : currentProjObj.gh} >
                                     <h5>GitHub</h5>
@@ -92,21 +97,9 @@ function ProjectPage({ projects, isDesktop, selectedProject }) {
                                         </div>
                                     </>
                                 : null}
-                        </div>        
+                        </div>         */}
                         
-                        {currentProjObj.images.length > 0 ? 
-                            <div id="proj-right">            
-                                <div id="proj-img-container" className="scrollbar">
-                                    {renderImgs()}
-                                </div>
-                            </div>
-                            : null
-                        }
 
-                        {!isDesktop ? 
-                        <Link to="/" onClick={() => {window.scrollTo({top: 0, left: 0})}}>
-                            <img id="return-icon" src={star} alt="Home" />
-                        </Link> : null}
 
                     </div>
 
