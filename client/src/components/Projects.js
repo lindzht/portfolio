@@ -2,17 +2,23 @@ import ProjectCard from "./ProjectCard";
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import star from '../images/star.png';
+import ProjectPage from "./ProjectPage";
 
 
-function Projects({ projects }) {
+function Projects({ projects, isDesktop }) {
+
+    let selectedProject 
+    console.log(selectedProject);
 
     const renderCards = projects.map((project) => {
         return (
-            <Link key={project.id} to={project.name.toLowerCase()} onClick={() => {window.scrollTo({top: 0, left: 0})}} >
-                <ProjectCard {...project} key={project.name}  />
-            </Link>
+            <div  >
+                <ProjectCard {...project} key={project.name} onClick={()=>{console.log("test")}} />
+            </div>
         )
     })
+
+    
 
     return (
         <div id="projects-container">
@@ -20,6 +26,12 @@ function Projects({ projects }) {
             <div id="proj-thumbnails-container">
                 {renderCards}
             </div>
+
+            {selectedProject && selectedProject.length > 0 ? 
+            <div id="project-deets">
+                <ProjectPage selectedProject ={selectedProject} isDesktop={isDesktop}/>
+            </div> 
+            : null}
 
             <div id="return">
                 <HashLink smooth to="/#home">
