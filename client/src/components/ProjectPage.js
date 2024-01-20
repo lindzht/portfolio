@@ -8,14 +8,19 @@ import NavProjPage from "./NavProjPage";
 import Footer from "./Footer";
 
 
-function ProjectPage({ projects, isDesktop }) {
+function ProjectPage({ projects, isDesktop, selectedProject }) {
 
-    let params = useParams()
+    console.log(projects)
+    console.log(selectedProject)
+    
+
+    // let params = useParams()
     const currentProjArr = projects.filter((project) => {
-        return (project.name.toLowerCase() === params.projectName)
+        return (project.name.toLowerCase() === selectedProject.toLowerCase());
     })
     
     const currentProjObj = currentProjArr[0]
+    console.log(currentProjArr)
 
     function renderImgs () { 
         let images = Object.values(currentProjObj.images[0])
@@ -34,6 +39,7 @@ function ProjectPage({ projects, isDesktop }) {
 
     return (
         <div className="projpage-container">
+            {console.log(selectedProject + "test")}
             {isDesktop ? <NavProjPage projects={projects}/> : null}
             {currentProjArr && currentProjArr.length > 0 ? 
                 <>

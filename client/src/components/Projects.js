@@ -3,22 +3,30 @@ import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import star from '../images/star.png';
 import ProjectPage from "./ProjectPage";
+import { useState } from 'react';
 
 
 function Projects({ projects, isDesktop }) {
 
-    let selectedProject 
-    console.log(selectedProject);
+    const [selectedProject, setSelectedProject] = useState([])
+
+
 
     const renderCards = projects.map((project) => {
         return (
-            <div  >
-                <ProjectCard {...project} key={project.name} onClick={()=>{console.log("test")}} />
-            </div>
+            <ProjectCard {...project} key={project.name} setSelectedProject={setSelectedProject}/>
         )
     })
 
-    
+    console.log(selectedProject)
+
+    const renderProject =()=>{
+        if(selectedProject.length > 0){
+            return(
+                <ProjectPage projects={projects} selectedProject={selectedProject} isDesktop={isDesktop}/>
+            )
+        }
+    }
 
     return (
         <div id="projects-container">
@@ -27,11 +35,13 @@ function Projects({ projects, isDesktop }) {
                 {renderCards}
             </div>
 
-            {selectedProject && selectedProject.length > 0 ? 
+            {/* {selectedProject && selectedProject.length > 0 ? 
             <div id="project-deets">
                 <ProjectPage selectedProject ={selectedProject} isDesktop={isDesktop}/>
             </div> 
-            : null}
+            : null} */}
+
+           {renderProject()}
 
             <div id="return">
                 <HashLink smooth to="/#home">

@@ -2,7 +2,9 @@ import javascript from '../images/javascript.png'
 import React from '../images/react.png'
 import rails from '../images/rails.png'
 
-function ProjectCard({ name, thumbnail, date_created, skills }) {
+function ProjectCard({ name, thumbnail, date_created, skills, id, setSelectedProject }) {
+
+    
 
     function renderSkills() {
         return (skills.map((skill) => {
@@ -16,9 +18,11 @@ function ProjectCard({ name, thumbnail, date_created, skills }) {
         }))
     }
 
+ 
+
 
     return (
-        <div className="proj_card">
+        <div className="proj_card" onClick={()=>{setSelectedProject(name)}}>
             {thumbnail ?
                
                 <img className="img_card" src={thumbnail} alt={name} style={{"opacity" : "70%"}}/>
