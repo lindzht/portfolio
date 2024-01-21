@@ -912,6 +912,23 @@ height: 70vh;
     margin-left: 5%;
   } */
 
+  #proj-thumbnails-container-change {
+    display: flex;
+    flex-direction: row;
+    margin-top: -250px;
+    z-index: 100;
+  }
+
+  #proj-thumbnails-container-change .proj_card,
+  #proj-thumbnails-container-change .img_card{
+    width: 200px;
+    height: 70px;
+    border-radius: 5px 5px;
+  }
+
+  #proj-thumbnails-container-change .p_details {
+    display: none;
+  }
 
   .projpage-details{
     margin-top: 5%;
@@ -919,6 +936,7 @@ height: 70vh;
     flex-direction: row;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
+    height: 65%;
   }
 
   .projpage-header {

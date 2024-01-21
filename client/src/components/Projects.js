@@ -32,7 +32,7 @@ function Projects({ projects, isDesktop }) {
         <div id="projects-container">
             {selectedProject.length > 0 ? <h1 onClick={()=>{setSelectedProject([])}}>{selectedProject}</h1> : <h1>Projects</h1>}
            {renderProject()}
-            <div id="proj-thumbnails-container">
+            <div id={selectedProject.length > 0? "proj-thumbnails-container-change": "proj-thumbnails-container"}>
                 {renderCards}
             </div>
 
