@@ -32,6 +32,8 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<LandingPage projects={projects} isDesktop={isDesktop}/>} />
+
+          {/* Project Pages */}
           <Route path="/:projectName" element={<ProjectPage projects={projects} isDesktop={isDesktop}/>}/>
         </Routes>
 
