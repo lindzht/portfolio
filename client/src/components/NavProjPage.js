@@ -31,7 +31,7 @@ function NavProjPage({projects}) {
                     <img className="return-icon-nav" src={star} alt="Home" />
                 </Link>
                 
-            </div>
+            </div> 
         </div>
     )
 }
